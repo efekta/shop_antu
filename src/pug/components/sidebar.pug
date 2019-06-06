@@ -1,0 +1,61 @@
+aside.sidebar
+	div.sidebar__switches
+		span.switches-icon
+			img(src="", alt="")
+		ul.nav.nav-tabs(role="tablist")
+			li.nav-item
+				a.nav-link.active(href="#profile1" role="tab" data-toggle="tab") Каталог 
+			li.nav-item
+				a.nav-link(href="#profile2" role="tab" data-toggle="tab") Бренд
+		div.tab-content
+			div.tab-pane.fade.in.active#profile1(role="tabpanel")
+				ul.cd-accordion-menu.animated
+					li.has-children
+						a
+							span.switches-icon-svg
+								i.fal.fa-chevron-right
+							input#group-1(type='checkbox', name='group-1', checked='')
+							label(for='group-1') Гель-лаки, краски, лаки
+					li.has-children
+						a
+							span.switches-icon-svg
+								i.fal.fa-chevron-right
+							input#group-1(type='checkbox', name='group-1', checked='')
+							label(for='group-1') Моделирование ногтей
+					li.has-children
+						a
+							span.switches-icon-svg
+								i.fal.fa-chevron-right
+							input#group-1(type='checkbox', name='group-1', checked='')
+							label(for='group-1') Маникюр / Педикюр
+					li.has-children
+						a
+							span.switches-icon-svg
+								i.fal.fa-chevron-right
+							input#group-1(type='checkbox', name='group-1', checked='')
+							label(for='group-1') Дизайн / Nail-Art
+					li.has-children
+						a
+							span.switches-icon-svg
+								i.fal.fa-chevron-right
+							input#group-1(type='checkbox', name='group-1', checked='')
+							label(for='group-1') Ресницы / Брови
+					li.has-children
+						a
+							span.switches-icon-svg
+								i.fal.fa-chevron-right
+							input#group-1(type='checkbox', name='group-1', checked='')
+							label(for='group-1') Салонные процедуры / SPA
+					li.has-children
+						a
+							span.switches-icon-svg
+								i.fal.fa-chevron-right
+							input#group-1(type='checkbox', name='group-1', checked='')
+							label(for='group-1') Уход за волосами
+					li.has-children
+						a
+							span.switches-icon-svg
+								i.fal.fa-chevron-right
+							input#group-1(type='checkbox', name='group-1', checked='')
+							label(for='group-1') Вспомогательные материалы
+			div.tab-pane.fade.in.active#profile2(role="tabpanel")

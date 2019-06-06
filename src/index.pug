@@ -1,0 +1,12 @@
+extends pug/base
+
+append vars
+
+block content
+    div.page
+        include pug/components/header.pug
+        div.content-wrapper
+            include pug/components/sidebar.pug
+            include pug/components/main.pug
+
+    include pug/components/footer.pug

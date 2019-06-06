@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+* {
+	box-sizing: border-box;
+}
+html {
+	font-size: 12px;
+	height: 100%;
+}
+body {
+	display: flex;
+    flex-direction: column;
+	color: $base-color-font;
+	font-size: 12px;
+	height: 100%;
+}
+.page {
+	flex: 1 0 auto;
+}
+footer {
+	flex-shrink: 0;
+}
+a {
+	color: #3b3b3b;
+	font-weight: 600;
+	cursor: pointer;
+	&:hover {
+		text-decoration: none;
+		color: $light-red;
+	}
+}
+.color-light-gray {
+	color: $color-light-gray;
+}
+.color-red {
+	color: $red;
+}
+button.btn {
+	display: block;
+	text-align: center;
+	outline: none;
+	padding: 0;
+	margin: 0;
+	&:hover {
+		color: $white;
+		background: $light-red;
+	}
+}
+ul {
+	list-style-type: none;padding: 0;
+}
+
+.content-wrapper {
+	position: relative;
+}

@@ -10226,7 +10226,30 @@ ul {
   padding: 0; }
 
 .content-wrapper {
-  position: relative; }
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.left-panel {
+  width: 255px;
+  background: #fff;
+  background: pink; }
+
+.right-panel {
+  width: 190px;
+  background: #fff;
+  background: pink; }
 
 .top-header {
   padding: 30px 0 25px 0; }
@@ -10369,7 +10392,7 @@ ul {
   color: #ec2438; }
 
 .sidebar {
-  width: 300px;
+  width: 100%;
   padding: 15px; }
   .sidebar .tabs {
     margin-bottom: 10px; }

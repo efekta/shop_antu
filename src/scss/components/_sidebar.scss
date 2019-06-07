@@ -172,10 +172,22 @@
 		color: #ec2461;
 	}
 }
-// @media screen and (max-width: 1024px) and (min-width: 320px) { 
+@media screen and (max-width: 1024px) and (min-width: 320px) { 
+.hover-sub-menu {
+	position: static;
+	opacity: 1;
+	visibility: visible;
+	box-shadow: none;
+	height: auto;
+	width: 100%;
+	border: none;
+	border-radius: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 20px;
+}
 
-
-// }
+}
 
 
 

@@ -10196,7 +10196,11 @@ footer {
 a {
   color: #3b3b3b;
   font-weight: 600;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  transition: all .3s ease-in; }
   a:hover {
     text-decoration: none;
     color: #ff5f6f; }
@@ -10365,99 +10369,142 @@ ul {
   color: #ec2438; }
 
 .sidebar {
-  padding: 15px;
-  width: 300px; }
-  .sidebar .nav-tabs {
-    border-bottom: none; }
-  .sidebar .nav-tabs .nav-item {
-    margin-bottom: 0;
-    position: relative; }
-    .sidebar .nav-tabs .nav-item:first-child:before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      right: 0;
-      width: 1px;
-      height: 10px;
-      background: #3b3b3b;
-      -webkit-transform: translateY(-50%) rotate(15deg);
-         -moz-transform: translateY(-50%) rotate(15deg);
-          -ms-transform: translateY(-50%) rotate(15deg);
-           -o-transform: translateY(-50%) rotate(15deg);
-              transform: translateY(-50%) rotate(15deg); }
-  .sidebar .nav {
-    padding-left: 67px;
-    padding-bottom: 0; }
-  .sidebar .nav-tabs .nav-link {
-    border: none;
-    text-transform: uppercase; }
+  width: 300px;
+  padding: 15px; }
+  .sidebar .tabs {
+    margin-bottom: 10px; }
+  .sidebar .tab {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600; }
 
-.nav-tabs .nav-link.active,
-.nav-tabs .nav-item.show .nav-link {
-  background: transparent; }
+.sidebar__switches {
+  position: relative; }
 
-/* -------------------------------- 
+.tab.tab-active {
+  color: #ec2438; }
 
-Main Components Menu Sidebar
+.tab:first-child {
+  position: relative;
+  padding-left: 35px; }
 
--------------------------------- */
-.cd-accordion-menu ul {
-  /* by default hide all sub menus */
+.tab:first-child:before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 0;
+  width: 11px;
+  height: 11px;
+  background-image: url("../images/icons/spritesheet.png");
+  background-repeat: no-repeat;
+  background-position: -115px -122px; }
+
+.tab:first-child:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 1px;
+  height: 12px;
+  background: #3b3b3b;
+  -webkit-transform: translateY(-50%) rotate(35deg);
+     -moz-transform: translateY(-50%) rotate(35deg);
+      -ms-transform: translateY(-50%) rotate(35deg);
+       -o-transform: translateY(-50%) rotate(35deg);
+          transform: translateY(-50%) rotate(35deg); }
+
+.accrodion-menu .menu-list li {
+  position: relative; }
+
+.accrodion-menu .menu-list li a {
+  position: relative;
+  padding: 10px 15px 10px 35px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .accrodion-menu .menu-list li a i {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+            transform: translateY(-50%); }
+
+.accrodion-menu .menu-list__link.active .menu-list__link_svg-ico {
+  top: 0;
+  -webkit-transform: rotate(90deg) translateY(0);
+     -moz-transform: rotate(90deg) translateY(0);
+      -ms-transform: rotate(90deg) translateY(0);
+       -o-transform: rotate(90deg) translateY(0);
+          transform: rotate(90deg) translateY(0); }
+
+.menu-list__link_svg-ico {
+  position: absolute;
+  height: 100%;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+     -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 24px;
+  color: #3b3b3b; }
+
+.accrodion-menu .menu-list li ul li a i:first-child:before {
   display: none; }
 
-.cd-accordion-menu li {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none; }
+.accrodion-menu .menu-list .sub-menu {
+  display: none; }
+  .accrodion-menu .menu-list .sub-menu_show-on {
+    display: block; }
 
-.cd-accordion-menu input[type=checkbox] {
-  /* hide native checkbox */
+.hover-sub-menu {
+  opacity: 0;
+  visibility: hidden;
+  width: 310px;
+  min-height: 300px;
+  padding: 30px 0;
+  overflow-y: scroll;
   position: absolute;
-  opacity: 0; }
+  top: 0;
+  right: -300px;
+  background: #fff;
+  -webkit-box-shadow: 3px 0px 4px 0px rgba(28, 28, 28, 0.21);
+     -moz-box-shadow: 3px 0px 4px 0px rgba(28, 28, 28, 0.21);
+          box-shadow: 3px 0px 4px 0px rgba(28, 28, 28, 0.21);
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  z-index: 2;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
 
-.cd-accordion-menu label, .cd-accordion-menu a {
-  display: block;
-  padding: 5px 0 5px 40px; }
+.accrodion-menu .menu-list .sub-menu li:hover .hover-sub-menu {
+  opacity: 1;
+  visibility: visible; }
 
-.cd-accordion-menu a {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-     -moz-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+.hover-sub-menu::-webkit-scrollbar-track {
+  -webkit-border-radius: 12px;
+          border-radius: 12px;
+  background-color: transparent; }
 
-.switches-icon-svg {
-  position: absolute;
-  right: 0;
-  width: 11px;
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-     -moz-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+.hover-sub-menu::-webkit-scrollbar {
+  width: 8px;
+  background-color: transparent; }
 
-svg.switches-icon-svg_down {
-  -webkit-transform: rotate(90deg);
-     -moz-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-       -o-transform: rotate(90deg);
-          transform: rotate(90deg); }
-
-.cd-accordion-menu label {
-  cursor: pointer; }
+.hover-sub-menu::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 12px;
+          border-radius: 12px;
+  background-color: #ff5f6f; }
 
 footer {
   padding: 50px 0; }

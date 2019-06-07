@@ -165,31 +165,32 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _vendor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./vendor */ "./src/js/vendor.js");
 
-/* -------------------------------- 
+$(document).ready(function () {
+  /*=================
+  Sidebar Tabs
+  ==================*/
+  $(".tab_items").not(":first").hide();
+  $(".sidebar .tab").click(function () {
+    $(".sidebar .tab").removeClass("tab-active ").eq($(this).index()).addClass("tab-active");
+    $(".tab_items").hide().eq($(this).index()).fadeIn();
+  }).eq(0).addClass("tab-active ");
+  /*============================
+  Main Components Menu Sidebar Acordion
+  =============================*/
+  // $("#leftside-navigation .sub-menu > a").click(function(e) {
+  //   // event.preventDefault();
+  //   $("#leftside-navigation ul ul").slideUp(), $(this).next().is(":visible") || $(this).next().slideDown(),
+  //   e.stopPropagation()
+  // })
 
-Main Components Menu Sidebar
-
--------------------------------- */
-
-jQuery(document).ready(function () {
-  var accordionsMenu = $('.cd-accordion-menu');
-
-  if (accordionsMenu.length > 0) {
-    accordionsMenu.each(function () {
-      var accordion = $(this); //detect change in the input[type="checkbox"] value
-
-      accordion.on('change', 'input[type="checkbox"]', function () {
-        var checkbox = $(this);
-        console.log(checkbox.prop('checked'));
-        checkbox.prop('checked') ? checkbox.siblings('ul').attr('style', 'display:none;').slideDown(300) : checkbox.siblings('ul').attr('style', 'display:block;').slideUp(300);
-      });
-    });
-  }
-
-  $('.cd-accordion-menu a').on('click', function (event) {
+  $(".sidebar .accrodion-menu ul li a").on('click', function (event) {
     event.preventDefault();
-    $(this).find('.swithes-icon-svg svg').toggleClass('switches-icon-svg_down');
-  });
+    $($(this)).toggleClass("active");
+    $(".accrodion-menu .menu-list .sub-menu").toggleClass('sub-menu_show-on');
+  }); // $(".sidebar #leftside-navigation ul ul li a").on('click', function(event) {
+  // 	event.preventDefault();
+  // 	$(".sidebar #leftside-navigation ul ul.hover-sub-menu").toggleClass('show-on');
+  // });
 });
 
 /***/ }),

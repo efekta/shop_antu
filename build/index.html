@@ -65,42 +65,38 @@
 			</header>
 			<div class="content-wrapper">
 				<aside class="sidebar">
-					<div class="sidebar__switches"><span class="switches-icon"><img src="" alt=""></span>
-						<ul class="nav nav-tabs" role="tablist">
-							<li class="nav-item"><a class="nav-link active" href="#profile1" role="tab" data-toggle="tab">Каталог </a></li>
-							<li class="nav-item"><a class="nav-link" href="#profile2" role="tab" data-toggle="tab">Бренд</a></li>
-						</ul>
-						<div class="tab-content">
-							<div class="tab-pane fade in active" id="profile1" role="tabpanel">
-								<ul class="cd-accordion-menu animated">
-									<li class="has-children"><a><span class="switches-icon-svg"><i class="fal fa-chevron-right"></i></span>
-											<input id="group-1" type="checkbox" name="group-1" checked="">
-											<label for="group-1">Гель-лаки, краски, лаки</label></a></li>
-									<li class="has-children"><a><span class="switches-icon-svg"><i class="fal fa-chevron-right"></i></span>
-											<input id="group-1" type="checkbox" name="group-1" checked="">
-											<label for="group-1">Моделирование ногтей</label></a></li>
-									<li class="has-children"><a><span class="switches-icon-svg"><i class="fal fa-chevron-right"></i></span>
-											<input id="group-1" type="checkbox" name="group-1" checked="">
-											<label for="group-1">Маникюр / Педикюр</label></a></li>
-									<li class="has-children"><a><span class="switches-icon-svg"><i class="fal fa-chevron-right"></i></span>
-											<input id="group-1" type="checkbox" name="group-1" checked="">
-											<label for="group-1">Дизайн / Nail-Art</label></a></li>
-									<li class="has-children"><a><span class="switches-icon-svg"><i class="fal fa-chevron-right"></i></span>
-											<input id="group-1" type="checkbox" name="group-1" checked="">
-											<label for="group-1">Ресницы / Брови</label></a></li>
-									<li class="has-children"><a><span class="switches-icon-svg"><i class="fal fa-chevron-right"></i></span>
-											<input id="group-1" type="checkbox" name="group-1" checked="">
-											<label for="group-1">Салонные процедуры / SPA</label></a></li>
-									<li class="has-children"><a><span class="switches-icon-svg"><i class="fal fa-chevron-right"></i></span>
-											<input id="group-1" type="checkbox" name="group-1" checked="">
-											<label for="group-1">Уход за волосами</label></a></li>
-									<li class="has-children"><a><span class="switches-icon-svg"><i class="fal fa-chevron-right"></i></span>
-											<input id="group-1" type="checkbox" name="group-1" checked="">
-											<label for="group-1">Вспомогательные материалы</label></a></li>
+					<div class="sidebar__switches tabs"><span class="tab tab-active">Каталог</span><span class="tab">Бренд</span></div>
+					<div class="tab_content">
+						<div class="tab_items">
+							<div class="accrodion-menu">
+								<ul class="menu-list">
+									<li class="menu-list__item"><a class="menu-list__link" href=""><i class="menu-list__icon sprite sprite-gellak_icon"></i><span>Гель-лаки, краски, лаки</span><i class="menu-list__link_svg-ico fal fa-angle-right"></i></a></li>
+									<li class="menu-list__item"><a class="menu-list__link" href=""><i class="menu-list__icon sprite sprite-modelir_icon"></i><span>Моделирование ногтей</span><i class="menu-list__link_svg-ico fal fa-angle-right"></i></a></li>
+									<li class="menu-list__item"><a class="menu-list__link" href=""><i class="menu-list__icon sprite sprite-manikur_icon"></i><span>Маникюр / Педикюр</span><i class="menu-list__link_svg-ico fal fa-angle-right"></i></a></li>
+									<li class="menu-list__item"><a class="menu-list__link" href=""><i class="menu-list__icon sprite sprite-design_icon"></i><span>Дизайн / Nail-Art</span><i class="menu-list__link_svg-ico fal fa-angle-right"></i></a></li>
+									<li class="menu-list__item"><a class="menu-list__link" href=""><i class="menu-list__icon sprite sprite-resnicy_icon"></i><span>Ресницы / Брови</span><i class="menu-list__link_svg-ico fal fa-angle-right"></i></a>
+										<ul class="sub-menu">
+											<li><a href="">Ресницы/Брови</a></li>
+											<li><a href=""><span>Материалы для ресниц и бровей (Биотатуаж)</span></a>
+												<ul class="hover-sub-menu">
+													<li><a href="">Материалы для ресниц и бровей</a></li>
+													<li><a href="">Инструменты для работы с ресницами и бровями</a></li>
+													<li><a href="">Ухаживающие средства</a></li>
+													<li><a href="">Окрашивание бровей и ресниц</a></li>
+													<li><a href="">Ресницы для наращивания</a></li>
+													<li><a href="">Средства для наращивания ресниц</a></li>
+													<li><a href="">Сопутствующие товары</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li class="menu-list__item"><a class="menu-list__link" href=""><i class="menu-list__icon sprite sprite-spa_icon"></i><span>Салонные процедуры / SPA</span><i class="menu-list__link_svg-ico fal fa-angle-right"></i></a></li>
+									<li class="menu-list__item"><a class="menu-list__link" href=""><i class="menu-list__icon sprite sprite-uxod_icon"></i><span>Уход за волосами</span><i class="menu-list__link_svg-ico fal fa-angle-right"></i></a></li>
+									<li class="menu-list__item"><a class="menu-list__link" href=""><i class="menu-list__icon sprite sprite-perchatka_icon"></i><span>Вспомогательные материалы</span><i class="menu-list__link_svg-ico fal fa-angle-right"></i></a></li>
 								</ul>
 							</div>
-							<div class="tab-pane fade in active" id="profile2" role="tabpanel"></div>
 						</div>
+						<div class="tab_items">222</div>
 					</div>
 				</aside>
 				<main class="main">

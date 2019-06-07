@@ -10549,6 +10549,7 @@ ul {
 @media screen and (max-width: 1024px) and (min-width: 320px) {
   .hover-sub-menu {
     position: static;
+    display: none;
     opacity: 1;
     visibility: visible;
     -webkit-box-shadow: none;

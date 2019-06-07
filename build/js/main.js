@@ -185,8 +185,9 @@ $(document).ready(function () {
 
   $(".sidebar .accrodion-menu ul li a").on('click', function (event) {
     event.preventDefault();
-    $($(this)).toggleClass("active");
-    $(".accrodion-menu .menu-list .sub-menu").toggleClass('sub-menu_show-on');
+    $(this).toggleClass("active"); // $(".accrodion-menu .menu-list .sub-menu").toggleClass('sub-menu_show-on');
+
+    $(this).next().toggleClass('sub-menu_show-on');
   }); // $(".sidebar #leftside-navigation ul ul li a").on('click', function(event) {
   // 	event.preventDefault();
   // 	$(".sidebar #leftside-navigation ul ul.hover-sub-menu").toggleClass('show-on');

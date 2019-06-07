@@ -10506,6 +10506,46 @@ ul {
           border-radius: 12px;
   background-color: #ff5f6f; }
 
+.menu-list__link_color-red:hover {
+  color: #ec2438; }
+  .menu-list__link_color-red:hover .menu-list__link_svg-ico {
+    color: #ec2438; }
+
+.menu-list__link_color-pink:hover {
+  color: #f12899; }
+  .menu-list__link_color-pink:hover .menu-list__link_svg-ico {
+    color: #f12899; }
+
+.menu-list__link_color-purple:hover {
+  color: #ad3ae9; }
+  .menu-list__link_color-purple:hover .menu-list__link_svg-ico {
+    color: #ad3ae9; }
+
+.menu-list__link_color-blue:hover {
+  color: #329feb; }
+  .menu-list__link_color-blue:hover .menu-list__link_svg-ico {
+    color: #329feb; }
+
+.menu-list__link_color-green:hover {
+  color: #35b851; }
+  .menu-list__link_color-green:hover .menu-list__link_svg-ico {
+    color: #35b851; }
+
+.menu-list__link_color-yellow:hover {
+  color: #f3cf27; }
+  .menu-list__link_color-yellow:hover .menu-list__link_svg-ico {
+    color: #f3cf27; }
+
+.menu-list__link_color-orange:hover {
+  color: #f07b26; }
+  .menu-list__link_color-orange:hover .menu-list__link_svg-ico {
+    color: #f07b26; }
+
+.menu-list__link_color-light-pink:hover {
+  color: #ec2461; }
+  .menu-list__link_color-light-pink:hover .menu-list__link_svg-ico {
+    color: #ec2461; }
+
 footer {
   padding: 50px 0; }
 

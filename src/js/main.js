@@ -21,7 +21,7 @@ $(document).ready(function() {
 
 	$(".sidebar .accrodion-menu ul li a").on('click', function(event) {
 		event.preventDefault();
-		$($(this)).toggleClass("active")
+		$($(this)).toggleClass("active");
 		$(".accrodion-menu .menu-list .sub-menu").toggleClass('sub-menu_show-on');
 	});
 

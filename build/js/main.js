@@ -220,7 +220,7 @@ $(document).ready(function () {
 
       if ($(this).next().length) {
         // $(this).toggleClass("active");
-        $(this).next().toggleClass('sub-menu_show-on');
+        $(this).next().toggleClass('hover-sub-menu_show-on');
       }
     });
   } // });

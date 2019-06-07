@@ -73,7 +73,7 @@ $(document).ready(function() {
 			    // $(this).toggleClass("active");
 
 
-			$(this).next().toggleClass('sub-menu_show-on');
+			$(this).next().toggleClass('hover-sub-menu_show-on');
 
 			}
 		  });

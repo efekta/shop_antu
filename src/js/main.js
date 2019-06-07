@@ -19,13 +19,22 @@ $(document).ready(function() {
 	//   e.stopPropagation()
 	// })
 
+	// $(".sidebar .accrodion-menu ul li a").on('click', function(event) {
+	// 	event.preventDefault();
+	// 	$(this).toggleClass("active");
+	// 	// $(".accrodion-menu .menu-list .sub-menu").toggleClass('sub-menu_show-on');
+	// 	$(this).next().toggleClass('sub-menu_show-on');
+	// });
 	$(".sidebar .accrodion-menu ul li a").on('click', function(event) {
-		event.preventDefault();
-		$(this).toggleClass("active");
-		// $(".accrodion-menu .menu-list .sub-menu").toggleClass('sub-menu_show-on');
-		$(this).next().toggleClass('sub-menu_show-on');
-	});
+	    event.preventDefault();
+	if (  $(this).next().length) {
+	    $(this).toggleClass("active");
 
+
+	$(this).next().toggleClass('sub-menu_show-on');
+
+	}
+  });
 
 	// $(".sidebar #leftside-navigation ul ul li a").on('click', function(event) {
 	// 	event.preventDefault();

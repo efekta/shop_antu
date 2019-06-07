@@ -182,12 +182,20 @@ $(document).ready(function () {
   //   $("#leftside-navigation ul ul").slideUp(), $(this).next().is(":visible") || $(this).next().slideDown(),
   //   e.stopPropagation()
   // })
+  // $(".sidebar .accrodion-menu ul li a").on('click', function(event) {
+  // 	event.preventDefault();
+  // 	$(this).toggleClass("active");
+  // 	// $(".accrodion-menu .menu-list .sub-menu").toggleClass('sub-menu_show-on');
+  // 	$(this).next().toggleClass('sub-menu_show-on');
+  // });
 
   $(".sidebar .accrodion-menu ul li a").on('click', function (event) {
     event.preventDefault();
-    $(this).toggleClass("active"); // $(".accrodion-menu .menu-list .sub-menu").toggleClass('sub-menu_show-on');
 
-    $(this).next().toggleClass('sub-menu_show-on');
+    if ($(this).next().length) {
+      $(this).toggleClass("active");
+      $(this).next().toggleClass('sub-menu_show-on');
+    }
   }); // $(".sidebar #leftside-navigation ul ul li a").on('click', function(event) {
   // 	event.preventDefault();
   // 	$(".sidebar #leftside-navigation ul ul.hover-sub-menu").toggleClass('show-on');

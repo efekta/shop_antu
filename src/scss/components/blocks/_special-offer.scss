@@ -1,0 +1,49 @@
+.special-offer-list__link {
+	position: relative;
+	display: block;
+	// padding: 20px;
+	border: 2px solid $red;
+	&:hover {
+		border: 2px solid $light-red;
+		.btn.special-offer-btn {
+			background: $light-red;
+		}
+		color: inherit;
+	}
+}
+.special-offer-list__wrapp {
+	padding: 20px;
+	margin-bottom: 20px;
+}
+.special-offer-price {
+	text-align: center;
+	span.sum {
+		text-decoration: line-through;
+	}
+	span.new-sum {
+		color: $red;
+	}
+}
+.special-offer-price span {
+	text-transform: uppercase;
+	color: $color-light-gray;
+	margin: 0 10px;
+	font-size: 20px;
+}
+.special-offer-content {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis
+}
+.btn.special-offer-btn {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: block;
+	width: 100%;
+	padding: 5px;
+	background: $red;
+	color: $white;
+	border-radius: 0;
+}

@@ -1,0 +1,15 @@
+.recently-watched {
+	
+}
+button.btn.recently-watched-btn {
+	display: block;
+	min-width: 71px;
+	padding: 3px 10px;
+	border-radius: 6px;
+	background: $red;
+	color: $white;
+	&:hover {
+		background: $light-red;
+	}
+}
+

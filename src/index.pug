@@ -3,12 +3,15 @@ extends pug/base
 append vars
 
 block content
-  div.page
-    include pug/components/header.pug
-    div.content-wrapper
-      div.left-panel
-        include pug/components/sidebar.pug
-      include pug/components/main.pug
-      div.right-panel
+	div.page
+		include pug/components/header.pug
+		div.container
+			div.content-wrapper.row
+				div.left-panel.col-md-3
+					include pug/components/sidebar.pug
+				div.col-md-7
+					include pug/components/main.pug
+				div.right-panel.col-md-2
+	include pug/components/footer.pug
 
-  include pug/components/footer.pug
+

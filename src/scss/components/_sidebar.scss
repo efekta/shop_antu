@@ -124,53 +124,153 @@
 	background-color: $light-red;
 }
 
-.menu-list__link_color-red:hover {
+.menu-list__item_color-red:hover > a {
 	color: $red;
 	.menu-list__link_svg-ico {
 		color: $red;
 	}
 }
-.menu-list__link_color-pink:hover {
+.menu-list__item_color-pink:hover > a {
 	color: #f12899;
 	.menu-list__link_svg-ico {
 		color: #f12899;
 	}
 }
-.menu-list__link_color-purple:hover {
+.menu-list__item_color-purple:hover > a {
 	color: #ad3ae9;
 	.menu-list__link_svg-ico {
 		color: #ad3ae9;
 	}
 }
-.menu-list__link_color-blue:hover {
+.menu-list__item_color-blue:hover > a {
 	color: #329feb;
 	.menu-list__link_svg-ico {
 		color: #329feb;
 	}
 }
-.menu-list__link_color-green:hover {
+.menu-list__item_color-green:hover > a {
 	color: #35b851;
 	.menu-list__link_svg-ico {
 		color: #35b851;
 	}
 }
-.menu-list__link_color-yellow:hover {
+.menu-list__item_color-yellow:hover > a {
 	color: #f3cf27;
 	.menu-list__link_svg-ico {
 		color: #f3cf27;
 	}
 }
-.menu-list__link_color-orange:hover {
+.menu-list__item_color-orange:hover > a {
 	color: #f07b26;
 	.menu-list__link_svg-ico {
 		color: #f07b26;
 	}
 }
-.menu-list__link_color-light-pink:hover {
+.menu-list__item_color-light-pink:hover > a {
 	color: #ec2461;
 	.menu-list__link_svg-ico {
 		color: #ec2461;
 	}
+}
+// Hover for ul > ul
+.menu-list__item_color-red:hover .sub-menu li a:hover {
+	color: $red;
+	.menu-list__link_svg-ico {
+		color: $red;
+	}
+}
+.menu-list__item_color-pink:hover .sub-menu li a:hover {
+	color: #f12899;
+	.menu-list__link_svg-ico {
+		color: #f12899;
+	}
+}
+.menu-list__item_color-purple:hover .sub-menu li a:hover {
+	color: #ad3ae9;
+	.menu-list__link_svg-ico {
+		color: #ad3ae9;
+	}
+}
+.menu-list__item_color-blue:hover .sub-menu li a:hover {
+	color: #329feb;
+	.menu-list__link_svg-ico {
+		color: #329feb;
+	}
+}
+.menu-list__item_color-green:hover .sub-menu li a:hover {
+	color: #35b851;
+	.menu-list__link_svg-ico {
+		color: #35b851;
+	}
+}
+.menu-list__item_color-yellow:hover .sub-menu li a:hover {
+	color: #f3cf27;
+	.menu-list__link_svg-ico {
+		color: #f3cf27;
+	}
+}
+.menu-list__item_color-orange:hover .sub-menu li a:hover {
+	color: #f07b26;
+	.menu-list__link_svg-ico {
+		color: #f07b26;
+	}
+}
+.menu-list__item_color-light-pink:hover > a {
+	color: #ec2461;
+	.menu-list__link_svg-ico {
+		color: #ec2461;
+	}
+}
+
+.hover-sub-menu li a {
+	position: relative;
+}
+.hover-sub-menu li a::after {
+	content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    transition: .3s;
+}
+
+//
+.hover-sub-menu li a:hover::after {
+	width: 3px;
+}
+
+.sub-menu__item_color-red .hover-sub-menu li a:hover::after {
+	background: $red;
+}
+.sub-menu__item_color-pink .hover-sub-menu li a:hover::after {
+	background: #f12899;
+}
+.sub-menu__item_color-purple .hover-sub-menu li a:hover::after {
+	background: #ad3ae9;
+}
+.sub-menu__item_color-blue .hover-sub-menu li a:hover::after {
+	background: #329feb;
+}
+.sub-menu__item_color-green .hover-sub-menu li a:hover::after {
+	background: #35b851;
+}
+.sub-menu__item_color-yellow .hover-sub-menu li a:hover::after {
+	background: #f3cf27;
+}
+.sub-menu__item_color-orange .hover-sub-menu li a:hover::after {
+	background: #f07b26;
+}
+.sub-menu__item_color-light-pink .hover-sub-menu li a:hover::after {
+	background: #ec2461;
+}
+
+.menu-list__link_upp {
+	text-transform: uppercase;
+}
+.accrodion-menu .menu-list.menu-list_no-padding-left li a {
+	padding-left: 0;
 }
 @media screen and (max-width: 1024px) and (min-width: 320px) { 
 	.hover-sub-menu {

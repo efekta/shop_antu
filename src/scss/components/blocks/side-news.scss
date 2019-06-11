@@ -1,0 +1,29 @@
+.side-news {
+	article {
+		padding: 20px 0;
+	}
+	span {
+		display: block;
+		margin-bottom: 20px;
+		color: $gray;
+		font-size: 12px;
+	}
+	a {
+		display: flex;
+		justify-content: space-between;
+		color: $gray;
+		font-size: 14px;
+		&:hover {
+			color: $red;
+		}
+	}
+}
+.side-news_svg-ico {
+	position: static;
+	color: $gray;
+	font-size: 20px;
+}
+.all-side-news a:hover span,
+.all-side-news a:hover svg {
+	color: $red;
+}

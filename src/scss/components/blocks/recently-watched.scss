@@ -1,5 +1,5 @@
-.recently-watched {
-	
+.recently-watched-list__item {
+	text-align: center;
 }
 button.btn.recently-watched-btn {
 	display: block;
@@ -13,3 +13,53 @@ button.btn.recently-watched-btn {
 	}
 }
 
+.recently-watched__sum {
+	color: $red;
+	font-size: 14px;
+}
+.recently-watched-content {
+	margin-bottom: 30px;
+}
+button.btn.recently-watched-btn {
+	margin-bottom: 20px;
+}
+.recently-watched-have {
+	position: relative;
+	padding-left: 10px;
+	text-align: left;
+	span {
+		color: $green;
+		border-bottom: 1px solid $green;
+	}
+	&:before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 5px;
+		height: 5px;
+		border-radius: 50%;
+		background: $green;
+		transform: translateY(-50%);
+	}
+}
+.recently-watched__order {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+	input {
+		display: inline-block;
+		padding: 3px;
+		border-width: 1px;
+		border-color: rgb(228, 228, 228);
+		border-style: solid;
+		border-radius: 6px;
+		background-color: rgb(255, 255, 255);
+		width: 41px;
+		min-height: 26px;
+	}
+	span {
+		display: inline-block;
+		margin: 0 5px;
+	}
+}

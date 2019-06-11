@@ -77,6 +77,9 @@
 		padding-left: 7px;
 		color: $red;
 	}
+	a {
+		display: block;
+	}
 }
 
 .card-box {
@@ -85,6 +88,7 @@
 .user-cab {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 .favorites {
 	position: relative;

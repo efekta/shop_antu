@@ -7,9 +7,11 @@ block content
 		include pug/components/header.pug
 		div.container
 			div.content-wrapper.row
-				div.left-panel.col-md-3
+				aside.sidebar.left-panel.col-md-3
 					include pug/components/sidebar.pug
-				div.col-md-7
+					include pug/components/blocks/side-news.pug
+					include pug/components/blocks/subscription.pug
+				main.main.col-md-7
 					include pug/components/main.pug
 				div.right-panel.col-md-2
 	include pug/components/footer.pug

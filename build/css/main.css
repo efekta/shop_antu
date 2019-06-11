@@ -11123,9 +11123,11 @@ button.btn.recently-watched-btn {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-flex-wrap: nowrap;
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap; }
@@ -11162,30 +11164,30 @@ button.btn.recently-watched-btn {
       height: 1px;
       background: #3b3b3b; }
 
-.side-news article {
-  padding: 20px 0; }
-
-.side-news span {
-  display: block;
-  margin-bottom: 20px;
-  color: #8d8d8d;
-  font-size: 12px; }
-
-.side-news a {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-     -moz-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  color: #8d8d8d;
-  font-size: 14px; }
-  .side-news a:hover {
-    color: #ec2438; }
+.side-news {
+  margin-bottom: 30px; }
+  .side-news article {
+    padding: 20px 0; }
+  .side-news span {
+    display: block;
+    margin-bottom: 20px;
+    color: #8d8d8d;
+    font-size: 12px; }
+  .side-news a {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    color: #8d8d8d;
+    font-size: 14px; }
+    .side-news a:hover {
+      color: #ec2438; }
 
 .side-news_svg-ico {
   position: static;
@@ -11195,6 +11197,135 @@ button.btn.recently-watched-btn {
 .all-side-news a:hover span,
 .all-side-news a:hover svg {
   color: #ec2438; }
+
+.subscription {
+  margin-bottom: 30px; }
+
+.subscription-content {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 150px;
+  text-align: center;
+  background: url("../images/mail.png") no-repeat;
+  margin-bottom: 30px; }
+
+.subscription-content__title {
+  font-size: 19px; }
+
+.subscription-content__desc {
+  width: 70%;
+  margin: 0 auto;
+  font-size: 12px; }
+
+.subscription-circle {
+  border-style: solid;
+  border-width: 4px;
+  border-color: white;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #ec2438;
+  opacity: 0.99;
+  -webkit-box-shadow: -1.545px 4.755px 0px 0px rgba(28, 28, 28, 0.1);
+     -moz-box-shadow: -1.545px 4.755px 0px 0px rgba(28, 28, 28, 0.1);
+          box-shadow: -1.545px 4.755px 0px 0px rgba(28, 28, 28, 0.1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 23px;
+  height: 23px;
+  padding: 20px;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px;
+  font-weight: bold; }
+
+.subscription-input-wrapp {
+  position: relative;
+  display: block;
+  margin: auto;
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+  background-color: white;
+  -webkit-box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
+     -moz-box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
+  width: 196px; }
+  .subscription-input-wrapp:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    background: url("../images/icons/spritesheet.png");
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 10px;
+    background-position: -30px -72px;
+    -webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+            transform: translateY(-50%); }
+
+.subscription-input-wrapp input {
+  height: 26px;
+  padding: 5px 10px 5px 25px;
+  background-color: transparent;
+  border: none; }
+
+button.btn.btn-subscription {
+  color: #fff;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
+  background-color: #ec2438;
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.09);
+     -moz-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.09);
+  min-width: 161px;
+  min-height: 27px;
+  display: block;
+  margin: 20px auto;
+  text-transform: uppercase;
+  font-weight: bold; }
+  button.btn.btn-subscription:hover {
+    background: #ff5f6f; }
 
 footer {
   padding: 50px 0; }

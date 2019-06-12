@@ -174,6 +174,16 @@ $(document).ready(function () {
       // $('.logo-link').removeClass('logo-link_fixed');
     }
   });
+  /*========================
+  mob nav
+  =========================*/
+
+  $(".menu-gamburger").on("click", function () {
+    $(".page-nav-mob").toggleClass('page-nav-mob_show');
+  });
+  $("#nav-icon").click(function () {
+    $(this).toggleClass('open'); // $('body').toggleClass('overlay');
+  });
 });
 
 /***/ }),

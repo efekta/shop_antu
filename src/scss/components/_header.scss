@@ -170,6 +170,80 @@ ul.nav-list {
 	display: none;
 	margin-bottom: 0;
 }
+#nav-icon {
+    width: 32px;
+    height: 25px;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+#nav-icon span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #000;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+#nav-icon:hover span {
+    background: $red;
+}
+#nav-icon span:nth-child(1) {
+    top: 0px;
+    transform-origin: left center;
+}
+#nav-icon span:nth-child(2) {
+    top: 7px;
+    transform-origin: left center;
+}
+#nav-icon span:nth-child(3) {
+    top: 14px;
+    transform-origin: left center;
+}
+#nav-icon span:nth-child(4) {
+    top: 21px;
+    transform-origin: left center;
+}
+.header-burger-menu {
+	display: none;
+}
+#nav-icon.open span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    left: 0;
+}
+#nav-icon.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+}
+#nav-icon.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 22px;
+    left: 0;
+}
+#nav-icon.open span:nth-child(4) {
+    width: 0%;
+    opacity: 0;
+}
+// .page-nav-mob {
+//     width: 100%;
+//     background: #fff;
+//     // position: fixed;
+//     // top: 139px;
+//     // left: 0;
+//     // right: 0;
+//     transition: all .3s ease;
+//     display: none;
+//     // z-index: 100;
+// }
+// .page-nav {
+//     height: 475px;
+//     overflow-y: scroll;
+//     padding: 45px 15px;
+// }
+
 // .bottom-header_fixed .nav {
 // 	text-align: center;
 // }
@@ -190,16 +264,20 @@ ul.nav-list {
 // 	left: 2%;
 // 	z-index: 4;
 // }
-// .Полоса__97__прозрачности_ {
-//   background-color: rgb(255, 255, 255);
-//   opacity: 0.969;
-//   box-shadow: 0.469px 2.963px 4px 0px rgba(28, 28, 28, 0.18);
-//   position: absolute;
-//   left: 0px;
-//   top: 0px;
-//   width: 1140px;
-//   height: 70px;
-//   z-index: 5;
-// }
+@media (max-width: 1024px) {
+	.page-nav-mob {
+		display: none;
+	}
+
+	.page-nav-mob_show {
+	    display: block;
+	}
+	.header-burger-menu {
+	    display: block;
+	}
+	// .mob-d-none {
+	// 	display: none;
+	// }
+}
 
 

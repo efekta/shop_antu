@@ -64,3 +64,24 @@ button.btn.banners-btn {
 		font-size: 12px;
 	}
 }
+@media (max-width: 992px) {
+	.banners {
+		order: 3;
+	}
+	.banners__link {
+		display: none;
+	}
+	.banners-advantages {
+		text-align: center;
+	}
+
+}
+
+
+
+
+
+
+
+
+

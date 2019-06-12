@@ -75,4 +75,8 @@ $(document).ready(function() {
 	// 	event.preventDefault();
 	// 	$(".sidebar #leftside-navigation ul ul.hover-sub-menu").toggleClass('show-on');
 	// });
+	$(".sidebar__switches").on("click", function() {
+	$(".tab_content").toggleClass('tab_content_show');
+	});
+
 });

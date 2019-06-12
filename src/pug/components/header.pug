@@ -1,11 +1,11 @@
 header.header
 	div.top-header
 		div.container
-			div.row.top-header_flex-end
-				div.col-md-2
+			div.row.top-header_flex-end.justify-content-between
+				div.col-lg-2.col-md-12
 					a.logo-link(href="index.html")
 						img(src="images/logo.png", alt="pic")
-				div.col-md-7
+				div.col-lg-7.mob-d-none
 					div.row
 						div.col-md-4.contacts
 							p.color-light-gray Бесплатный звонок по России
@@ -23,7 +23,7 @@ header.header
 						div.search-form__wrapp-input
 							input(type="search")
 							button.btn.btn-search Найти
-				div.col-md-3
+				div.col-lg-3.col-md-5
 					div.user-wrap
 						div.card-box
 							a(href="") 
@@ -42,16 +42,16 @@ header.header
 	div.bottom-header
 		div.container
 			div.row.justify-content-between.align-items-center.flex-nowrap
-				div.logo-box-mob.col-md-1
+				div.logo-box-mob
 					a.logo-link(href="index.html")
 						img(src="images/logo-color.png", alt="pic")
-				div#nav-icon.header-burger-menu.menu-gamburger
-					span
-					span
-					span
-					span
-				nav.nav.page-nav-mob
-					ul.nav-list
+				nav.nav
+					div#nav-icon.header-burger-menu.menu-gamburger
+						span
+						span
+						span
+						span
+					ul.nav-list.page-nav-mob
 						li.nav-list__item.active
 							a.nav-list__link(href="#") Главная
 						li.nav-list__item
@@ -72,7 +72,7 @@ header.header
 							a.nav-list__link(href="#") Faq
 						li.nav-list__item
 							a.nav-list__link(href="#") Контакты
-				div.card-box.card-box-mob.col-md-1
+				div.card-box.card-box-mob
 					a(href="") 
 						span 33 шт.
 					a(href="") 

@@ -294,7 +294,24 @@
 
 
 
-
+@media (max-width: 992px) {
+	.sidebar {
+		order: 2;
+	}
+	.sidebar__switches {
+		border: 1px solid $red;
+		padding: 20px;
+	}
+	.tab_content {
+		display: none;
+	}
+	.tab_content_show {
+		display: block;
+	}
+	.side-news {
+		display: none;
+	}
+}
 
 
 

@@ -390,11 +390,8 @@ ul.nav-list {
 	.nav .nav-list .nav-list__item {
 		display: block;
 		text-align: left;
-		a {
-			padding-left: 0;
-		}
 	}
-	// .bottom-header_fixed {
-	// 	padding: 0 15px;
-	// }
+	.bottom-header_fixed {
+		padding: 0 15px;
+	}
 }

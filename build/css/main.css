@@ -10833,8 +10833,8 @@ ul.nav-list {
   .nav .nav-list .nav-list__item {
     display: block;
     text-align: left; }
-    .nav .nav-list .nav-list__item a {
-      padding-left: 0; } }
+  .bottom-header_fixed {
+    padding: 0 15px; } }
 
 .sidebar {
   width: 100%;

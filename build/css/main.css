@@ -11729,4 +11729,8 @@ footer {
   .footer-logo img {
     padding-bottom: 10px; }
 
+@media (max-width: 992px) {
+  footer {
+    padding: 20px 0; } }
+
 /*# sourceMappingURL=main.css.map */

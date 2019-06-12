@@ -1,5 +1,6 @@
 .popular-product-list__link {
 	display: block;
+	text-align: center;
 }
 .popular-product-list__link:hover {
 	color: inherit;
@@ -63,7 +64,9 @@
 }
 
 
+@media (max-width: 992px) { 
 
+}
 
 
 

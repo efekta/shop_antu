@@ -1,4 +1,5 @@
 .recently-watched-list__item {
+	margin-bottom: 20px;
 	text-align: center;
 }
 button.btn.recently-watched-btn {
@@ -24,24 +25,25 @@ button.btn.recently-watched-btn {
 	margin-bottom: 20px;
 }
 .recently-watched-have {
-	position: relative;
-	padding-left: 10px;
 	text-align: left;
 	span {
+		position: relative;
+		padding-left: 10px;
 		color: $green;
 		border-bottom: 1px solid $green;
+		&:before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 5px;
+			height: 5px;
+			border-radius: 50%;
+			background: $green;
+			transform: translateY(-50%);
+		}
 	}
-	&:before {
-		content: "";
-		position: absolute;
-		top: 50%;
-		left: 0;
-		width: 5px;
-		height: 5px;
-		border-radius: 50%;
-		background: $green;
-		transform: translateY(-50%);
-	}
+
 }
 .recently-watched__order {
 	display: flex;
@@ -61,5 +63,14 @@ button.btn.recently-watched-btn {
 	span {
 		display: inline-block;
 		margin: 0 5px;
+	}
+}
+
+@media (max-width: 992px) {
+	.recently-watched__order {
+		justify-content: space-around;
+	}
+	.recently-watched-have {
+		text-align: center;
 	}
 }

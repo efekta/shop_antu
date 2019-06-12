@@ -11176,9 +11176,13 @@ svg.slider-svg-ico {
 .slider-svg-ico__left {
   left: 17px; }
 
+.special-offer-list__item {
+  margin-bottom: 20px; }
+
 .special-offer-list__link {
   position: relative;
   display: block;
+  text-align: center;
   border: 2px solid #ec2438; }
   .special-offer-list__link:hover {
     border: 2px solid #ff5f6f;
@@ -11224,7 +11228,8 @@ svg.slider-svg-ico {
           border-radius: 0; }
 
 .popular-product-list__link {
-  display: block; }
+  display: block;
+  text-align: center; }
 
 .popular-product-list__link:hover {
   color: inherit; }
@@ -11299,6 +11304,7 @@ svg.slider-svg-ico {
     margin-bottom: 0; }
 
 .recently-watched-list__item {
+  margin-bottom: 20px;
   text-align: center; }
 
 button.btn.recently-watched-btn {
@@ -11324,28 +11330,28 @@ button.btn.recently-watched-btn {
   margin-bottom: 20px; }
 
 .recently-watched-have {
-  position: relative;
-  padding-left: 10px;
   text-align: left; }
   .recently-watched-have span {
+    position: relative;
+    padding-left: 10px;
     color: #3caf38;
     border-bottom: 1px solid #3caf38; }
-  .recently-watched-have:before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 5px;
-    height: 5px;
-    -webkit-border-radius: 50%;
-       -moz-border-radius: 50%;
-            border-radius: 50%;
-    background: #3caf38;
-    -webkit-transform: translateY(-50%);
-       -moz-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-         -o-transform: translateY(-50%);
-            transform: translateY(-50%); }
+    .recently-watched-have span:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 5px;
+      height: 5px;
+      -webkit-border-radius: 50%;
+         -moz-border-radius: 50%;
+              border-radius: 50%;
+      background: #3caf38;
+      -webkit-transform: translateY(-50%);
+         -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+           -o-transform: translateY(-50%);
+              transform: translateY(-50%); }
 
 .recently-watched__order {
   display: -webkit-box;
@@ -11376,6 +11382,14 @@ button.btn.recently-watched-btn {
   .recently-watched__order span {
     display: inline-block;
     margin: 0 5px; }
+
+@media (max-width: 992px) {
+  .recently-watched__order {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+  .recently-watched-have {
+    text-align: center; } }
 
 .home-page-desc {
   padding: 40px 0;

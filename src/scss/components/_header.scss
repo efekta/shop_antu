@@ -386,6 +386,8 @@ ul.nav-list {
 
 	.page-nav-mob_show {
 	    display: block;
+	    overflow-y: scroll;
+	    height: 200px;
 	}
 	.nav .nav-list .nav-list__item {
 		display: block;

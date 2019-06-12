@@ -10503,6 +10503,22 @@ img {
 input {
   outline: none; }
 
+.page-nav-mob_show::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  background-color: #F5F5F5; }
+
+.page-nav-mob_show::-webkit-scrollbar {
+  width: 8px;
+  background-color: #F5F5F5; }
+
+.page-nav-mob_show::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #ff5f6f; }
+
 .header {
   position: relative;
   background: #fff; }
@@ -10829,7 +10845,9 @@ ul.nav-list {
   .page-nav-mob {
     display: none; }
   .page-nav-mob_show {
-    display: block; }
+    display: block;
+    overflow-y: scroll;
+    height: 200px; }
   .nav .nav-list .nav-list__item {
     display: block;
     text-align: left; }
@@ -10837,8 +10855,7 @@ ul.nav-list {
     padding: 0 15px; } }
 
 .sidebar {
-  width: 100%;
-  padding: 15px; }
+  width: 100%; }
   .sidebar .tabs {
     margin-bottom: 10px; }
   .sidebar .tab {
@@ -11126,6 +11143,7 @@ ul.nav-list {
 
 @media (max-width: 992px) {
   .sidebar {
+    padding: 0;
     -webkit-box-ordinal-group: 3;
     -webkit-order: 2;
        -moz-box-ordinal-group: 3;

@@ -1,6 +1,6 @@
 .sidebar {
 	width: 100%;
-	padding: 15px;
+	// padding: 15px;
 	.tabs {
 		margin-bottom: 10px;
 	}
@@ -296,6 +296,7 @@
 
 @media (max-width: 992px) {
 	.sidebar {
+		padding: 0;
 		order: 2;
 	}
 	.sidebar__switches {

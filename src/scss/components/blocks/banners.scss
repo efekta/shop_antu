@@ -54,3 +54,13 @@ button.btn.banners-btn {
 .banners__desc {
 	font-size: 12px;
 }
+
+.banners-advantages {
+	.banners__link {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 15px;
+		font-size: 12px;
+	}
+}

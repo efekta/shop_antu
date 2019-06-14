@@ -11159,6 +11159,10 @@ ul.nav-list {
   .side-news {
     display: none; } }
 
+@media (max-width: 578px) {
+  .sidebar {
+    padding: 0 15px; } }
+
 @media (max-width: 992px) {
   .main {
     -webkit-box-ordinal-group: 4;
@@ -11465,6 +11469,8 @@ button.btn.recently-watched-btn {
 
 .subscription-content {
   position: relative;
+  max-width: 260px;
+  margin: auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -11490,6 +11496,7 @@ button.btn.recently-watched-btn {
   min-height: 150px;
   text-align: center;
   background: url("../images/mail.png") no-repeat;
+  background-position-x: 50%;
   margin-bottom: 30px; }
 
 .subscription-content__title {
@@ -11588,6 +11595,10 @@ button.btn.btn-subscription {
   font-weight: bold; }
   button.btn.btn-subscription:hover {
     background: #ff5f6f; }
+
+@media (max-width: 992px) {
+  .subscription-content__desc {
+    width: 43%; } }
 
 .banners__link {
   position: relative;

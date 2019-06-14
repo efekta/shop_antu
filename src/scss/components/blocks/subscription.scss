@@ -3,6 +3,8 @@
 }
 .subscription-content {
 	position: relative;
+	max-width: 260px;
+	margin: auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -10,6 +12,8 @@
 	min-height: 150px;
 	text-align: center;
 	background: url('../images/mail.png') no-repeat;
+	background-position-x: 50%;
+ //    background-size: cover;
 	margin-bottom: 30px;
 }
 .subscription-content__title {
@@ -91,6 +95,11 @@ button.btn.btn-subscription {
 }
 
 
+@media (max-width: 992px) {
+	.subscription-content__desc {
+		width: 43%;
+	}
+}
 
 
 

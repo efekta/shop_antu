@@ -312,11 +312,19 @@
 	.side-news {
 		display: none;
 	}
+
 }
 
 
 
+@media (max-width: 578px) {
+	.sidebar {
+		padding: 0 15px;
 
+	}
+
+
+}
 
 
 

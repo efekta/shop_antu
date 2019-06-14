@@ -178,10 +178,10 @@ $(document).ready(function () {
   mob nav
   =========================*/
 
-  $(".menu-gamburger").on("click", function () {
+  $(".nav .menu-gamburger").on("click", function () {
     $(".page-nav-mob").toggleClass('page-nav-mob_show');
   });
-  $("#nav-icon").click(function () {
+  $(".nav #nav-icon").click(function () {
     $(this).toggleClass('open'); // $('body').toggleClass('overlay');
   });
 });
@@ -252,9 +252,15 @@ $(document).ready(function () {
   // 	event.preventDefault();
   // 	$(".sidebar #leftside-navigation ul ul.hover-sub-menu").toggleClass('show-on');
   // });
+  // $(".sidebar__switches").on("click", function() {
+  // $(".tab_content").toggleClass('tab_content_show');
+  // });
 
-  $(".sidebar__switches").on("click", function () {
+  $(".sidebar-catalog .menu-gamburger-sidebar").on("click", function () {
     $(".tab_content").toggleClass('tab_content_show');
+  });
+  $(".sidebar-catalog #nav-icon").click(function () {
+    $(this).toggleClass('open'); // $('body').toggleClass('overlay');
   });
 });
 

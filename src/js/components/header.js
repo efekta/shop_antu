@@ -18,12 +18,13 @@ $(document).ready(function(){
 		/*========================
 	mob nav
 	=========================*/
-	$(".menu-gamburger").on("click", function() {
+	$(".nav .menu-gamburger").on("click", function() {
 		$(".page-nav-mob").toggleClass('page-nav-mob_show');
 	});
-	$("#nav-icon").click(function(){
+	$(".nav #nav-icon").click(function(){
 		$(this).toggleClass('open');
 		// $('body').toggleClass('overlay');
 	});
 
 });
+	

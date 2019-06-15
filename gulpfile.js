@@ -215,6 +215,7 @@ gulp.task('pug', () => {
 gulp.task('scss', () => {
 	return gulp.src([
 		'src/scss/*.scss',
+		'src/scss/*.css',
 		'!src/scss/_*.scss',
 	])
 		.pipe($.plumber({

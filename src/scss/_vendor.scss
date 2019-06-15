@@ -1,4 +1,10 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "vendor/fa-svg-with-js";
+// @import "vendor/jquery.fancybox";
 @import "../libs/slick/slick.scss";
 @import "../libs/slick/slick-theme.scss";
+
+@import "../libs/fancybox/jquery.fancybox.scss";
+// $fancybox-image-url: "../images";
+
+// @import "../../node_modules/fancybox/dist/scss/jquery.fancybox.scss";

@@ -154,6 +154,22 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/js/components/faq.js":
+/*!**********************************!*\
+  !*** ./src/js/components/faq.js ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+;
+$(document).ready(function () {
+  $('.fancybox').fancybox({
+    animationEffect: 'fade'
+  }).attr('data-fancybox', 'group1');
+});
+
+/***/ }),
+
 /***/ "./src/js/components/header.js":
 /*!*************************************!*\
   !*** ./src/js/components/header.js ***!
@@ -312,13 +328,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_sidebar__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_components_sidebar__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _components_slider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/slider */ "./src/js/components/slider.js");
 /* harmony import */ var _components_slider__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_components_slider__WEBPACK_IMPORTED_MODULE_5__);
-
- // import '../libs/fancybox/jquery.fancybox.js';
-
-
+/* harmony import */ var _components_faq__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/faq */ "./src/js/components/faq.js");
+/* harmony import */ var _components_faq__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_components_faq__WEBPACK_IMPORTED_MODULE_6__);
 
 
- // import './components/faq';
+
+
+
+
+
 
 /***/ }),
 
@@ -344,10 +362,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
- // import '../libs/fancybox/jquery.fancybox.js';
-// import 'fancybox';
 
- // import './vendor/jquery.fancybox';
 
 svg4everybody__WEBPACK_IMPORTED_MODULE_1___default()();
 window.$ = jquery__WEBPACK_IMPORTED_MODULE_2___default.a;

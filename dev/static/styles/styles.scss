@@ -1,0 +1,148 @@
+@import "utils/libs";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+@import "utils/sprite";
+html {
+  font-size: $base-font-size;
+  height: 100%;
+}
+
+body { height: 100%; }
+
+h1, h2, h3, h4, h5, h6 { margin: 0; }
+
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a { text-decoration: none; }
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video,
+textarea { vertical-align: middle; }
+
+textarea { resize: none; }
+
+section { position: relative; }
+
+input,
+select,
+button { outline: none; }
+
+*, *:before, *:after { box-sizing: border-box; }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content { flex: 1 0 auto; }
+
+
+body.overlay {
+    overflow: hidden;
+}
+.overlay::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    transition: all 300ms ease;
+}
+a {
+  color: #3b3b3b;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .3s ease-in;
+  &:hover {
+    text-decoration: none;
+    color: $light-red;
+  }
+}
+.color-light-gray {
+  color: $color-light-gray;
+}
+.color-red {
+  color: $red;
+}
+button.btn {
+  display: block;
+  text-align: center;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  transition: all .3s;
+  &:hover {
+    color: $white;
+    background: $light-red;
+  }
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+.content-wrapper {
+  position: relative;
+}
+.box__title-wrapp {
+  padding: 15px 0;
+  text-align: center;
+}
+.subtitle {
+  color: $red;
+  font-size: 14px;
+}
+img {
+  max-width: 100%;
+}
+input {
+  outline: none;
+}
+.page-nav-mob_show::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+.page-nav-mob_show::-webkit-scrollbar
+{
+  width: 8px;
+  background-color: #F5F5F5;
+}
+
+.page-nav-mob_show::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: $light-red;
+}
+.title {
+  font-size: 18px;
+  font-weight: 600;
+}
+.sub-title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+//Модули
+@import "modules/modules";

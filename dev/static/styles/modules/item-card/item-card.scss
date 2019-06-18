@@ -3,9 +3,7 @@
 	.title_inner {
 		margin-bottom: 50px;
 	}
-	.inner-card {
-		margin-bottom: 20px;
-	}
+
 	.slider-for {
 		margin-bottom: 50px;
 	}
@@ -55,52 +53,55 @@
 		}
 	}
 
-	.inner-card {
-		.star {
-		  display: flex;
-		}
 
-		.star__item {
-		  color: $light-red;
-		  margin: 1px;
-		  cursor: pointer;
-		  font-size: 12px;
-		  opacity: .8;
-		}
+	.star {
+	  display: flex;
+	}
 
-		.star__item_select {
-		  color: $red;
-		  opacity: 1;
-		}
+	.star__item {
+	  color: $light-red;
+	  margin: 1px;
+	  cursor: pointer;
+	  font-size: 12px;
+	  opacity: .8;
+	}
 
-		.star__item_active {
-		  color: $red;
-		  opacity: 1;
-		}
-		.item-card-stars {
-			display: flex;
-			flex-wrap: nowrap;
-			align-items: center;
-			a {
-				display: inline-block;
-				margin-left: 5px;
-				border-bottom: 1px solid $base-color-font;
-				&:hover {
-					border-bottom: 1px solid $red;
-				}
-			}
-		}
-		.card-content {
-			color: $gray;
-			a {
-				border-bottom: 1px solid $base-color-font;
-				&:hover {
-					border-bottom: 1px solid $red;
-				}
+	.star__item_select {
+	  color: $red;
+	  opacity: 1;
+	}
+
+	.star__item_active {
+	  color: $red;
+	  opacity: 1;
+	}
+	.item-card-stars {
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: center;
+		margin-bottom: 15px;
+		a {
+			display: inline-block;
+			margin-left: 5px;
+			border-bottom: 1px solid $base-color-font;
+			&:hover {
+				border-bottom: 1px solid $red;
 			}
 		}
 	}
-
+	.card-content {
+		color: $gray;
+		a {
+			border-bottom: 1px solid $base-color-font;
+			&:hover {
+				border-bottom: 1px solid $red;
+			}
+		}
+	}
+	
+	.card-list-wrapp {
+		padding-top: 30px;
+	}
 	.card-list-wrapp ul {
 		display: flex;
 		flex-wrap: wrap;
@@ -137,7 +138,7 @@
 	    background-position: -98px -44px;
 	}
 	.card-popular {
-		margin-bottom: 15px;
+		margin-bottom: 55px;
 	}
 	.card-popular input {
 	    display: inline-block;
@@ -183,7 +184,43 @@
 			background: $light-red;
 		}
 	}
-
+	.item-card-radio label span {
+		margin: 0 5px;
+	}
+	.inner-card-popular .row {
+		align-items: flex-end;
+		margin-bottom: 23px;
+	}
+	.pickup-address {
+		a {
+			display: inline-block;
+			border-bottom: 1px solid $base-color-font;
+			&:hover {
+				background: transparent;
+				border-bottom: 1px solid $red;
+				color: $red;
+			}
+		}
+		p {
+			margin-bottom: 20px;
+			span {
+				margin-left: 5px;
+				border-bottom: 1px solid $base-color-font;
+			}
+		}
+	}
+	h3 {
+		font-weight: 500;
+		font-size: 12px;
+		margin-bottom: 15px;
+	}
+	a {
+		margin-bottom: 5px;
+	}
+	ul li {
+		display: flex;
+		justify-content: space-between;
+	}
 }
 
 

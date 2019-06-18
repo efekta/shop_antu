@@ -140,5 +140,44 @@ $(document).ready(function () {
 	  animationEffect : 'fade'
 	}).attr('data-fancybox', 'group1');
 
+	/*====================================
+	Слайдер в карточке товара
+	======================================*/
+	 $('.slider-for').slick({
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  arrows: false,
+	  dots: false,
+	  fade: true,
+	  asNavFor: '.slider-nav'
+	});
+	$('.slider-nav').slick({
+	  slidesToShow: 4,
+	  slidesToScroll: 1,
+	  asNavFor: '.slider-for',
+	  dots: false,
+	  // centerMode: true,
+	  focusOnSelect: true
+	});
 	
+	/*====================================
+	Рейтинг звезд в карточке товара
+	======================================*/
+	var stars = $(".star__item");
+	var starsActive;
+	var starsSelect;
+	  
+	stars.hover(function(el) {
+	  starsActive = stars.slice(0, $(this).index()+1);
+	  starsActive.addClass("star__item_active");
+	},
+	function(){
+	  stars.removeClass("star__item_active");
+	});
+
+	stars.on("click", function() {
+	  stars.removeClass("star__item_select");
+	  starsActive.addClass("star__item_select");
+	  starsSelect = starsActive;
+	});
 });

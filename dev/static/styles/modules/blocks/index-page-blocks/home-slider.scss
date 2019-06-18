@@ -2,24 +2,25 @@
 	position: relative;
 	// padding: 17px;
 	border: 1px solid $color-light-gray;
-}
-.slider-svg-ico {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	z-index: 2;
-}
-svg.slider-svg-ico {
-	color: $gray;
-	font-size: 36px;
-	cursor: pointer;
-	&:hover {
-		color: $red;
+	.slider-svg-ico {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 2;
+	}
+	svg.slider-svg-ico {
+		color: $gray;
+		font-size: 36px;
+		cursor: pointer;
+		&:hover {
+			color: $red;
+		}
+	}
+	.slider-svg-ico__right {
+		right: 17px;
+	}
+	.slider-svg-ico__left {
+		left: 17px;
 	}
 }
-.slider-svg-ico__right {
-	right: 17px;
-}
-.slider-svg-ico__left {
-	left: 17px;
-}
+

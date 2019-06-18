@@ -1,93 +1,190 @@
-.title_inner {
-	// font-weight: 400;
-	margin-bottom: 60px;
-}
-.slider-for__item img,
-.slider-nav__item img {
-	margin: auto;
-}
-.item-card-content {
-	margin-bottom: 30px;
-	p {
-		span.card-desc__desc {
-			font-weight: 500;
-			margin: 0 5px;
+.page-item-card {
+
+	.title_inner {
+		margin-bottom: 50px;
+	}
+	.inner-card {
+		margin-bottom: 20px;
+	}
+	.slider-for {
+		margin-bottom: 50px;
+	}
+	.slider-for__item img,
+	.slider-nav__item img {
+		margin: auto;
+	}
+	.item-card-content {
+
+		p {
+			span.card-desc__desc {
+				font-weight: 500;
+				margin: 0 5px;
+			}
+		}
+		label {
+			position: relative;
+		}
+		input[type="radio"] {
+		    vertical-align: middle;
+		    font-size: 20px;
+		    line-height: 25px;
+		    margin-right: 10px;
+		    cursor: pointer;
+		    display: none;
+		}
+		input[type="radio"] + label::before {
+		    content: "";
+		    display: inline-block;
+		    vertical-align: middle;
+		    width: 20px;
+		    height: 20px;
+		    margin-right: 10px;
+		    border-radius: 50%;
+		    border: 1px solid $red;
+		}
+		input[type="radio"]:checked + label::after {
+		    content: "";
+		    position: absolute;
+	    	top: 50%;
+	    	left: 0;
+	    	transform: translate(50%, -50%);
+		    width: 10px;
+		    height: 10px;
+		    border-radius: 50%;
+		    background: $red;
 		}
 	}
-	label {
+
+	.inner-card {
+		.star {
+		  display: flex;
+		}
+
+		.star__item {
+		  color: $light-red;
+		  margin: 1px;
+		  cursor: pointer;
+		  font-size: 12px;
+		  opacity: .8;
+		}
+
+		.star__item_select {
+		  color: $red;
+		  opacity: 1;
+		}
+
+		.star__item_active {
+		  color: $red;
+		  opacity: 1;
+		}
+		.item-card-stars {
+			display: flex;
+			flex-wrap: nowrap;
+			align-items: center;
+			a {
+				display: inline-block;
+				margin-left: 5px;
+				border-bottom: 1px solid $base-color-font;
+				&:hover {
+					border-bottom: 1px solid $red;
+				}
+			}
+		}
+		.card-content {
+			color: $gray;
+			a {
+				border-bottom: 1px solid $base-color-font;
+				&:hover {
+					border-bottom: 1px solid $red;
+				}
+			}
+		}
+	}
+
+	.card-list-wrapp ul {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 30px;
+
+		a {
+			display: inline-block;
+			padding: 10px 10px 10px 0;
+		}
+	}
+	a {
+		&:hover {
+			color: $red;
+		}
+	}
+	h2 {
+		font-size: 12px;
+		font-weight: 500;
+		margin-bottom: 26px;
+	}
+	.card-popular-like {
 		position: relative;
 	}
-	input[type="radio"] {
-	    vertical-align: middle;
-	    font-size: 20px;
-	    line-height: 25px;
-	    margin-right: 10px;
-	    cursor: pointer;
-	    display: none;
-	}
-	input[type="radio"] + label::before {
-	    content: "";
-	    display: inline-block;
-	    vertical-align: middle;
-	    width: 20px;
-	    height: 20px;
-	    margin-right: 10px;
-	    border-radius: 50%;
-	    border: 1px solid $red;
-	}
-	input[type="radio"]:checked + label::after {
+	.card-popular-like span:after {
 	    content: "";
 	    position: absolute;
-    	top: 50%;
-    	left: 0;
-    	transform: translate(50%, -50%);
-	    width: 10px;
-	    height: 10px;
-	    border-radius: 50%;
-	    background: $red;
+	    top: 3px;
+	    left: 0;
+	    background: url('../images/icons/spritesheet.png');
+	    background-repeat: no-repeat;
+	    display: block;
+	    width: 11px;
+	    height: 11px;
+	    background-position: -98px -44px;
 	}
-	.item-card-radio {
-		margin-bottom: 10px;
+	.card-popular {
+		margin-bottom: 15px;
 	}
-}
-
-.inner-card {
-	.star {
-	  display: flex;
+	.card-popular input {
+	    display: inline-block;
+	    padding: 3px;
+	    border-width: 1px;
+	    border-color: #e4e4e4;
+	    border-style: solid;
+	    border-radius: 8px;
+	    background-color: transparent;
+	    width: 41px;
+	    min-height: 26px;
+	    text-align: center;
+	    color: $base-color-font;
 	}
-
-	.star__item {
-	  color: $light-red;
-	  margin: 1px;
-	  cursor: pointer;
-	  font-size: 12px;
-	  opacity: .8;
+	.card-popular span {
+		margin: 0 10px;
 	}
-
-	.star__item_select {
-	  color: $red;
-	  opacity: 1;
-	}
-
-	.star__item_active {
-	  color: $red;
-	  opacity: 1;
-	}
-	.item-card-stars {
-		display: flex;
-		flex-wrap: nowrap;
-		justify-content: space-between;
-		align-items: center;
-		span {
-			display: inline-block;
-			margin-left: 5px;
-			border-bottom: 1px solid $base-color-font;
+	button.btn.btn-card-like {
+		border-bottom: 1px solid $base-color-font;
+		margin: 0 0 0 20px;
+		&:hover {
+			background: transparent;
+			border-bottom: 1px solid $red;
+			color: $red;
 		}
 	}
+	.card-order {
+		span {
+			display: block;
+			font-size: 40px;
+			font-weight: 500;
+			margin-bottom: 30px;
+		}
+	}
+	button.btn.btn-order {
+		display: inline-block;
+		border-radius: 8px;
+		background-color: $red;
+		min-width: 97px;
+		height: 28px;
+		color: $white;
+		&:hover {
+			background: $light-red;
+		}
+	}
+
 }
-
-
-
 
 
 

@@ -145,6 +145,9 @@ input {
   color: $red;
   font-size: 14px;
 }
-
+.title_inner {
+  font-weight: 400;
+  font-size: 18px;
+}
 //Модули
 @import "modules/modules";

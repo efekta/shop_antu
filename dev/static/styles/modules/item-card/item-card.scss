@@ -265,7 +265,7 @@
 	}
 	.item-card-carousel__item {
 		position: relative;
-		padding: 20px;
+		padding: 0 20px 20px 0;
 		text-align: center;
 		.item-card-carousel__hit {
 			border-bottom-right-radius: 75%;
@@ -285,19 +285,20 @@
 			}
 		}
 		h4 {
-			width: 56%;
+			width: 75%;
 			margin-left: auto;
 			margin-right: auto;
 			font-size: 12px;
 			line-height: 20px;
 			font-weight: 300;
+			margin-top: 65px;
 			margin-bottom: 30px;
 		}
 		.card-carousel__desc {
 			margin-left: auto;
 			margin-right: auto;
 			margin-bottom: 5px;
-			width: 60%;
+			width: 70%;
 		}
 	}
 	.card-carousel-pic {
@@ -354,7 +355,10 @@
 			font-size: 18px;
 		}
 	}
+	.recently-watched__order {
 
+	    text-align: left;
+	}
 	.recently-watched__order input {
 		min-width: 53px;
 		min-height: 22px;

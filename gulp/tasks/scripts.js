@@ -9,7 +9,7 @@ module.exports = function () {
     $.gulp.task('libsJS:dev', () => {
         return $.gulp.src([
             'node_modules/svg4everybody/dist/svg4everybody.min.js',
-            'dev/libs/fontawesome/fontawesome.js',
+            'dev/libs/fontawesome/fontawesome-all.js',
             'dev/libs/bootstrap/bootstrap.min.js',
             'dev/libs/slick/slick.min.js',
             'dev/libs/fancybox/jquery.fancybox.js'
@@ -21,7 +21,7 @@ module.exports = function () {
     $.gulp.task('libsJS:build', () => {
         return $.gulp.src([
             'node_modules/svg4everybody/dist/svg4everybody.min.js',
-            'dev/libs/fontawesome/fontawesome.js',
+            'dev/libs/fontawesome/fontawesome-all.js',
             'dev/libs/bootstrap/bootstrap.min.js',
             'dev/libs/slick/slick.min.js',
             'dev/libs/fancybox/jquery.fancybox.js'

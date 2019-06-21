@@ -112,17 +112,36 @@
     border: none;
     text-decoration: underline;
 }
-
+// .blog-article__pic img {
+// 	width: 100%;
+// }
 
 @media (max-width: 992px) {
 	.blog-article__desc {
+		text-align: center;
 		margin-bottom: 15px;
 	}
 	.blog-article__wrapp_link {
 		text-align: left;
 	}
-	.blog-article__pic img {
-		width: 100%;
+	.blog-article__pic_overlay {
+		opacity: 1;
+		background: transparent;
+	}
+	.blog-article__pic {
+		text-align: center;
+	}
+	.blog-article__content {
+		// text-align: center;
+	}
+	.blog-article h2 {
+		display: block;
+		text-align: center;
+		border-bottom: none;
+		text-decoration: underline;
+	}
+	.blog-article__wrapp_link {
+		text-align: center;
 	}
 }
 

@@ -1,0 +1,137 @@
+.blog-sort {
+	margin-bottom: 50px;
+}
+.blog-sort__item {
+	margin-bottom: 15px;
+	span {
+		font-weight: 500;
+		font-size: 12px;
+		margin-right: 25px;
+	}
+	a {
+		border-bottom: 1px solid $base-color-font;
+		margin-right: 12px;
+		color: #212121;
+		&:hover {
+			border-bottom: 1px solid $red;
+			color: $red;
+		}
+	}
+}
+.blog-article {
+	margin-bottom: 50px;
+	.blog-article__link {
+		display: block;
+	}
+	h2 {
+		display: inline-block;
+		border-bottom: 1px solid $base-color-font;
+		margin-bottom: 25px;
+		font-size: 14px;
+		// &:hover {
+		// 	border-bottom: 1px solid $red;
+		// 	color: $red;
+		// }
+	}
+}
+.blog-article__pic {
+	position: relative;
+	margin-bottom: 25px;
+}
+.blog-article__pic_overlay {
+	padding: 15px;
+	position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: space-between;
+    display: flex;
+    transition: opacity 0.3s ease-out 0.1s;
+    color: $white;
+    span {
+    	margin-left: 5px;
+    }
+    p {
+    	margin-bottom: 0;
+    }
+}
+.blog-article__link:hover .blog-article__pic_overlay {
+	opacity: 1;
+}
+
+.blog-article__desc {
+	span {
+		color: #adadad;
+		font-size: 12px;
+		margin-right: 10px;
+	}
+	a {
+		border-bottom: 1px solid $base-color-font;
+		&:hover {
+			border-bottom: 1px solid $red;
+			color: $red;
+		}
+	}
+}
+.blog-article__content {
+	a {
+		display: inline-block;
+		vertical-align: middle;
+		padding: 5px 10px;
+		min-width: 97px;
+		border-radius: 12px;
+		background: $red;
+		color: $white;
+		text-align: center;
+	}
+}
+
+.blog-article__wrapp_link {
+	text-align: right;
+}
+
+.page-item .page-link {
+	border: none;
+	color: $base-color-font;
+	font-size: 14px;
+	font-weight: 400;
+	&:hover {
+		background: transparent;
+		color: $red;
+		text-decoration: underline;
+	}
+}
+
+.page-item.active .page-link {
+    color: $red;
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 992px) {
+	.blog-article__desc {
+		margin-bottom: 15px;
+	}
+	.blog-article__wrapp_link {
+		text-align: left;
+	}
+	.blog-article__pic img {
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+
+

@@ -135,19 +135,21 @@ input {
 }
 .title {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
+  margin-bottom: 30px;
 }
 .sub-title {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
 }
 .subtitle {
   color: $red;
   font-size: 14px;
 }
 .title_inner {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 18px;
+  margin-bottom: 30px;
 }
 //Модули
 @import "modules/modules";

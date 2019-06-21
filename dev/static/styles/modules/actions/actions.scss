@@ -1,7 +1,6 @@
 .actions {
 	color: #212121;
 	h1 {
-		margin-bottom: 30px;
 		font-weight: 500;
 	}
 	p {
@@ -37,19 +36,10 @@
 	.actions-mb {
 		margin-bottom: 35px;
 	}
-	// .recently-watched__order input {
-	// 	border-width: 1.638px;
-	// 	border-color: rgb(228, 228, 228);
-	// 	border-style: solid;
-	// 	border-radius: 10px;
-	// 	background-color: rgb(255, 255, 255);
-	// 	width: 45.724px;
-	// 	height: 17.724px;
-	// 	text-align: center;
-	// }
 	.actions-items .recently-watched__order {
 		position: relative;
 	}
+
 	.actions-items .recently-watched__order span:after {
 	    content: "";
 	    position: absolute;
@@ -62,16 +52,7 @@
 	    height: 11px;
 	    background-position: -98px -44px;
 	}
-	.item-card-carousel__item {
-		// width: 25%;
-	}
-	// button.btn.recently-watched-btn {
-	// 	border-radius: 10px;
-	// 	background-color: $red;
-	// 	min-width: 63px;
-	// 	min-height: 21px;
 
-	// }
 	button.btn-like:hover {
 		background: transparent;
 	}
@@ -79,8 +60,12 @@
 		font-size: 12px;
 		margin-bottom: 5px;
 	}
+
 }
 
+// .item-card-carousel__item .item-card-carousel__hit {
+//     left: 15px;
+// }
 @media (max-width: 992px) {
 	.actions {
 		.acticle-content-wrapp {

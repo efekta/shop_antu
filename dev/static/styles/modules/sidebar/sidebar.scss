@@ -11,39 +11,40 @@
 		text-transform: uppercase;
 		font-weight: 600;
 	}
+	.tab.tab-active {
+		color: $red;
+	}
+	.tab:first-child {
+		position: relative;
+		padding-left: 35px;
+	}
+	.tab:first-child:before {
+			content: "";
+			position: absolute;
+			top: 13px;
+			left: 0;
+			width: 11px;
+			height: 11px;
+			background-image: url('../images/icons/spritesheet.png');
+			background-repeat: no-repeat;
+	    	background-position: -115px -122px;
+		}
+	.tab:first-child:after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		right: 0;
+		width: 1px;
+		height: 12px;
+		background: $base-color-font;
+		transform: translateY(-50%) rotate(35deg);
+	}
 }
 .sidebar__switches {
 	position: relative;
 }
 
-.tab.tab-active {
-	color: $red;
-}
-.tab:first-child {
-	position: relative;
-	padding-left: 35px;
-}
-.tab:first-child:before {
-		content: "";
-		position: absolute;
-		top: 13px;
-		left: 0;
-		width: 11px;
-		height: 11px;
-		background-image: url('../images/icons/spritesheet.png');
-		background-repeat: no-repeat;
-    	background-position: -115px -122px;
-	}
-.tab:first-child:after {
-	content: "";
-	position: absolute;
-	top: 50%;
-	right: 0;
-	width: 1px;
-	height: 12px;
-	background: $base-color-font;
-	transform: translateY(-50%) rotate(35deg);
-}
+
 
 
 //Accordion

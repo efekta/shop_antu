@@ -32,11 +32,19 @@ $(document).ready(function () {
 	Sidebar Tabs
 	==================*/
 	$(".tab_items").not(":first").hide();
-	$(".sidebar .tab").click(function() {
-		$(".sidebar .tab").removeClass("tab-active ").eq($(this).index()).addClass("tab-active");
+	$(".sidebar__switches .tab").click(function() {
+		$(".sidebar__switches .tab").removeClass("tab-active ").eq($(this).index()).addClass("tab-active");
 		$(".tab_items").hide().eq($(this).index()).fadeIn()
 	}).eq(0).addClass("tab-active ");
 
+	/*=================
+	Usercab Tabs
+	==================*/
+	$(".tab-items").not(":first").hide();
+	$(".user-tabs .tab").click(function() {
+		$(".user-tabs .tab").removeClass("tab-active ").eq($(this).index()).addClass("tab-active");
+		$(".tab-items").hide().eq($(this).index()).fadeIn()
+	}).eq(0).addClass("tab-active ");
 	/*====================================
 	Main Components Menu Sidebar Acordion
 	======================================*/

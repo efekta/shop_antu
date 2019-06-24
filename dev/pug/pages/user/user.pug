@@ -1,2 +1,32 @@
 main.main.user.col-lg-9.col-md-12
 	h1.title Мой профиль
+	.user-tabs.tabs
+		button.btn.btn-user-tab.tab.tab-active Мои заказы
+		button.btn.btn-user-tab.tab Мой профиль
+	.tab-content
+		.tab-items
+			span 1
+		.tab-items
+			form
+				.form-wrapp
+					.form-box
+						p.user-title Фамилия и имя
+						.user-input
+							input(type="text" value="Екатеринова Екатерина" disabled)
+						p.user-title Email
+						.user-input
+							input(type="email" value="naumova@antu.ru" disabled)
+						p.user-title Адрес доставки
+						.user-input
+							textarea(disabled) Петропавловск-Камчатский, ул. Пушкина, дом Колотушкина, кв. 6, этаж 6."
+					.form-box
+						p.user-title Телефон
+						.user-input
+							input(type="tel" value="+7 (921) 321-12-12" disabled)
+						p.user-title День рождения
+						.user-input
+							input(type="date" value="20 ноября 1984" disabled)
+						p.user-title Подписка на e-mail рассылку
+						.user-input
+							input(type="text" value="№151456044" disabled)
+				button.btn.btn-editing Редактировать

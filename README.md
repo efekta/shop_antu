@@ -6,3 +6,4 @@
 <p><a href="https://efekta.github.io/shop_antu/build/blog.html">Блог</a></p>
 <p><a href="https://efekta.github.io/shop_antu/build/delivery.html">Доставка</a></p>
 <p><a href="https://efekta.github.io/shop_antu/build/favourites.html">Избранное</a></p>
+<p><a href="https://efekta.github.io/shop_antu/build/user.html">Мой профиль</a></p>

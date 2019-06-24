@@ -68,7 +68,16 @@ button.btn.btn-editing {
   }
 }
 
-
+@media (max-width: 768px) {
+  .user {
+    .form-wrapp {
+      flex-wrap: wrap;
+    }
+    .form-box {
+      width: 100%;
+    }
+  }
+}
 
 
 

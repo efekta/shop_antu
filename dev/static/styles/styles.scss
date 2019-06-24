@@ -11,7 +11,7 @@ html {
 body { 
   height: 100%;
   font-family: 'Nanum Gothic', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 { 
@@ -149,6 +149,7 @@ input {
 .subtitle {
   color: $red;
   font-size: 14px;
+  font-weight: 500;
 }
 .title_inner {
   font-weight: 500;

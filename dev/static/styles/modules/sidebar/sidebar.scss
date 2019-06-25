@@ -273,6 +273,27 @@
 .accrodion-menu .menu-list.menu-list_no-padding-left li a {
 	padding-left: 0;
 }
+.sidebar__switches {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+}
+#nav-icon.header-burger-menu.menu-gamburger.menu-gamburger-sidebar {
+	// display: flex;
+	// justify-content: flex-end;
+	background-color: transparent;
+	padding: 0;
+	span {
+		background: $red;
+	}
+}
+#nav-icon.header-burger-menu.menu-gamburger.menu-gamburger-sidebar.open span:nth-child(3) {
+	// left: 60px;
+}
+#nav-icon.header-burger-menu.menu-gamburger.menu-gamburger-sidebar.open span:nth-child(1) {
+	// left: 60px;
+}
 @media screen and (max-width: 1024px) and (min-width: 320px) { 
 	.hover-sub-menu {
 		position: static;
@@ -302,7 +323,7 @@
 	}
 	.sidebar__switches {
 		border: 1px solid $red;
-		padding: 20px;
+		padding: 0 20px;
 	}
 	.tab_content {
 		display: none;

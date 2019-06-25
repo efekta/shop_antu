@@ -9,6 +9,7 @@ module.exports = function () {
     $.gulp.task('libsJS:dev', () => {
         return $.gulp.src([
             'node_modules/svg4everybody/dist/svg4everybody.min.js',
+            'dev/libs/datepicker/datepicker.min.js',
             'dev/libs/fontawesome/fontawesome-all.js',
             'dev/libs/bootstrap/bootstrap.min.js',
             'dev/libs/slick/slick.min.js',
@@ -21,6 +22,7 @@ module.exports = function () {
     $.gulp.task('libsJS:build', () => {
         return $.gulp.src([
             'node_modules/svg4everybody/dist/svg4everybody.min.js',
+            'dev/libdev/libs/datepicker/datepicker.min.js',
             'dev/libs/fontawesome/fontawesome-all.js',
             'dev/libs/bootstrap/bootstrap.min.js',
             'dev/libs/slick/slick.min.js',

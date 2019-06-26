@@ -1,12 +1,14 @@
 .favourites {
 	h1 {
-		margin-bottom: 40px;
+
 		svg {
 			margin-left: 5px;
 			color: $red;
 		}
 	}
 	h2 {
+
+		margin-bottom: 20px;
 		span {
 			color: $red;
 		}
@@ -29,4 +31,29 @@
 }
 .favourites-mb {
 	margin-bottom: 40px;
+}
+.favourites__title-wrapp p span {
+	position: relative;
+	padding-right: 20px;
+}
+.favourites__title-wrapp p span:after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    right: 0;
+    background: url('../images/icons/spritesheet.png');
+    background-repeat: no-repeat;
+    display: block;
+    width: 11px;
+    height: 11px;
+    background-position: -98px -44px;
+    margin-right: 3px;
+}
+.favourites__title-wrapp p a {
+	color: $red;
+	border-bottom: 1px solid $red;
+	&:hover {
+		color: $light-red;
+		border-bottom: 1px solid $light-red;
+	}
 }

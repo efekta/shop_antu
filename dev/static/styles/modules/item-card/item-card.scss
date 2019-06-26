@@ -120,6 +120,7 @@
 	}
 	.card-popular-like {
 		position: relative;
+		margin-bottom: 20px;
 	}
 	.card-popular-like span:after {
 	    content: "";
@@ -214,7 +215,7 @@
 		margin-bottom: 5px;
 	}
 	ul {
-		margin-bottom: 15px;
+		// margin-bottom: 15px;
 		li {
 			display: flex;
 			justify-content: space-between;
@@ -392,7 +393,8 @@
 		position: relative;
 		display: flex;
 		justify-content: center;
-		margin-bottom: 0;
+		// margin-bottom: 0;
+		bottom: 0;
 	}
 	.slick-dots li button:before {
 	    font-family: 'slick';

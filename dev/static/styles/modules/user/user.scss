@@ -67,7 +67,62 @@ button.btn.btn-editing {
     background: $white;
   }
 }
+.table {
+  width: 100%;
+  display: table;
+}
 
+.table__head {
+  display: table-row;
+}
+.table__body {
+  display: table-row;
+}
+.th {
+  font-weight: 600;
+}
+.th, .td {
+  display: table-cell;
+  padding: 15px 15px 15px 0;
+}
+@media (max-width: 1200px) {
+  .table {
+    display: flex;
+  }
+
+  .table__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 49%;
+  }
+  .table__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 49%;
+  }
+
+  .th, .td {
+    width: 100%;
+    display: block;
+    padding: 0;
+    padding-bottom: 15px;
+  }
+
+}
+.table-status-order {
+  border-radius: 6px;
+  background-color: $red;
+  min-width: 85px;
+  color: $white;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  padding: 3px 10px;
+}
 @media (max-width: 768px) {
   .user {
     .form-wrapp {

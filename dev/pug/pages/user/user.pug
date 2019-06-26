@@ -5,7 +5,32 @@ main.main.user.col-lg-9.col-md-12
 		button.btn.btn-user-tab.tab Мой профиль
 	.tab-content
 		.tab-items
-			span 1
+			.table
+				.table__head
+					.th № Заказа
+					.th Статус
+					.th Содержание заказа
+					.th Тип доставки
+					.th Оплата
+					.th Дата
+				.table__body
+					.td
+						span #1008755
+					.td
+						span.table-status-order Возврат
+					.td
+						p Мини-набор для стемпинга (штамп + скрапер)
+						p (Штампик маленький для ногтей розовый) x 1
+						p Двухсторонний штамп (Штампик двухсторонний x1)
+					.td
+						span Курьерская доставка по СПБ (в пределах МКад)
+					.td
+						span Наличные
+					.td
+						span 3 апреля 2018
+
+
+
 		.tab-items
 			form
 				.form-wrapp
@@ -25,7 +50,7 @@ main.main.user.col-lg-9.col-md-12
 							input(type="tel" value="+7 (921) 321-12-12" disabled)
 						p.user-title День рождения
 						.user-input
-							input(type="date" value="20 ноября 1984" disabled)
+							input(type="date" value="1984-11-20" disabled)
 						p.user-title Подписка на e-mail рассылку
 						.user-input
 							input(type="text" value="№151456044" disabled)

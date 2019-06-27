@@ -61,6 +61,7 @@ button.btn.btn-editing {
   background: $red;
   border-radius: 7px;
   margin-right: 15px;
+  cursor: pointer;
   &:hover {
     border: 1px solid $red;
     color: $red;
@@ -69,49 +70,24 @@ button.btn.btn-editing {
 }
 .table {
   width: 100%;
-  display: table;
+  // display: table;
 }
 
 .table__head {
-  display: table-row;
+    display: flex;
+    justify-content: space-between;
 }
-.table__body {
-  display: table-row;
+.table__item {
+    display: flex;
+    justify-content: space-between;
 }
 .th {
   font-weight: 600;
 }
 .th, .td {
-  display: table-cell;
+  // display: table-cell;
+  width: 16%;
   padding: 15px 15px 15px 0;
-}
-@media (max-width: 1200px) {
-  .table {
-    display: flex;
-  }
-
-  .table__head {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 49%;
-  }
-  .table__body {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 49%;
-  }
-
-  .th, .td {
-    width: 100%;
-    display: block;
-    padding: 0;
-    padding-bottom: 15px;
-  }
-
 }
 .table-status-order {
   border-radius: 6px;
@@ -123,6 +99,41 @@ button.btn.btn-editing {
   text-align: center;
   padding: 3px 10px;
 }
+.table-status-order_green {
+  background-color: #34d55e;
+}
+@media (max-width: 1200px) {
+  .table {
+    display: flex;
+  }
+
+  .table__head {
+    // display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 49%;
+  }
+  .table__item {
+    // display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 49%;
+  }
+
+  .th, .td {
+    width: 100%;
+    // display: block;
+    display: inline-block;
+    vertical-align: middle;
+    min-height: 50px;
+    padding: 0;
+    padding-bottom: 15px;
+  }
+
+}
+
 @media (max-width: 768px) {
   .user {
     .form-wrapp {

@@ -5,25 +5,49 @@ main.main.page-item-card.col-lg-9.col-md-12
 			.row
 				.col-lg-6.col-md-6
 					.item-card-slider
-						.slider.slider-for
-							div.slider-for__item
-								img(src="static/images/content/gross_max.png", alt="pic")
-							div.slider-for__item
-								img(src="static/images/content/gross_max.png", alt="pic")
-							div.slider-for__item
-								img(src="static/images/content/gross_max.png", alt="pic")
-							div.slider-for__item
-								img(src="static/images/content/gross_max.png", alt="pic")
+						#slider.flexslider
+							ul.slides
+								li
+									a.example-image-link(href="static/images/content/gross.png", data-lightbox="product-lightbox", data-title="My caption")
+										img.example-image(src="static/images/content/gross_max.png", alt="pic")
+								li
+									a.example-image-link(href="static/images/content/gross.png", data-lightbox="product-lightbox", data-title="My caption")
+										img.example-image(src="static/images/content/gross_max.png", alt="pic")
+								li
+									a.example-image-link(href="static/images/content/gross.png", data-lightbox="product-lightbox", data-title="My caption")
+										img.example-image(src="static/images/content/gross_max.png", alt="pic")
+								li
+									a.example-image-link(href="static/images/content/gross.png", data-lightbox="product-lightbox", data-title="My caption")
+										img.example-image(src="static/images/content/gross_max.png", alt="pic")
+						#carousel.flexslider
+							ul.slides
+								li
+									img(src="static/images/content/gross_min.png", alt="pic")
+								li
+									img(src="static/images/content/gross_min.png", alt="pic")
+								li
+									img(src="static/images/content/gross_min.png", alt="pic")
+								li
+									img(src="static/images/content/gross_min.png", alt="pic")
+						//- .slider.slider-for
+						//- 	div.slider-for__item
+						//- 		img(src="static/images/content/gross_max.png", alt="pic")
+						//- 	div.slider-for__item
+						//- 		img(src="static/images/content/gross_max.png", alt="pic")
+						//- 	div.slider-for__item
+						//- 		img(src="static/images/content/gross_max.png", alt="pic")
+						//- 	div.slider-for__item
+						//- 		img(src="static/images/content/gross_max.png", alt="pic")
 
-						.slider.slider-nav
-							div.slider-nav__item
-								img(src="static/images/content/gross_min.png", alt="pic")
-							div.slider-nav__item
-								img(src="static/images/content/gross_min.png", alt="pic")
-							div.slider-nav__item
-								img(src="static/images/content/gross_min.png", alt="pic")
-							div.slider-nav__item
-								img(src="static/images/content/gross_min.png", alt="pic")
+						//- .slider.slider-nav
+						//- 	div.slider-nav__item
+						//- 		img(src="static/images/content/gross_min.png", alt="pic")
+						//- 	div.slider-nav__item
+						//- 		img(src="static/images/content/gross_min.png", alt="pic")
+						//- 	div.slider-nav__item
+						//- 		img(src="static/images/content/gross_min.png", alt="pic")
+						//- 	div.slider-nav__item
+						//- 		img(src="static/images/content/gross_min.png", alt="pic")
 				.col-lg-6.col-md-6
 					.item-card-content
 						p.card-desc

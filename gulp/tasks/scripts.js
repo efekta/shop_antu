@@ -13,6 +13,8 @@ module.exports = function () {
             'dev/libs/fontawesome/fontawesome-all.js',
             'dev/libs/bootstrap/bootstrap.min.js',
             'dev/libs/slick/slick.min.js',
+            'dev/libs/flexslider/jquery.flexslider-min.js',
+            'dev/libs/lightbox/lightbox.min.js',
             'dev/libs/fancybox/jquery.fancybox.js'
             ])
             .pipe(concat('libs.min.js'))
@@ -26,6 +28,8 @@ module.exports = function () {
             'dev/libs/fontawesome/fontawesome-all.js',
             'dev/libs/bootstrap/bootstrap.min.js',
             'dev/libs/slick/slick.min.js',
+            'dev/libs/flexslider/jquery.flexslider-min.js',
+            'dev/libs/lightbox/lightbox.min.js',
             'dev/libs/fancybox/jquery.fancybox.js'
             ])
             .pipe(concat('libs.min.js'))

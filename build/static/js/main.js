@@ -151,23 +151,48 @@ $(document).ready(function () {
 	/*====================================
 	Слайдер в карточке товара
 	======================================*/
-	 $('.slider-for').slick({
-	  slidesToShow: 1,
-	  slidesToScroll: 1,
-	  arrows: false,
-	  dots: false,
-	  fade: true,
-	  asNavFor: '.slider-nav'
-	});
-	$('.slider-nav').slick({
-	  slidesToShow: 4,
-	  slidesToScroll: 1,
-	  asNavFor: '.slider-for',
-	  dots: false,
-	  // centerMode: true,
-	  focusOnSelect: true
-	});
-	
+	//  $('.slider-for').slick({
+	//   slidesToShow: 1,
+	//   slidesToScroll: 1,
+	//   arrows: false,
+	//   dots: false,
+	//   fade: true,
+	//   asNavFor: '.slider-nav'
+	// });
+	// $('.slider-nav').slick({
+	//   slidesToShow: 4,
+	//   slidesToScroll: 1,
+	//   asNavFor: '.slider-for',
+	//   dots: false,
+	//   // centerMode: true,
+	//   focusOnSelect: true
+	// });
+	$('#carousel').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 48,
+    itemMargin: 5,
+    asNavFor: '#slider',
+    prevText: "",           
+	nextText: ""            
+  });
+ 
+  $('#slider').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#carousel",
+    prevText: "",           
+	nextText: "" 
+  });
+  lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+  })
+
 	/*====================================
 	Рейтинг звезд в карточке товара
 	======================================*/

@@ -70,7 +70,9 @@ button.btn.recently-watched-btn {
 		margin: 0 5px;
 	}
 }
-
+.box__title-wrapp {
+	margin-bottom: 30px;
+}
 @media (max-width: 992px) {
 	.recently-watched-have {
 		text-align: center;

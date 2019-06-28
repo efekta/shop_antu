@@ -161,5 +161,17 @@ input {
 .btn.focus, .btn:focus {
   box-shadow: none;
 }
+#scroller {
+  position: fixed;
+  right: 100px;
+  bottom: 100px;
+  display: none;
+}
+.scroller {
+  width: 29px;
+  height: 31px;
+  background: url('../images/general/scroller.png') no-repeat;
+  cursor: pointer;
+}
 //Модули
 @import "modules/modules";

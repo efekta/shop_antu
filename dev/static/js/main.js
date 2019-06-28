@@ -16,7 +16,28 @@ $(document).ready(function () {
 		// $('.logo-link').removeClass('logo-link_fixed');
 		}
 	});
-
+	/*========================
+	scropp up
+	 =======================*/
+	$(window).scroll(function() {
+	 
+	    if($(this).scrollTop() != 0) {
+	 
+	        $('#scroller').fadeIn();
+	 
+	    } else {
+	 
+	        $('#scroller').fadeOut();
+	 
+	    }
+	 
+	});
+	 
+	$('#scroller').click(function() {
+	 
+	$('body,html').animate({scrollTop:0},800);
+	 
+	});
 	/*========================
 	mob nav
 	=========================*/

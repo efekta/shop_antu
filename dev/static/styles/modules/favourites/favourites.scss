@@ -58,3 +58,20 @@
 	}
 }
 
+// .recently-watched-have {
+// 	span {
+// 		button.btn.btn-like {
+// 			display: inline-block; {
+// 				color: $red;
+// 				svg {
+// 					color: $red;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+button.btn.btn-like  {
+	display: inline-block;
+	color: $red;
+	background: transparent;
+}

@@ -1,2 +1,35 @@
-//- #lightboxOverlay.lightboxOverlay
-//- #lightbox.lightbox
+#exampleModalCenter.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle', aria-hidden='true')
+	.modal-dialog.modal-dialog-centered(role='document')
+		.modal-content
+			.modal-header
+				h5#exampleModalCenterTitle.modal-title Ремувер для кутикулы с ланолином "Blue Cross"
+				button.close(type='button', data-dismiss='modal', aria-label='Close')
+					span(aria-hidden='true')
+						i.fal.fa-times
+			.modal-body
+				.modal-main-content
+					form.modal-main-content-form
+						.modal-form-box
+							.item-card-radio
+								input#fixed-input_1(type="radio", name="card", checked)
+								label(for="fixed-input_1")
+									span 946 мл.
+									span 1350 &#8381;
+							.item-card-radio
+								input#fixed-input_2(type="radio", name="card")
+								label(for="fixed-input_2")
+									span 473 мл.
+									span 790 &#8381;
+							.item-card-radio
+								input#fixed-input_3(type="radio", name="card")
+								label(for="fixed-input_3")
+									span 170 мл.
+									span 490 &#8381;
+						.modal-form-box_result
+							span.form-box_result_pay 390 &#8381;
+							span x
+							span.form-box_result_num 1
+					.modal-main-content-pic
+						img(src="../static/images/content/gross-modal.png", alt="pic")
+			.modal-footer
+				button.btn.recently-watched-btn(type='submit') Купить

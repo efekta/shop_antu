@@ -163,8 +163,8 @@ input {
 }
 #scroller {
   position: fixed;
-  right: 100px;
-  bottom: 100px;
+  right: 15px;
+  bottom: 80px;
   display: none;
 }
 .scroller {
@@ -172,6 +172,9 @@ input {
   height: 31px;
   background: url('../images/general/scroller.png') no-repeat;
   cursor: pointer;
+}
+.slick-slide {
+  outline: none;
 }
 //Модули
 @import "modules/modules";

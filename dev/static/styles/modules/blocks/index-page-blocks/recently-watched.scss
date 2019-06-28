@@ -28,19 +28,24 @@ button.btn.recently-watched-btn {
 	text-align: left;
 	span {
 		position: relative;
+		width: 100%;
+		display: inline-block;
 		padding-left: 10px;
 		color: $green;
-		border-bottom: 1px solid $green;
+		text-decoration: underline;
+		// border-bottom: 1px solid $green;
 		&:before {
 			content: "";
 			position: absolute;
-			top: 50%;
+			top: 0;
+			// top: 50%;
 			left: 0;
 			width: 5px;
 			height: 5px;
 			border-radius: 50%;
 			background: $green;
-			transform: translateY(-50%);
+			margin-top: 5px;
+			// transform: translateY(-50%);
 		}
 	}
 
@@ -67,10 +72,13 @@ button.btn.recently-watched-btn {
 }
 
 @media (max-width: 992px) {
-	.recently-watched__order {
-		justify-content: space-around;
-	}
 	.recently-watched-have {
 		text-align: center;
+	}
+	.recently-watched-have span {
+	    text-align: left;
+	}
+	.page-item-card .item-card-carousel__item {
+		margin-bottom: 20px;
 	}
 }

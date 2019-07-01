@@ -1,0 +1,55 @@
+.order-page-form {
+	position: relative;
+	width: 62px;
+	height: 25px;
+	line-height: 100%;
+	input.qty {
+		border-width: 1.28px;
+		border-color: rgb(228, 228, 228);
+		border-style: solid;
+		border-radius: 8px;
+		background-color: rgb(255, 255, 255);
+		text-align: center;
+		width: 41.44px;
+		height: 20.44px;
+
+	}
+	input.qtyminus, input.qtyplus {
+		background: transparent;
+		border: none;
+		// width: 0;
+		// height: 0;
+	}
+	.order-input-box {
+		label {
+			width: 0;
+			height: 0;
+		}
+	}
+	.order-input-box__wrapp {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.order-input-box__min, .order-input-box__max {
+		width: 15px;
+		height: 15px;
+		cursor: pointer;
+		&:hover {
+			color: $red;
+		}
+	}
+	.order-input-box__min {
+		top: 0;
+	}
+	.order-input-box_result {
+		position: relative;
+		text-align: right;
+		margin-left: 20px;
+	}
+}
+.order__link {
+	font-size: 12px;
+	font-weight: 500;
+	color: #272727;
+}

@@ -1,2 +1,28 @@
 main.main.order.col-lg-9.col-md-12
 	h1.title Корзина
+	.row.align-items-center
+		.col-lg-2
+			img(src="static/images/content/card.png", alt="pic")
+		.col
+			a.order__link(href="#") UNO, Гель–краска №005 Red — «Красная»
+		.col-lg-2
+			form#myform.order-page-form
+				div.order-input-box.order-input-box_result
+					input(type='text' name='quantity' value='0' class='qty')
+				div.order-input-box__wrapp
+					div.order-input-box.order-input-box__min
+						span.qtyminus(field='quantity')
+							i.fal.fa-chevron-up
+					
+					div.order-input-box.order-input-box__max
+						span.qtyplus(field='quantity')
+							i.fal.fa-chevron-down
+
+		.col-lg-1
+			a(href="")
+				img(src="static/images/icons/action-like.png", alt="pic")
+		.col-lg-1
+			span 360 &#8381;
+		.col-lg-1
+			a(href="")
+				i.fal.fa-times

@@ -9,3 +9,5 @@
 <p><a href="https://efekta.github.io/shop_antu/build/favourites_inner.html">Список избранного пуст</a></p>
 <p><a href="https://efekta.github.io/shop_antu/build/user.html">Мой профиль</a></p>
 <p><a href="https://efekta.github.io/shop_antu/build/inner.html">Внутреннее меню и фильтр</a></p>
+<p><a href="https://efekta.github.io/shop_antu/build/order.html">Корзина</a></p>
+<p><a href="https://efekta.github.io/shop_antu/build/registration.html">Регистрация</a></p>

@@ -1,6 +1,10 @@
 .order {
 	color: #3b3b3b;
 }
+.order__link {
+	display: block;
+
+}
 .order-page-form {
 	position: relative;
 	width: 62px;
@@ -190,10 +194,16 @@
 
 
 @media (max-width: 576px) {
-.place_order-form-item_box {
-	input {
-		width: 100%;
+	.place_order-form-item_box {
+		input {
+			width: 100%;
+			}
 		}
+	.coupon {
+		width: 100%;
+	}
+	.order__link {
+		margin: 20px 0;
 	}
 }
 

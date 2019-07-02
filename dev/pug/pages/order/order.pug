@@ -294,10 +294,26 @@ main.main.order.col-lg-9.col-md-12
 				label(for="user_name") Я уже заказывал ранее и у меня есть аккаунт
 			.place_order-form-item_wrapp
 				.place_order-form-item_box
-					input(type="text")
+					input(type="text", placeholder="Фамилия и имя")
 				.place_order-form-item_box
-					input(type="text")
+					input.phone-js(type="text", placeholder="Телефон", name="your-phone")
 				.place_order-form-item_box
-					input(type="text")
+					input(type="text", placeholder="Email")
 				.place_order-form-item_box
-					input(type="text")
+					input.datepicker-here(type="text", data-range="true" data-multiple-dates-separator=" - ", placeholder="День Рождения")
+			.place_order-form-item_wrapp
+				p Адрес доставки
+				.place_order-form-item_box
+					input(type="text", placeholder="Страна")
+				.place_order-form-item_box
+					input(type="text", placeholder="Город")
+				.place_order-form-item_box
+					input(type="text", placeholder="Регион")
+				.place_order-form-item_box
+					input(type="text", placeholder="Улица")
+				.place_order-form-item_box
+					input(type="text", placeholder="Дом, корпус, строение")
+				.place_order-form-item_box
+					input(type="text", placeholder="Квартира / офис")
+				.place_order-form-item_box
+					input(type="text", placeholder="Индекс")

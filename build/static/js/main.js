@@ -1,5 +1,29 @@
 $(document).ready(function () {
     svg4everybody({});
+    /*====================================
+	masked input
+	======================================*/
+	$(".phone-js").mask("+7(999) 999-9999");
+    /*====================================
+	календарь в поле ввода 
+	======================================*/
+	// $('#example-show-hide-callbacks').data('datepicker')
+	// $('#example-show-hide-callbacks').datepicker({
+	//     onShow: function(dp, animationCompleted){
+	//         if (!animationCompleted) {
+	//             log('start showing')
+	//         } else {
+	//             log('finished showing')
+	//         }
+	//     },
+	//     onHide: function(dp, animationCompleted){
+	//         if (!animationCompleted) {
+	//             log('start hiding')
+	//         } else {
+	//             log('finished hiding')
+	//         }
+	//     }
+	// })
 
     /*========================
 	 fixed header
@@ -16,6 +40,8 @@ $(document).ready(function () {
 		// $('.logo-link').removeClass('logo-link_fixed');
 		}
 	});
+
+
 	/*========================
 	scropp up
 	 =======================*/
@@ -189,16 +215,16 @@ $(document).ready(function () {
 	//   focusOnSelect: true
 	// });
 	$('#carousel').flexslider({
-    animation: "slide",
-    controlNav: false,
-    animationLoop: false,
-    slideshow: false,
-    itemWidth: 48,
-    itemMargin: 5,
-    asNavFor: '#slider',
-    prevText: "",           
-	nextText: ""            
-  });
+		animation: "slide",
+		controlNav: false,
+		animationLoop: false,
+		slideshow: false,
+		itemWidth: 48,
+		itemMargin: 5,
+		asNavFor: '#slider',
+		prevText: "",           
+		nextText: ""            
+	});
  
   $('#slider').flexslider({
     animation: "slide",
@@ -334,6 +360,7 @@ $(document).ready(function () {
         if (!/\d/.test(keyChar)) return false;
 
     });
+
     /*====================================
 	form order page card
 	======================================*/
@@ -373,4 +400,9 @@ $(document).ready(function () {
 	    }
 	  });
 	});
+});
+
+;$(document).ready(function () {
+
+
 });

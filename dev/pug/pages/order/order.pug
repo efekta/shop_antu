@@ -1,28 +1,303 @@
 main.main.order.col-lg-9.col-md-12
 	h1.title Корзина
-	.row.align-items-center
-		.col-lg-2
-			img(src="static/images/content/card.png", alt="pic")
-		.col
-			a.order__link(href="#") UNO, Гель–краска №005 Red — «Красная»
-		.col-lg-2
-			form#myform.order-page-form
-				div.order-input-box.order-input-box_result
-					input(type='text' name='quantity' value='0' class='qty')
-				div.order-input-box__wrapp
-					div.order-input-box.order-input-box__min
-						span.qtyminus(field='quantity')
-							i.fal.fa-chevron-up
-					
-					div.order-input-box.order-input-box__max
-						span.qtyplus(field='quantity')
-							i.fal.fa-chevron-down
+	form#myform
+		.row.align-items-center.order-item
+			.col-lg-2
+				img(src="static/images/content/card.png", alt="pic")
+			.col
+				a.order__link(href="#") UNO, Гель–краска №005 Red — «Красная»
+			.col-lg-2
+				.myform-box.order-page-form
+					div.order-input-box.order-input-box_result
+						input(type='text' name='quantity1' value='3' class='qty')
+					div.order-input-box__wrapp
+						div.order-input-box.order-input-box__min
+							span.qtyminus(field='quantity1')
+								i.fal.fa-chevron-up
+						
+						div.order-input-box.order-input-box__max
+							span.qtyplus(field='quantity1')
+								i.fal.fa-chevron-down
 
-		.col-lg-1
-			a(href="")
-				img(src="static/images/icons/action-like.png", alt="pic")
-		.col-lg-1
-			span 360 &#8381;
-		.col-lg-1
-			a(href="")
-				i.fal.fa-times
+			.col-lg-1
+				a(href="")
+					img(src="static/images/icons/action-like.png", alt="pic")
+			.col-lg-1
+				span 360 &#8381;
+			.col-lg-1
+				a.order_clear__link(href="")
+					i.fal.fa-times
+		
+		.row.align-items-center.order-item
+			.col-lg-2
+				img(src="static/images/content/card.png", alt="pic")
+			.col
+				a.order__link(href="#") UNO, Гель–краска №005 Red — «Красная»
+			.col-lg-2
+				.myform-box.order-page-form
+					div.order-input-box.order-input-box_result
+						input(type='text' name='quantity2' value='2' class='qty')
+					div.order-input-box__wrapp
+						div.order-input-box.order-input-box__min
+							span.qtyminus(field='quantity2')
+								i.fal.fa-chevron-up
+						
+						div.order-input-box.order-input-box__max
+							span.qtyplus(field='quantity2')
+								i.fal.fa-chevron-down
+
+			.col-lg-1
+				a(href="")
+					img(src="static/images/icons/action-like.png", alt="pic")
+			.col-lg-1
+				span 360 &#8381;
+			.col-lg-1
+				a.order_clear__link(href="")
+					i.fal.fa-times
+		
+		.row.align-items-center.order-item
+			.col-lg-2
+				img(src="static/images/content/card.png", alt="pic")
+			.col
+				a.order__link(href="#") UNO, Гель–краска №005 Red — «Красная»
+			.col-lg-2
+				.myform-box.order-page-form
+					div.order-input-box.order-input-box_result
+						input(type='text' name='quantity3' value='12' class='qty')
+					div.order-input-box__wrapp
+						div.order-input-box.order-input-box__min
+							span.qtyminus(field='quantity3')
+								i.fal.fa-chevron-up
+						
+						div.order-input-box.order-input-box__max
+							span.qtyplus(field='quantity3')
+								i.fal.fa-chevron-down
+
+			.col-lg-1
+				a(href="")
+					img(src="static/images/icons/action-like.png", alt="pic")
+			.col-lg-1
+				span 360 &#8381;
+			.col-lg-1
+				a.order_clear__link(href="")
+					i.fal.fa-times
+
+		.total-cart
+			.row
+				.col
+					.coupon
+						input.coupon-code(type="text", placeholder="Промокод или сертификат")
+						input.coupon-button(type="submit" class="coupon-button flexdiscount-submit-button" value="Применить")
+				.col
+					.total-text
+						span.total-desc Итого:
+						span.total-summ 1080 &#8381;
+		.recomend
+			.row
+				.col-md-12
+					p Возможно, Вам пригодится:
+					p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia dicta commodi est recusandae iste, natus eum asperiores corrupti, qui, velit dolore nisi tenetur eaque ad sapiente beatae id alias, aliquid.
+	.row
+		.col-md-12.favourites-mb
+			.actions-items.page-item-card
+				.row
+					.col-lg-3.col-md-6.item-card-carousel__item
+						.item-card-carousel__hit
+							span Хит!
+						h4 UNO, Гель-краска №015 Red — «Красная»
+						.card-carousel-pic
+							.card-carousel-pic_first
+								img.carousel-pic_first_show(src="static/images/content/Untitled-1.png", alt="pic")
+								img.carousel-pic_first_hide(src="static/images/content/show1.png", alt="pic")
+							.card-carousel-pic_inner
+								img.carousel-pic_inner_show(src="static/images/content/Untitled-2.png", alt="pic")
+								img.carousel-pic_inner_hide(src="static/images/content/show2.png", alt="pic")
+						.card-carousel__desc
+							p Плотная гель-краска красного цвета. 
+							p Имеет дисперсионный слой.  5мл.
+						.card-carousel__price
+							span 390 &#8381;
+						.recently-watched__order
+							.recently-watched__order-wrapp
+								input(type="number", value="1", min="1")
+								span шт.
+							button(type="button", data-toggle="modal", data-target="#exampleModalCenter").btn.recently-watched-btn Купить
+							//- button(type="submit").btn.btn-like
+							//- 	span
+						.recently-watched-have
+							span В наличии
+								.item-card-hover-box
+									.item-card-hover__item
+										p Интернет-магазин – 
+										span.hover__item_no_pay Нет в наличии
+									.item-card-hover__item
+										p ТЦ "Нарва" Ленинский –
+										span 1 шт.
+									.item-card-hover__item
+										p БЦ "Нижегородский" Москва – 
+										span.hover__item_no_pay Нет в наличии
+									.item-card-hover__item
+										p ТЦ "Миллер" Комендантский –
+										span 1 шт
+									.item-card-hover__item
+										p ТРК "Балканский" Купчино –
+										span.hover__item_no_pay Нет в наличии  
+									.item-card-hover__item
+										p ТЦ "Заневский каскад" Ладожская -
+										span 1 шт
+									.item-card-hover__item
+										p ТРК "Принц Плаза" Москва –  
+										span.hover__item_no_pay Нет в наличии
+					.col-lg-3.col-md-6.item-card-carousel__item
+						.item-card-carousel__hit
+							span Хит!
+						h4 UNO, Гель-краска №015 Red — «Красная»
+						.card-carousel-pic
+							.card-carousel-pic_first
+								img.carousel-pic_first_show(src="static/images/content/Untitled-1.png", alt="pic")
+								img.carousel-pic_first_hide(src="static/images/content/show1.png", alt="pic")
+							.card-carousel-pic_inner
+								img.carousel-pic_inner_show(src="static/images/content/Untitled-2.png", alt="pic")
+								img.carousel-pic_inner_hide(src="static/images/content/show2.png", alt="pic")
+						.card-carousel__desc
+							p Плотная гель-краска красного цвета. 
+							p Имеет дисперсионный слой.  5мл.
+						.card-carousel__price
+							span 390 &#8381;
+						.recently-watched__order
+							.recently-watched__order-wrapp
+								input(type="number", value="1", min="1")
+								span шт.
+							button(type="button", data-toggle="modal", data-target="#exampleModalCenter").btn.recently-watched-btn Купить
+						.recently-watched-have
+							span В наличии
+								.item-card-hover-box
+									.item-card-hover__item
+										p Интернет-магазин – 
+										span.hover__item_no_pay Нет в наличии
+									.item-card-hover__item
+										p ТЦ "Нарва" Ленинский –
+										span 1 шт.
+									.item-card-hover__item
+										p БЦ "Нижегородский" Москва – 
+										span.hover__item_no_pay Нет в наличии
+									.item-card-hover__item
+										p ТЦ "Миллер" Комендантский –
+										span 1 шт
+									.item-card-hover__item
+										p ТРК "Балканский" Купчино –
+										span.hover__item_no_pay Нет в наличии  
+									.item-card-hover__item
+										p ТЦ "Заневский каскад" Ладожская -
+										span 1 шт
+									.item-card-hover__item
+										p ТРК "Принц Плаза" Москва –  
+										span.hover__item_no_pay Нет в наличии
+					.col-lg-3.col-md-6.item-card-carousel__item
+						.item-card-carousel__hit
+							span Хит!
+						h4 UNO, Гель-краска №015 Red — «Красная»
+						.card-carousel-pic
+							.card-carousel-pic_first
+								img.carousel-pic_first_show(src="static/images/content/Untitled-1.png", alt="pic")
+								img.carousel-pic_first_hide(src="static/images/content/show1.png", alt="pic")
+							.card-carousel-pic_inner
+								img.carousel-pic_inner_show(src="static/images/content/Untitled-2.png", alt="pic")
+								img.carousel-pic_inner_hide(src="static/images/content/show2.png", alt="pic")
+						.card-carousel__desc
+							p Плотная гель-краска красного цвета. 
+							p Имеет дисперсионный слой.  5мл.
+						.card-carousel__price
+							span 390 &#8381;
+						.recently-watched__order
+							.recently-watched__order-wrapp
+								input(type="number", value="1", min="1")
+								span шт.
+							button(type="button", data-toggle="modal", data-target="#exampleModalCenter").btn.recently-watched-btn Купить
+						.recently-watched-have
+							span В наличии
+								.item-card-hover-box
+									.item-card-hover__item
+										p Интернет-магазин – 
+										span.hover__item_no_pay Нет в наличии
+									.item-card-hover__item
+										p ТЦ "Нарва" Ленинский –
+										span 1 шт.
+									.item-card-hover__item
+										p БЦ "Нижегородский" Москва – 
+										span.hover__item_no_pay Нет в наличии
+									.item-card-hover__item
+										p ТЦ "Миллер" Комендантский –
+										span 1 шт
+									.item-card-hover__item
+										p ТРК "Балканский" Купчино –
+										span.hover__item_no_pay Нет в наличии  
+									.item-card-hover__item
+										p ТЦ "Заневский каскад" Ладожская -
+										span 1 шт
+									.item-card-hover__item
+										p ТРК "Принц Плаза" Москва –  
+										span.hover__item_no_pay Нет в наличии
+					.col-lg-3.col-md-6.item-card-carousel__item
+						.item-card-carousel__hit
+							span Хит!
+						h4 UNO, Гель-краска №015 Red — «Красная»
+						.card-carousel-pic
+							.card-carousel-pic_first
+								img.carousel-pic_first_show(src="static/images/content/Untitled-1.png", alt="pic")
+								img.carousel-pic_first_hide(src="static/images/content/show1.png", alt="pic")
+							.card-carousel-pic_inner
+								img.carousel-pic_inner_show(src="static/images/content/Untitled-2.png", alt="pic")
+								img.carousel-pic_inner_hide(src="static/images/content/show2.png", alt="pic")
+						.card-carousel__desc
+							p Плотная гель-краска красного цвета. 
+							p Имеет дисперсионный слой.  5мл.
+						.card-carousel__price
+							span 390 &#8381;
+						.recently-watched__order
+							.recently-watched__order-wrapp
+								input(type="number", value="1", min="1")
+								span шт.
+							button(type="button", data-toggle="modal", data-target="#exampleModalCenter").btn.recently-watched-btn Купить
+						.recently-watched-have
+							span В наличии
+								.item-card-hover-box
+									.item-card-hover__item
+										p Интернет-магазин – 
+										span.hover__item_no_pay Нет в наличии
+									.item-card-hover__item
+										p ТЦ "Нарва" Ленинский –
+										span 1 шт.
+									.item-card-hover__item
+										p БЦ "Нижегородский" Москва – 
+										span.hover__item_no_pay Нет в наличии
+									.item-card-hover__item
+										p ТЦ "Миллер" Комендантский –
+										span 1 шт
+									.item-card-hover__item
+										p ТРК "Балканский" Купчино –
+										span.hover__item_no_pay Нет в наличии  
+									.item-card-hover__item
+										p ТЦ "Заневский каскад" Ладожская -
+										span 1 шт
+									.item-card-hover__item
+										p ТРК "Принц Плаза" Москва –  
+										span.hover__item_no_pay Нет в наличии
+	.place_order
+		h2.title Контактная информация
+		form#place_order-form
+			.place_order-form-item
+				input#new_user_name(type="radio", name="user_name", checked)
+				label(for="new_user_name") Я новый покупатель
+			.place_order-form-item
+				input#user_name(type="radio", name="user_name")
+				label(for="user_name") Я уже заказывал ранее и у меня есть аккаунт
+			.place_order-form-item_wrapp
+				.place_order-form-item_box
+					input(type="text")
+				.place_order-form-item_box
+					input(type="text")
+				.place_order-form-item_box
+					input(type="text")
+				.place_order-form-item_box
+					input(type="text")

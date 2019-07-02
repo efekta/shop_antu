@@ -1,3 +1,6 @@
+.order {
+	color: #3b3b3b;
+}
 .order-page-form {
 	position: relative;
 	width: 62px;
@@ -53,3 +56,152 @@
 	font-weight: 500;
 	color: #272727;
 }
+
+.order-item {
+	margin-bottom: 25px;
+}
+
+.coupon {
+	position: relative;
+	border-radius: 13px;
+	border-width: 1.28px;
+	border-color: rgb(228, 228, 228);
+	border-style: solid;
+	background-color: rgb(255, 255, 255);
+	width: 535.44px;
+	height: 39.44px;
+
+}
+.coupon-code {
+	background: transparent;
+	border: none;
+	width: 100%;
+	height: 100%;
+	padding: 0 10px;
+}
+.coupon-button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-radius: 13px;
+	background-color: rgb(251, 251, 251);
+	box-shadow: -1px 0px 0.99px 0.01px rgba(0, 0, 0, 0.06);
+	border: none;
+	width: 94px;
+	height: 100%;
+	&:hover {
+		background: $red;
+		color: $white;
+	}
+}
+
+.total-desc {
+	font-size: 14px;
+	margin-right: 5px;
+}
+
+.total-summ {
+	font-size: 28px;
+}
+
+.total-text {
+	text-align: right;
+}
+.order_clear__link {
+	display: block;
+	text-align: right;
+	font-size: 20px;
+}
+.total-cart {
+	margin-bottom: 45px;
+}
+
+.recomend {
+	margin-bottom: 30px;
+	p {
+		font-size: 12px;
+		color: #3b3b3b;
+		font-weight: 500;
+
+	}
+}
+
+.place_order {
+	padding-top: 70px;
+}
+.place_order-form-item {
+	input[type="radio"] {
+	    // vertical-align: middle;
+	    // font-size: 20px;
+	    // line-height: 25px;
+	    margin-right: 10px;
+	    cursor: pointer;
+	    display: none;
+	}
+	label {
+	    position: relative;
+	}
+	input[type="radio"] + label::before {
+	    content: "";
+	    display: inline-block;
+	    vertical-align: middle;
+		width: 14px;
+		height: 14px;
+	    margin-right: 10px;
+		border-width: 1.28px;
+		border-color: rgb(228, 228, 228);
+		border-style: solid;
+		border-radius: 2px;
+		background-color: rgb(255, 255, 255);
+	}
+	input[type="radio"]:checked + label::after {
+	    content: "";
+	    position: absolute;
+		top: 50%;
+		left: 0;
+		margin-top: 1px;
+		margin-left: 2px;
+		transform: translate(50%, -50%);
+	    width: 5px;
+	    height: 5px;
+	    border-radius: 50%;
+	    background: #ec2438;
+	}
+}
+
+.place_order-form-item_box {
+	margin-bottom: 7px;
+	input {
+		display: block;
+		border-width: 1.28px;
+		border-color: rgb(228, 228, 228);
+		border-style: solid;
+		border-radius: 8px;
+		background-color: rgb(255, 255, 255);
+		width: 347.44px;
+		padding: 6px 10px;
+	}
+}
+.place_order-form-item_wrapp {
+	padding-top: 30px;
+}
+
+
+
+
+@media (max-width: 576px) {
+.place_order-form-item_box {
+	input {
+		width: 100%;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+

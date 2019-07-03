@@ -134,6 +134,7 @@
 	padding-top: 70px;
 }
 .place_order-form-item {
+
 	input[type="radio"] {
 	    // vertical-align: middle;
 	    // font-size: 20px;
@@ -144,6 +145,7 @@
 	}
 	label {
 	    position: relative;
+	    cursor: pointer;
 	}
 	input[type="radio"] + label::before {
 	    content: "";
@@ -190,7 +192,25 @@
 	padding-top: 30px;
 }
 
+.place_order-form-item__inner {
+	display: flex;
+	// align-items: center;
+	.place_order-form-item__inner_wrapp_p {
+		position: relative;
+		width: 80%;
+		margin-bottom: 20px;
+		p {
+			margin-bottom: 0;
+			padding-left: 45px;
+		}
+		.sprite-order {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
 
+}
 
 
 @media (max-width: 576px) {

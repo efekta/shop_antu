@@ -122,8 +122,6 @@ main.main.order.col-lg-9.col-md-12
 								input(type="number", value="1", min="1")
 								span шт.
 							button(type="button", data-toggle="modal", data-target="#exampleModalCenter").btn.recently-watched-btn Купить
-							//- button(type="submit").btn.btn-like
-							//- 	span
 						.recently-watched-have
 							span В наличии
 								.item-card-hover-box
@@ -317,3 +315,21 @@ main.main.order.col-lg-9.col-md-12
 					input(type="text", placeholder="Квартира / офис")
 				.place_order-form-item_box
 					input(type="text", placeholder="Индекс")
+	.place_order
+		form#place_order-form
+			.place_order-form-item.place_order-form-item__inner
+				.place_order-form-input-wrapp__inner
+					input#user_registr(type="radio", name="user_registr", checked)
+					label(for="user_registr") 
+				.place_order-form-item__inner_wrapp_p
+					i.sprite-order.sprite-order-i-1
+					p Зарегистрироваться как постоянный покупатель (Зарегестрировшись на нашем сайте, вы получите возможность участвовать в нашей накопительной программе. Для незарегестрированых покупателей эта функция недоступна)
+
+
+			.place_order-form-item.place_order-form-item__inner
+				.place_order-form-input-wrapp__inner
+					input#user_registr_mail(type="radio", name="user_registr")
+					label(for="user_registr_mail")
+				.place_order-form-item__inner_wrapp_p
+					i.sprite-order.sprite-order-i-2-png
+					p Подписка на email рассылку. Всегда свежие интересные статьи из мира Nail.

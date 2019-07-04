@@ -17,7 +17,8 @@ module.exports = function () {
             'dev/libs/lightbox/lightbox.min.js',
             'dev/libs/fancybox/jquery.fancybox.js',
             'dev/libs/maskedinput/maskedinput.js',
-            'dev/libs/airdatepicker/datepicker.min.js'
+            'dev/libs/airdatepicker/datepicker.min.js',
+            'dev/libs/jQueryFormStyler/jquery.formstyler.min.js'
             ])
             .pipe(concat('libs.min.js'))
             .pipe($.gulp.dest(scriptsPATH.ouput));
@@ -34,7 +35,8 @@ module.exports = function () {
             'dev/libs/lightbox/lightbox.min.js',
             'dev/libs/fancybox/jquery.fancybox.js',
             'dev/libs/maskedinput/maskedinput.js',
-            'dev/libs/airdatepicker/datepicker.min.js'
+            'dev/libs/airdatepicker/datepicker.min.js',
+            'dev/libs/jQueryFormStyler/jquery.formstyler.min.js'
             ])
             .pipe(concat('libs.min.js'))
             .pipe(uglify())

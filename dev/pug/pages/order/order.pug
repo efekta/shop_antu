@@ -283,7 +283,7 @@ main.main.order.col-lg-9.col-md-12
 										span.hover__item_no_pay Нет в наличии
 	.place_order
 		h2.title Контактная информация
-		form#place_order-form
+		.place_order-form
 			.place_order-form-item
 				input#new_user_name(type="radio", name="user_name", checked)
 				label(for="new_user_name") Я новый покупатель
@@ -316,7 +316,7 @@ main.main.order.col-lg-9.col-md-12
 				.place_order-form-item_box
 					input(type="text", placeholder="Индекс")
 	.place_order
-		form#place_order-form
+		.place_order-form
 			.place_order-form-item.place_order-form-item__inner
 				.place_order-form-input-wrapp__inner
 					input#user_registr(type="radio", name="user_registr", checked)
@@ -325,7 +325,6 @@ main.main.order.col-lg-9.col-md-12
 					i.sprite-order.sprite-order-i-1
 					p Зарегистрироваться как постоянный покупатель (Зарегестрировшись на нашем сайте, вы получите возможность участвовать в нашей накопительной программе. Для незарегестрированых покупателей эта функция недоступна)
 
-
 			.place_order-form-item.place_order-form-item__inner
 				.place_order-form-input-wrapp__inner
 					input#user_registr_mail(type="radio", name="user_registr")
@@ -333,3 +332,61 @@ main.main.order.col-lg-9.col-md-12
 				.place_order-form-item__inner_wrapp_p
 					i.sprite-order.sprite-order-i-2-png
 					p Подписка на email рассылку. Всегда свежие интересные статьи из мира Nail.
+	.place_order
+		h2.title Доставка
+		.place_order-form
+			.place_order-form-item.place_order-form-item__inner
+				.place_order-form-input-wrapp__inner
+					input#user_dost(type="radio", name="user_dost", checked)
+					label(for="user_dost") 
+				.place_order-form-item__inner_wrapp_p
+					i.sprite-order.sprite-order-i-3
+					p.place-order-title Самовывоз Санкт-Петербург (бесплатно)
+			.rang-select
+				select.select
+					option.option Выберете
+					option.option(selected) м. Купчино, ТК "Балканский-1", Балканская пл., д.5, 1 этаж, помещение 1-32
+					option.option 2
+					option.option 3
+
+			p Самовывоз в г. Санкт-Петербурге осуществляется <a class="place_order-form__link" href="">бесплатно</a> в розничных магазинах компании Антураж. В случае наличия товара на складе магазина, самовывоз может быть осуществлен в тот-же день. 
+			p В ином случае, формирование заказа для самовывоза займет от 1 до 2 дней. 
+			p Срок хранения заказа на пункте самовывоза до 3-х дней.
+		.place_order-form
+			.place_order-form-item.place_order-form-item__inner
+				.place_order-form-input-wrapp__inner
+					input#user_sam(type="radio", name="user_dost")
+					label(for="user_sam")
+				.place_order-form-item__inner_wrapp_p
+					i.sprite-order.sprite-order-i-4
+					p.place-order-title Курьерская доставка по СПб (в пределах КАД)
+			.place_order-form-item_wrapp_i
+				.place_order-form-item_box
+					input(type="text", placeholder="Улица")
+				.place_order-form-item_box
+					input(type="text", placeholder="Дом, корпус, строение")
+				.place_order-form-item_box
+					input(type="text", placeholder="Квартира / офис")
+				p По Санкт-Петербургу доставка заказов производится в течение 1-2 рабочих дней с момента соглосования заказа, не считая дня заказа. 
+				p.color-red Стоимость доставки по Санкт-Петербургу (в пределах КАД):
+				p При заказе на сумму до 5000 руб. – <span class="color-red">300 рублей.</span>
+				p При заказе на сумму от 5000 руб. – <span class="color-red">бесплатно.</span>
+				p Стоимость доставки в удаленные районы города составляет <span class="color-red">– 350 рублей,</span> в независимости от суммы заказа.
+				p Удаленными районами считаются: <span class="color-red">Сестрорецк, Кронштадт, Ломоносов, Петродворец, Красное село, Пушкин, Павловск, Колпино, Всеволожск, Сертолово</span>
+		.place_order-form
+			.place_order-form-item.place_order-form-item__inner
+				.place_order-form-input-wrapp__inner
+					input#user_sdk(type="radio", name="user_dost")
+					label(for="user_sdk")
+				.place_order-form-item__inner_wrapp_p
+					i.sprite-order.sprite-order-i-5
+					p.place-order-title Служба доставки СДЭК
+				.rang-select.rang-select_small
+					select.select.select_small
+						option.option Выберете
+						option.option(selected) ПВЗ: На Лиговском 1 
+						option.option 2
+						option.option 3
+			p Обратите внимание! Вы можете выбрать удобный для вас пункт самовывоза, для этого щелкните по выпадающему меню.
+			p Стоимость и сроки доставки зависят от региона и способа доставки! При оформлении заказа, наш менеджер свяжется с Вами, для уточнения способа, стоимости и срока доставки. 
+			p Если Вы хотите узнать стоимость доставки до Вашего населенного пункта, перед оформлением заказа, позвоните <span class="color-red">8 800 700-73-80 (звонок по России бесплатный).</span>

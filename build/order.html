@@ -437,7 +437,7 @@
               </div>
               <div class="place_order">
                 <h2 class="title">Контактная информация</h2>
-                <form id="place_order-form">
+                <div class="place_order-form">
                   <div class="place_order-form-item">
                     <input id="new_user_name" type="radio" name="user_name" checked>
                     <label for="new_user_name">Я новый покупатель</label>
@@ -484,10 +484,10 @@
                       <input type="text" placeholder="Индекс">
                     </div>
                   </div>
-                </form>
+                </div>
               </div>
               <div class="place_order">
-                <form id="place_order-form">
+                <div class="place_order-form">
                   <div class="place_order-form-item place_order-form-item__inner">
                     <div class="place_order-form-input-wrapp__inner">
                       <input id="user_registr" type="radio" name="user_registr" checked>
@@ -506,7 +506,82 @@
                       <p>Подписка на email рассылку. Всегда свежие интересные статьи из мира Nail.</p>
                     </div>
                   </div>
-                </form>
+                </div>
+              </div>
+              <div class="place_order">
+                <h2 class="title">Доставка</h2>
+                <div class="place_order-form">
+                  <div class="place_order-form-item place_order-form-item__inner">
+                    <div class="place_order-form-input-wrapp__inner">
+                      <input id="user_dost" type="radio" name="user_dost" checked>
+                      <label for="user_dost"> </label>
+                    </div>
+                    <div class="place_order-form-item__inner_wrapp_p"><i class="sprite-order sprite-order-i-3"></i>
+                      <p class="place-order-title">Самовывоз Санкт-Петербург (бесплатно)</p>
+                    </div>
+                  </div>
+                  <div class="rang-select">
+                    <select class="select">
+                      <option class="option">Выберете</option>
+                      <option class="option" selected>м. Купчино, ТК "Балканский-1", Балканская пл., д.5, 1 этаж, помещение 1-32</option>
+                      <option class="option">2</option>
+                      <option class="option">3</option>
+                    </select>
+                  </div>
+                  <p>Самовывоз в г. Санкт-Петербурге осуществляется <a class="place_order-form__link" href="">бесплатно</a> в розничных магазинах компании Антураж. В случае наличия товара на складе магазина, самовывоз может быть осуществлен в тот-же день. </p>
+                  <p>В ином случае, формирование заказа для самовывоза займет от 1 до 2 дней. </p>
+                  <p>Срок хранения заказа на пункте самовывоза до 3-х дней.</p>
+                </div>
+                <div class="place_order-form">
+                  <div class="place_order-form-item place_order-form-item__inner">
+                    <div class="place_order-form-input-wrapp__inner">
+                      <input id="user_sam" type="radio" name="user_dost">
+                      <label for="user_sam"></label>
+                    </div>
+                    <div class="place_order-form-item__inner_wrapp_p"><i class="sprite-order sprite-order-i-4"></i>
+                      <p class="place-order-title">Курьерская доставка по СПб (в пределах КАД)</p>
+                    </div>
+                  </div>
+                  <div class="place_order-form-item_wrapp_i">
+                    <div class="place_order-form-item_box">
+                      <input type="text" placeholder="Улица">
+                    </div>
+                    <div class="place_order-form-item_box">
+                      <input type="text" placeholder="Дом, корпус, строение">
+                    </div>
+                    <div class="place_order-form-item_box">
+                      <input type="text" placeholder="Квартира / офис">
+                    </div>
+                    <p>По Санкт-Петербургу доставка заказов производится в течение 1-2 рабочих дней с момента соглосования заказа, не считая дня заказа. </p>
+                    <p class="color-red">Стоимость доставки по Санкт-Петербургу (в пределах КАД):</p>
+                    <p>При заказе на сумму до 5000 руб. – <span class="color-red">300 рублей.</span></p>
+                    <p>При заказе на сумму от 5000 руб. – <span class="color-red">бесплатно.</span></p>
+                    <p>Стоимость доставки в удаленные районы города составляет <span class="color-red">– 350 рублей,</span> в независимости от суммы заказа.</p>
+                    <p>Удаленными районами считаются: <span class="color-red">Сестрорецк, Кронштадт, Ломоносов, Петродворец, Красное село, Пушкин, Павловск, Колпино, Всеволожск, Сертолово</span></p>
+                  </div>
+                </div>
+                <div class="place_order-form">
+                  <div class="place_order-form-item place_order-form-item__inner">
+                    <div class="place_order-form-input-wrapp__inner">
+                      <input id="user_sdk" type="radio" name="user_dost">
+                      <label for="user_sdk"></label>
+                    </div>
+                    <div class="place_order-form-item__inner_wrapp_p"><i class="sprite-order sprite-order-i-5"></i>
+                      <p class="place-order-title">Служба доставки СДЭК</p>
+                    </div>
+                    <div class="rang-select rang-select_small">
+                      <select class="select select_small">
+                        <option class="option">Выберете</option>
+                        <option class="option" selected>ПВЗ: На Лиговском 1 </option>
+                        <option class="option">2</option>
+                        <option class="option">3</option>
+                      </select>
+                    </div>
+                  </div>
+                  <p>Обратите внимание! Вы можете выбрать удобный для вас пункт самовывоза, для этого щелкните по выпадающему меню.</p>
+                  <p>Стоимость и сроки доставки зависят от региона и способа доставки! При оформлении заказа, наш менеджер свяжется с Вами, для уточнения способа, стоимости и срока доставки. </p>
+                  <p>Если Вы хотите узнать стоимость доставки до Вашего населенного пункта, перед оформлением заказа, позвоните <span class="color-red">8 800 700-73-80 (звонок по России бесплатный).</span></p>
+                </div>
               </div>
             </main>
           </div>
@@ -570,7 +645,7 @@
       </footer>
       <div class="scroller scroll-top" id="scroller"></div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="static/js/libs.min.js"></script>
     <script src="static/js/main.js"></script>

@@ -24,6 +24,19 @@ $(document).ready(function () {
 	//         }
 	//     }
 	// })
+	/*========================
+	select
+	 =======================*/ 
+	 // $(".property-value").on('click', function() {
+	 // 	$(".jq-selectbox__trigger-arrow").toggleClass("jq-selectbox__trigger-arrow_active");
+	 // });
+
+	// $(function() {
+	//   if($('.select').length > 0) {
+	//   	$('.select').styler();
+	//   }
+
+	// });
 
     /*========================
 	 fixed header
@@ -402,7 +415,15 @@ $(document).ready(function () {
 	});
 });
 
-;$(document).ready(function () {
+// ;$(document).ready(function () {
+(function($) {
+$(function() {
 
+  $('select').styler();
 
 });
+})(jQuery);
+
+// });
+
+

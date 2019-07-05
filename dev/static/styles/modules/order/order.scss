@@ -293,6 +293,55 @@
 	font-weight: 600;
 	color: #212121;
 }
+
+.place_order-form_radio {
+	display: flex;
+	.item-order-radio {
+		margin-right: 35px;
+	}
+	input[type="radio"] {
+	    vertical-align: middle;
+	    font-size: 20px;
+	    line-height: 25px;
+	    margin-right: 10px;
+	    cursor: pointer;
+	    display: none;
+	}
+	label {
+    	position: relative;
+	}
+	input[type="radio"] + label::before {
+	    content: "";
+	    display: inline-block;
+	    vertical-align: middle;
+	    width: 15px;
+	    height: 15px;
+	    margin-right: 10px;
+	    border-radius: 50%;
+	    border: 1px solid rgb(228, 228, 228);
+	}
+	input[type="radio"]:checked + label::after {
+	    content: "";
+	    position: absolute;
+	    margin-top: 7px;
+    	margin-left: 5px;
+	    // top: 50%;
+	    top: 0;
+	    left: 0;
+	    // transform: translate(50%, -50%);
+	    width: 5px;
+	    height: 5px;
+	    border-radius: 50%;
+	    background: #ec2438;
+	}
+	input[type="radio"]:checked + label {
+		text-decoration: underline;
+	}
+}
+
+
+
+
 @media (max-width: 576px) {
 	.place_order-form-item_box {
 		input {

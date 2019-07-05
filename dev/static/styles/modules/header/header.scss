@@ -160,7 +160,7 @@ ul.nav-list {
 	right: 0;
 	box-shadow: 0.469px 2.963px 4px 0px rgba(28, 28, 28, 0.18);
 	background: $white;
-	z-index: 3;
+	z-index: 999;
 	padding: 0;
 	.logo-box-mob {
 		display: block;

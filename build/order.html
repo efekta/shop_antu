@@ -178,7 +178,7 @@
             </aside>
             <main class="main order col-lg-9 col-md-12">
               <h1 class="title">Корзина</h1>
-              <form id="myform">
+              <form class="myform">
                 <div class="row align-items-center order-item">
                   <div class="col-md-2 col-12"><img src="static/images/content/card.png" alt="pic"></div>
                   <div class="col-md-5 col-md-5 col-12"><a class="order__link" href="#">UNO, Гель–краска №005 Red — «Красная»</a></div>
@@ -581,6 +581,56 @@
                   <p>Обратите внимание! Вы можете выбрать удобный для вас пункт самовывоза, для этого щелкните по выпадающему меню.</p>
                   <p>Стоимость и сроки доставки зависят от региона и способа доставки! При оформлении заказа, наш менеджер свяжется с Вами, для уточнения способа, стоимости и срока доставки. </p>
                   <p>Если Вы хотите узнать стоимость доставки до Вашего населенного пункта, перед оформлением заказа, позвоните <span class="color-red">8 800 700-73-80 (звонок по России бесплатный).</span></p>
+                </div>
+                <div class="place_order-form">
+                  <div class="place_order-form-item place_order-form-item__inner">
+                    <div class="place_order-form-input-wrapp__inner">
+                      <input id="user_post" type="radio" name="user_dost">
+                      <label for="user_post"></label>
+                    </div>
+                    <div class="place_order-form-item__inner_wrapp_p"><i class="sprite-order sprite-order-i-6"></i>
+                      <p class="place-order-title">Почта России</p>
+                    </div>
+                  </div>
+                  <p>Доставка "Почтой России" возможна только после полной оплаты заказа! Стоимость доставки "Почтой России" зависит от региона! Наш менеджер обязательно свяжется с Вами по вопросу стоимости и времени доставки. </p>
+                  <p>Если Вы хотите узнать точную стоимость доставки до Вашего населенного пункта перед оформлением заказа, позвоните <a href="tel:+78007007380">8 800 700-73-80.</a></p>
+                </div>
+              </div>
+              <div class="place_order">
+                <h2 class="title">Доставка</h2>
+                <div class="place_order-form">
+                  <div class="place_order-form-item place_order-form-item__inner">
+                    <div class="place_order-form-input-wrapp__inner">
+                      <input id="user_pay" type="radio" name="user_pay">
+                      <label for="user_pay"></label>
+                    </div>
+                    <div class="place_order-form-item__inner_wrapp_p"><i class="sprite-order sprite-order-i-7"></i>
+                      <p class="place-order-title">Наличные</p>
+                    </div>
+                  </div>
+                  <p>Оплата производится наличными курьеру при доставке, при получении заказа в пункте самовывоза или в одном из розничных магазинов «Антураж».</p>
+                  <p>При способе доставки "Почтой России" вам придется дополнительно заплатить комиссию за перевод.</p>
+                </div>
+                <div class="place_order-form">
+                  <div class="place_order-form-item place_order-form-item__inner">
+                    <div class="place_order-form-input-wrapp__inner">
+                      <input id="user_pay_cart" type="radio" name="user_pay">
+                      <label for="user_pay_cart"></label>
+                    </div>
+                    <div class="place_order-form-item__inner_wrapp_p"><i class="sprite-order sprite-order-i-8"></i>
+                      <p class="place-order-title">Банковская карта</p>
+                    </div>
+                  </div>
+                  <div class="place_order-form_radio">
+                    <div class="item-order-radio">
+                      <input id="fixed-input_1" type="radio" name="card" checked>
+                      <label for="fixed-input_1"><span>Оплата картой в пункте самовывоза</span></label>
+                    </div>
+                    <div class="item-order-radio">
+                      <input id="fixed-input_2" type="radio" name="card">
+                      <label for="fixed-input_2"><span>Оплата картой на сайте</span></label>
+                    </div>
+                  </div>
                 </div>
               </div>
             </main>

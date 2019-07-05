@@ -1,6 +1,6 @@
 main.main.order.col-lg-9.col-md-12
 	h1.title Корзина
-	form#myform
+	form.myform
 		.row.align-items-center.order-item
 			.col-md-2.col-12
 				img(src="static/images/content/card.png", alt="pic")
@@ -390,3 +390,44 @@ main.main.order.col-lg-9.col-md-12
 			p Обратите внимание! Вы можете выбрать удобный для вас пункт самовывоза, для этого щелкните по выпадающему меню.
 			p Стоимость и сроки доставки зависят от региона и способа доставки! При оформлении заказа, наш менеджер свяжется с Вами, для уточнения способа, стоимости и срока доставки. 
 			p Если Вы хотите узнать стоимость доставки до Вашего населенного пункта, перед оформлением заказа, позвоните <span class="color-red">8 800 700-73-80 (звонок по России бесплатный).</span>
+
+		.place_order-form
+			.place_order-form-item.place_order-form-item__inner
+				.place_order-form-input-wrapp__inner
+					input#user_post(type="radio", name="user_dost")
+					label(for="user_post")
+				.place_order-form-item__inner_wrapp_p
+					i.sprite-order.sprite-order-i-6
+					p.place-order-title Почта России
+			p Доставка "Почтой России" возможна только после полной оплаты заказа! Стоимость доставки "Почтой России" зависит от региона! Наш менеджер обязательно свяжется с Вами по вопросу стоимости и времени доставки. 
+			p Если Вы хотите узнать точную стоимость доставки до Вашего населенного пункта перед оформлением заказа, позвоните <a href="tel:+78007007380">8 800 700-73-80.</a>
+
+	.place_order
+		h2.title Доставка
+		.place_order-form
+			.place_order-form-item.place_order-form-item__inner
+				.place_order-form-input-wrapp__inner
+					input#user_pay(type="radio", name="user_pay")
+					label(for="user_pay")
+				.place_order-form-item__inner_wrapp_p
+					i.sprite-order.sprite-order-i-7
+					p.place-order-title Наличные
+			p Оплата производится наличными курьеру при доставке, при получении заказа в пункте самовывоза или в одном из розничных магазинов «Антураж».
+			p При способе доставки "Почтой России" вам придется дополнительно заплатить комиссию за перевод.
+		.place_order-form
+			.place_order-form-item.place_order-form-item__inner
+				.place_order-form-input-wrapp__inner
+					input#user_pay_cart(type="radio", name="user_pay")
+					label(for="user_pay_cart")
+				.place_order-form-item__inner_wrapp_p
+					i.sprite-order.sprite-order-i-8
+					p.place-order-title Банковская карта
+			.place_order-form_radio
+				.item-order-radio
+					input#fixed-input_1(type="radio", name="card", checked)
+					label(for="fixed-input_1")
+						span Оплата картой в пункте самовывоза
+				.item-order-radio
+					input#fixed-input_2(type="radio", name="card")
+					label(for="fixed-input_2")
+						span Оплата картой на сайте

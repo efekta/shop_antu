@@ -417,11 +417,11 @@ $(document).ready(function () {
 
 // ;$(document).ready(function () {
 (function($) {
-$(function() {
+	$(function() {
 
-  $('select').styler();
+	  $('select').styler();
 
-});
+	});
 })(jQuery);
 
 // });

@@ -7,25 +7,25 @@ $(document).ready(function () {
     /*====================================
 	календарь в поле ввода 
 	======================================*/
-	// $('#example-show-hide-callbacks').data('datepicker')
-	// $('#example-show-hide-callbacks').datepicker({
-	//     onShow: function(dp, animationCompleted){
-	//         if (!animationCompleted) {
-	//             log('start showing')
-	//         } else {
-	//             log('finished showing')
-	//         }
-	//     },
-	//     onHide: function(dp, animationCompleted){
-	//         if (!animationCompleted) {
-	//             log('start hiding')
-	//         } else {
-	//             log('finished hiding')
-	//         }
-	//     }
-	// })
+	$('#example-show-hide-callbacks').data('datepicker')
+	$('#example-show-hide-callbacks').datepicker({
+	    onShow: function(dp, animationCompleted){
+	        if (!animationCompleted) {
+	            log('start showing')
+	        } else {
+	            log('finished showing')
+	        }
+	    },
+	    onHide: function(dp, animationCompleted){
+	        if (!animationCompleted) {
+	            log('start hiding')
+	        } else {
+	            log('finished hiding')
+	        }
+	    }
+	})
 	// $('.air-js_datapicker').data('datepicker')
-	$('.air-js_datapicker').datepicker([])
+	// $('.air-js_datapicker').datepicker([])
 	/*========================
 	select
 	 =======================*/ 

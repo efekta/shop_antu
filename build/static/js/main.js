@@ -24,6 +24,7 @@ $(document).ready(function () {
 	//         }
 	//     }
 	// })
+	$('.air-js_datapicker').data('datepicker')
 	/*========================
 	select
 	 =======================*/ 

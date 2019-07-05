@@ -11,16 +11,16 @@ $(document).ready(function () {
 	$('#example-show-hide-callbacks').datepicker({
 	    onShow: function(dp, animationCompleted){
 	        if (!animationCompleted) {
-	            log('start showing')
+	            console.log('start showing')
 	        } else {
-	            log('finished showing')
+	            console.log('finished showing')
 	        }
 	    },
 	    onHide: function(dp, animationCompleted){
 	        if (!animationCompleted) {
-	            log('start hiding')
+	            console.log('start hiding')
 	        } else {
-	            log('finished hiding')
+	            console.log('finished hiding')
 	        }
 	    }
 	})

@@ -604,14 +604,13 @@ main.main.order.col-lg-9.col-md-12
 						.place_recipient_textarea-wrapp
 							p Комментарий
 							textarea(name="")
-
-						.place_recipient-check-wrapp
-							input#recipient_check(type="checkbox", name="recipient_check", checked)
-							label(for="recipient_check") Я принимаю <a href="">Условия предоставления услуг</a>
-				.row
-					.col-md-12.btn-recipient-wrapp
-						button.btn.btn-recipient Оформить заказ
-
+						.row
+							.col-md-6
+								.place_recipient-check-wrapp
+									input#recipient_check(type="checkbox", name="recipient_check", checked)
+									label(for="recipient_check") Я принимаю <a href="">Условия предоставления услуг</a>
+							.col-md-6.btn-recipient-wrapp
+								button.btn.btn-recipient Оформить заказ
 				.row
 					.col-md-12
 						.feedback

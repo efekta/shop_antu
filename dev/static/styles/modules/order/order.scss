@@ -461,24 +461,37 @@ button.btn.btn-recipient {
 }
 .feedback {
 	position: relative;
-	padding-top: 25px;
-	padding-left: 20px;
-	padding-bottom: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 125px;
+	padding-left: 30px;
+	margin-top: 30px;
 }
 .feedback:before {
 	content: "";
 	position: absolute;
-	width: 11px;
+	width: 9px;
 	height: 125px;
 	background-color: $red;
 	top: 0;
 	left: 0;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
 }
+
+
 .feedback {
 	a {
 		font-size: 18px;
-		text-decoration: underline;
 		padding-bottom: 5px;
+		border-bottom: 1px solid #212121;
+		&:hover {
+			border-bottom: 1px solid $light-red;
+		}
+	}
+	p {
+		margin-bottom: 0;
 	}
 }
 @media (max-width: 576px) {
@@ -511,7 +524,9 @@ button.btn.btn-recipient {
 	.rang-select_small .jq-selectbox__select {
     	width: 100%;
 	}
-
+	.order-item {
+		text-align: center;
+	}
 }
 
 

@@ -146,6 +146,7 @@
 	label {
 	    position: relative;
 	    cursor: pointer;
+	    margin-bottom: 0;
 	}
 	input[type="radio"] + label::before {
 	    content: "";
@@ -336,6 +337,25 @@
 	}
 	input[type="radio"]:checked + label {
 		text-decoration: underline;
+	}
+}
+
+.place_order-form__links-box a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+	min-width: 155px;
+	min-height: 101px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgba(216, 216, 216, .24);
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+
+	box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.02);
+	&:hover {
+		border-color: rgba(216, 216, 216, 1);
 	}
 }
 

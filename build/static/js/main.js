@@ -1,4 +1,4 @@
-$(document).ready(function () {
+;$(document).ready(function () {
     svg4everybody({});
     /*====================================
 	masked input
@@ -147,7 +147,7 @@ $(document).ready(function () {
 		    $(this).toggleClass("active");
 
 
-		$(this).next().toggleClass('sub-menu_show-on');
+			$(this).next().toggleClass('sub-menu_show-on');
 
 		}
   	});
@@ -241,19 +241,19 @@ $(document).ready(function () {
 		nextText: ""            
 	});
  
-  $('#slider').flexslider({
-    animation: "slide",
-    controlNav: false,
-    animationLoop: false,
-    slideshow: false,
-    sync: "#carousel",
-    prevText: "",           
-	nextText: "" 
-  });
-  lightbox.option({
-      'resizeDuration': 200,
-      'wrapAround': true
-  })
+	$('#slider').flexslider({
+		animation: "slide",
+		controlNav: false,
+		animationLoop: false,
+		slideshow: false,
+		sync: "#carousel",
+		prevText: "",           
+		nextText: "" 
+	});
+	lightbox.option({
+		'resizeDuration': 200,
+		'wrapAround': true
+	})
 
 	/*====================================
 	Рейтинг звезд в карточке товара
@@ -324,19 +324,18 @@ $(document).ready(function () {
 	/*====================================
 	form range page inner
 	======================================*/
-
-        $("#slider-range").slider({
-            range: true,
-            min: 0,
-            max: 3000,
-            values: [0, 3000],
-            slide: function(event, ui) {
-                $("#amount").val(" " + ui.values[0]);
-                $("#amount-max").val(" " + ui.values[1]);
-            }
-        });
-        $("#amount").val(" " + $("#slider-range").slider("values", 0));
-        $("#amount-max").val(" " + $("#slider-range").slider("values", 1));
+    $("#slider-range").slider({
+        range: true,
+        min: 0,
+        max: 3000,
+        values: [0, 3000],
+        slide: function(event, ui) {
+            $("#amount").val(" " + ui.values[0]);
+            $("#amount-max").val(" " + ui.values[1]);
+        }
+    });
+    $("#amount").val(" " + $("#slider-range").slider("values", 0));
+    $("#amount-max").val(" " + $("#slider-range").slider("values", 1));
 
     // Изменение местоположения ползунка при вводиде данных в первый элемент input
     $("input#amount").change(function() {

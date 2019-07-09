@@ -375,7 +375,7 @@ main.main.order.col-lg-9.col-md-12
 					p Стоимость доставки в удаленные районы города составляет <span class="color-red">– 350 рублей,</span> в независимости от суммы заказа.
 					p Удаленными районами считаются: <span class="color-red">Сестрорецк, Кронштадт, Ломоносов, Петродворец, Красное село, Пушкин, Павловск, Колпино, Всеволожск, Сертолово</span>
 			.place_order-form
-				.place_order-form-item.place_order-form-item__inner
+				.place_order-form-item.place_order-form-item__inner.mob_flex_wrap
 					.place_order-form-input-wrapp__inner
 						input#user_sdk(type="radio", name="user_dost")
 						label(for="user_sdk")
@@ -423,7 +423,7 @@ main.main.order.col-lg-9.col-md-12
 					.place_order-form-item__inner_wrapp_p
 						i.sprite-order.sprite-order-i-8
 						p.place-order-title Банковская карта
-				.place_order-form_radio
+				.place_order-form_radio.mob_flex_wrap
 					.item-order-radio
 						input#fixed-input_1(type="radio", name="card", checked)
 						label(for="fixed-input_1")
@@ -610,7 +610,7 @@ main.main.order.col-lg-9.col-md-12
 									input#recipient_check(type="checkbox", name="recipient_check", checked)
 									label(for="recipient_check") Я принимаю <a href="">Условия предоставления услуг</a>
 							.col-md-6.btn-recipient-wrapp
-								button.btn.btn-recipient Оформить заказ
+								button(type="submit").btn.btn-recipient Оформить заказ
 				.row
 					.col-md-12
 						.feedback

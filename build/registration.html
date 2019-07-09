@@ -178,7 +178,32 @@
             </aside>
             <main class="main registration col-lg-9 col-md-12">
               <h1 class="title">Регистрация</h1>
-              <form class="onestep-cart-form"></form>
+              <form class="registration-form">
+                <div class="registration-form__item">
+                  <input type="text" placeholder="Имя и Фамилия">
+                </div>
+                <div class="registration-form__item">
+                  <input type="text" placeholder="Email">
+                </div>
+                <div class="registration-form__item">
+                  <input type="text" placeholder="Пароль">
+                </div>
+                <div class="registration-form__item">
+                  <input type="text" placeholder="Подтвердите пароль">
+                </div>
+                <div class="registration-form__item place_recipient-check-wrapp place_recipient-check-wrapp_mb">
+                  <input id="registration-form_check" type="checkbox" name="registration-form_check" checked>
+                  <label for="registration-form_check">Я принимаю Нажимая на кнопку подтверждения, я принимаю <a href="">условия политики обработки персональных данных </a></label>
+                </div>
+                <div class="registration-form__item">
+                  <div class="registration-form__btn-wrapp">
+                    <button class="btn btn-recipient" type="submit">Зарегестрироваться</button>
+                  </div>
+                  <div class="registration-form__link-wrapp">
+                    <p>Или <a href="">Войдите</a>, если у Вас уже есть аккаунт</p>
+                  </div>
+                </div>
+              </form>
             </main>
           </div>
         </div>

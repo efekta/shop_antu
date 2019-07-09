@@ -1,4 +1,21 @@
 main.main.registration.col-lg-9.col-md-12
 	h1.title Регистрация
-	form.onestep-cart-form
+	form.registration-form
+		.registration-form__item
+			input(type="text", placeholder="Имя и Фамилия")
+		.registration-form__item
+			input(type="text", placeholder="Email")
+		.registration-form__item
+			input(type="text", placeholder="Пароль")
+		.registration-form__item
+			input(type="text", placeholder="Подтвердите пароль")
+		.registration-form__item.place_recipient-check-wrapp.place_recipient-check-wrapp_mb
+			input#registration-form_check(type="checkbox", name="registration-form_check", checked)
+			label(for="registration-form_check") Я принимаю Нажимая на кнопку подтверждения, я принимаю <a href="">условия политики обработки персональных данных </a>
 
+		.registration-form__item
+			.registration-form__btn-wrapp
+				button(type="submit").btn.btn-recipient Зарегестрироваться
+			.registration-form__link-wrapp
+				p Или <a href="">Войдите</a>, если у Вас уже есть аккаунт
+				

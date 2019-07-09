@@ -434,7 +434,8 @@
 .place_recipient-check-wrapp input[type="checkbox"]:checked + label::after {
     content: "";
     position: absolute;
-    top: 50%;
+    // top: 50%;
+    top: 9px;
     left: 0;
     margin-top: 1px;
     margin-left: 2px;
@@ -512,7 +513,7 @@ button.btn.btn-recipient {
 	.jq-selectbox__select {
 		width: auto;
 	}
-	.place_order-form-item__inner {
+	.mob_flex_wrap {
 		flex-wrap: wrap;
 	}
 	.rang-select_small {
@@ -525,6 +526,15 @@ button.btn.btn-recipient {
     	width: 100%;
 	}
 	.order-item {
+		text-align: center;
+	}
+	.btn-recipient-wrapp {
+		margin-top: 20px;
+	}
+	.feedback {
+		margin-top: 20px;
+	}
+	.btn-recipient-wrapp {
 		text-align: center;
 	}
 }

@@ -1,0 +1,33 @@
+.registration-form__item {
+  margin-bottom: 10px;
+}
+.registration-form__item input {
+  border-width: 1.28px;
+  border-color: rgb(228, 228, 228);
+  border-style: solid;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  width: 347.44px;
+  padding: 6px 10px;
+}
+.registration-form__btn-wrapp {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+.registration-form__link-wrapp {
+  display: inline-block;
+  vertical-align: middle;
+  p {
+    margin-bottom: 0;
+  }
+}
+.place_recipient-check-wrapp_mb {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 576px) {
+  .registration-form__btn-wrapp {
+    margin-bottom: 20px;
+  }
+}

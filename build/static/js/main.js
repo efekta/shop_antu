@@ -7,23 +7,23 @@ $(document).ready(function () {
     /*====================================
 	календарь в поле ввода 
 	======================================*/
-	$('#example-show-hide-callbacks').data('datepicker')
-	$('#example-show-hide-callbacks').datepicker({
-	    onShow: function(dp, animationCompleted){
-	        if (!animationCompleted) {
-	            console.log('start showing')
-	        } else {
-	            console.log('finished showing')
-	        }
-	    },
-	    onHide: function(dp, animationCompleted){
-	        if (!animationCompleted) {
-	            console.log('start hiding')
-	        } else {
-	            console.log('finished hiding')
-	        }
-	    }
-	})
+	// $('#example-show-hide-callbacks').data('datepicker')
+	// $('#example-show-hide-callbacks').datepicker({
+	//     onShow: function(dp, animationCompleted){
+	//         if (!animationCompleted) {
+	//             console.log('start showing')
+	//         } else {
+	//             console.log('finished showing')
+	//         }
+	//     },
+	//     onHide: function(dp, animationCompleted){
+	//         if (!animationCompleted) {
+	//             console.log('start hiding')
+	//         } else {
+	//             console.log('finished hiding')
+	//         }
+	//     }
+	// })
 	// $('.air-js_datapicker').data('datepicker')
 	// $('.air-js_datapicker').datepicker([])
 	/*========================
@@ -417,7 +417,7 @@ $(document).ready(function () {
 	});
 });
 
-// ;$(document).ready(function () {
+
 (function($) {
 	$(function() {
 
@@ -426,6 +426,24 @@ $(document).ready(function () {
 	});
 })(jQuery);
 
-// });
 
+;$(document).ready(function () {
+	$('#example-show-hide-callbacks').data('datepicker')
+	$('#example-show-hide-callbacks').datepicker({
+	    onShow: function(dp, animationCompleted){
+	        if (!animationCompleted) {
+	            console.log('start showing')
+	        } else {
+	            console.log('finished showing')
+	        }
+	    },
+	    onHide: function(dp, animationCompleted){
+	        if (!animationCompleted) {
+	            console.log('start hiding')
+	        } else {
+	            console.log('finished hiding')
+	        }
+	    }
+	})
+});
 

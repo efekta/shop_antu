@@ -444,6 +444,43 @@
     border-radius: 50%;
     background: #ec2438;
 }
+.btn-recipient-wrapp {
+	text-align: right;
+}
+button.btn.btn-recipient {
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 9px;
+	background-color: rgb(236, 36, 56);
+	color: $white;
+	padding: 6px 10px;
+	min-width: 151px;
+	&:hover {
+		background: $light-red;
+	}
+}
+.feedback {
+	position: relative;
+	padding-top: 25px;
+	padding-left: 20px;
+	padding-bottom: 25px;
+}
+.feedback:before {
+	content: "";
+	position: absolute;
+	width: 11px;
+	height: 125px;
+	background-color: $red;
+	top: 0;
+	left: 0;
+}
+.feedback {
+	a {
+		font-size: 18px;
+		text-decoration: underline;
+		padding-bottom: 5px;
+	}
+}
 @media (max-width: 576px) {
 	.place_order-form-item_box {
 		input {

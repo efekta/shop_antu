@@ -427,23 +427,23 @@ $(document).ready(function () {
 })(jQuery);
 
 
-;$(document).ready(function () {
-	$('#example-show-hide-callbacks').data('datepicker')
-	$('#example-show-hide-callbacks').datepicker({
-	    onShow: function(dp, animationCompleted){
-	        if (!animationCompleted) {
-	            console.log('start showing')
-	        } else {
-	            console.log('finished showing')
-	        }
-	    },
-	    onHide: function(dp, animationCompleted){
-	        if (!animationCompleted) {
-	            console.log('start hiding')
-	        } else {
-	            console.log('finished hiding')
-	        }
-	    }
-	})
-});
+// ;$(document).ready(function () {
+// 	$('#example-show-hide-callbacks').data('datepicker')
+// 	$('#example-show-hide-callbacks').datepicker({
+// 	    onShow: function(dp, animationCompleted){
+// 	        if (!animationCompleted) {
+// 	            console.log('start showing')
+// 	        } else {
+// 	            console.log('finished showing')
+// 	        }
+// 	    },
+// 	    onHide: function(dp, animationCompleted){
+// 	        if (!animationCompleted) {
+// 	            console.log('start hiding')
+// 	        } else {
+// 	            console.log('finished hiding')
+// 	        }
+// 	    }
+// 	})
+// });
 

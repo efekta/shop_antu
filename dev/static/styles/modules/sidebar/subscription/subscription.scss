@@ -93,15 +93,47 @@ button.btn.btn-subscription {
 		background: $light-red;
 	}
 }
-
+.subscription-form-hide-block-wrapp {
+	position: relative;
+}
+.subscription-form-hide-block {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+	opacity: 0;
+	width: 165px;
+	margin: 15px auto;
+	text-align: center;
+	font-size: 10px;
+	color: #3b3b3b;
+	font-weight: 500;
+	transition: all .3s;
+	p {
+		margin-bottom: 5px;
+		span {
+			border-bottom: 1px solid #3b3b3b;
+		}
+	}
+}
+.subscription-form-hide-block-wrapp:hover .subscription-form-hide-block {
+	opacity: 1;
+	top: 100%;
+}
 
 @media (max-width: 992px) {
 	.subscription-content__desc {
 		width: 43%;
 	}
-	.subscription-input-wrapp, .subscription-input-wrapp input {
-		width: 100%;
+	// .subscription-input-wrapp, .subscription-input-wrapp input {
+	// 	width: 100%;
+	// }
+	.subscription-form-hide-block {
+		position: relative;
+		opacity: 1;
+		top: 100%;
 	}
+
 }
 
 

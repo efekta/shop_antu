@@ -2,17 +2,18 @@
 	margin-bottom: 30px;
 	article {
 		padding: 20px 0;
+		border-bottom: 1px solid #f9f9f9;
 	}
 	span {
 		display: block;
 		margin-bottom: 20px;
-		color: $gray;
+		color: #c2c2c2;
 		font-size: 12px;
 	}
 	a {
 		display: flex;
 		justify-content: space-between;
-		color: $gray;
+		color: #959494;
 		font-size: 14px;
 		&:hover {
 			color: $red;
@@ -21,10 +22,22 @@
 }
 .side-news_svg-ico {
 	position: static;
-	color: $gray;
+	color: #cdcdcd;
 	font-size: 20px;
 }
 .all-side-news a:hover span,
 .all-side-news a:hover svg {
 	color: $red;
+}
+.all-side-news {
+	// padding: 25px 15px;
+	a {
+		padding: 25px 20px 25px 15px;
+		font-weight: 500;
+		color: #212121;
+	}
+	span {
+		margin-bottom: 0;
+		color: #212121;
+	}
 }

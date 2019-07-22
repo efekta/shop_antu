@@ -50,11 +50,13 @@
 //Accordion
 .accrodion-menu .menu-list li {
 	position: relative;
+	border-bottom: 1px solid #f9f9f9;
 }
 .accrodion-menu .menu-list li a {
 	position: relative;
 	padding: 10px 15px 10px 35px;
 	display: flex;
+	border-bottom: 1px solid #f9f9f9;
 	i {
 	    position: absolute;
 	    top: 50%;

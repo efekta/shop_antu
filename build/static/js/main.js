@@ -1,5 +1,9 @@
 ;$(document).ready(function () {
     svg4everybody({});
+    $('#myTab a').on('click', function (e) {
+	  e.preventDefault()
+	  $(this).tab('show')
+	})
     /*====================================
 	masked input
 	======================================*/

@@ -135,7 +135,7 @@
 	    background-position: -98px -44px;
 	}
 	.card-popular {
-		margin-bottom: 55px;
+		margin-bottom: 30px;
 	}
 	.card-popular input {
 	    display: inline-block;
@@ -436,6 +436,82 @@
 .item-card-carousel__hit_pink {
 	background-color: #f22572;
 }
+
+.page-item-card {
+	.order-page-form {
+	    position: relative;
+	    width: 125px;
+	    height: 25px;
+	    line-height: 100%;
+	    display: flex;
+	    align-items: center;
+	    justify-content: space-between;
+	}
+	.order-page-form .order-input-box_result {
+	    position: relative;
+	    text-align: right;
+	    margin-left: 35px;
+	}
+	.page-item-card .card-popular input.qty {
+		min-width: 41.44px;
+  		height: 19.44px;
+		border-width: 1.28px;
+		border-color: rgb(228, 228, 228);
+		border-style: solid;
+		border-radius: 8px;
+		background-color: rgb(255, 255, 255);
+	}
+	.card-order span {
+		margin-bottom: 10px;
+	}
+	.old-price {
+		position: relative;
+	}
+	.card-old-price, .card-order {
+		text-align: right;
+	}
+	.card-old-price span {
+		padding: 3px 8px;
+		color: #fff;
+		border-radius: 3px;
+		background-color: rgb(236, 36, 56);
+		text-decoration: line-through;
+	}
+	.card-old-price {
+		margin-bottom: 15px;
+	}
+}
+
+.card-popular_discount {
+	display: inline-block;
+	border-width: 1px;
+	border-color: rgb(236, 36, 56);
+	border-style: solid;
+	border-radius: 4px;
+	padding: 3px 10px;
+	margin-bottom: 30px;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #212121;
+    background-color: #fff;
+    border-color: none;
+    border-bottom: 1px solid #212121;
+}
+.nav-tabs {
+	border-bottom: 0;
+	margin-bottom: 55px;
+}
+.nav-tabs .nav-link {
+    border: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.nav-tabs .nav-item {
+    margin-bottom: 0;
+}
+
+
 @media (max-width: 992px) {
 	.item-card-slider {
 		margin-bottom: 20px;

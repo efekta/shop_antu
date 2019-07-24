@@ -31,5 +31,34 @@
 							span.form-box_result_num 1
 					.modal-main-content-pic
 						img(src="../static/images/content/gross-modal.png", alt="pic")
-			.modal-footer
+			.modal-footer.flex-wrap
 				button.btn.recently-watched-btn(type='submit') Купить
+
+
+#exampleModalCenter_2.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle_2', aria-hidden='true')
+	.modal-dialog.modal-dialog-centered(role='document')
+		.modal-content
+			.modal-header
+				h5#exampleModalCenterTitle_2.modal-title Сообщить о поступлении товара
+				button.close(type='button', data-dismiss='modal', aria-label='Close')
+					span(aria-hidden='true')
+						i.fal.fa-times
+			.modal-body.pb-0
+				.modal-main-content
+					form.modal-main-content-form
+						.modal-form-item
+							p <span class="necessarily">*</span>Ваш e-mail
+							.input-wrapp
+								input(type="text")
+						.modal-form-item
+							p Актуальность
+							.select-wrapp
+								select
+									option 360 дней
+									option 180 дней
+									option 90 дней
+			.modal-footer.flex-wrap
+				.button-wrap
+					button.btn.modal-btn(type='submit') Уведомить меня
+				.necessarily-box
+					p <span class="necessarily">*</span>— Обязательно к заполнению

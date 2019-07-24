@@ -284,10 +284,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-5 inner-card-popular">
-                  <div class="row">
+                <div class="col-lg-5 inner-card-popular out_of_stock">
+                  <div class="row flex-nowrap">
                     <div class="col-lg-6">
-                      <div class="card-popular_discount">Выгода 200 &#8381;</div>
                       <div class="card-popular">
                         <div class="myform-box order-page-form">
                           <div class="order-input-box order-input-box_result">
@@ -303,48 +302,9 @@
                         <button class="btn btn-card-like" type="submit">Добавить в избранное</button>
                       </div>
                     </div>
-                    <div class="col-lg-6 old-price">
-                      <div class="card-old-price"><span>850 &#8381;</span></div>
-                      <div class="card-order"><span>490 &#8381;</span>
-                        <button class="btn btn-order" type="button">Купить</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <div class="pickup-address">
-                        <p>Самовывоз в<span>6 магазинах</span></p>
-                        <h3>Санкт-Петербург</h3>
-                        <ul>
-                          <li><a href="">ТЦ "Нарва" Ленинский пр-т.</a><span>4 шт.</span></li>
-                          <li><a href="">ТЦ "Миллер" Комендантский пр-т.</a><span>20 шт.</span></li>
-                          <li><a href="">ТРК "Балканский" Купчино</a><span>300 шт.</span></li>
-                          <li><a href="">ТЦ "Заневский каскад" Ладожская</a><span>8 шт.</span></li>
-                        </ul>
-                        <h3>Москва</h3>
-                        <ul>
-                          <li><a href="">БЦ "Нижегородский" </a><span>0 шт.</span></li>
-                          <li><a href="">ТРК "Принц Плаза"</a><span>30 шт.</span></li>
-                        </ul>
-                        <h3>Доставка курьером</h3>
-                        <div class="pickup-address__data"><span>18.08.2018 г.</span><span>300 р.</span></div>
-                        <h3>Доставка по России</h3>
-                        <ul>
-                          <li><a href="">Почта Росии</a><span>от 200 р</span></li>
-                          <li><a href="">СДЭК</a><span>от 400 р</span></li>
-                        </ul>
-                        <div class="pickup-address__pay">
-                          <h3>Оплата</h3>
-                          <ul>
-                            <li><a href=""><span>Наличные</span><i class="far fa-money-bill"></i></a></li>
-                            <li><a href=""><span>Безналичная оплата	</span><i class="far fa-credit-card"></i></a></li>
-                            <li><a href=""> <span>Электронные деньги</span><i class="far fa-money-bill"></i></a></li>
-                            <li><a href=""><span>Оплата с мобильного</span><i class="fas fa-mobile-alt"></i></a></li>
-                            <li><a href=""><span>Терминалы оплаты</span><i class="far fa-mobile-android-alt"></i></a></li>
-                            <li><a href=""><span>Бонусная программа Антураж</span><i class="fas fa-gift"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
+                    <div class="col-lg-6 of_stock"><span>Нет в наличии</span>
+                      <button class="btn btn-stock" type="button" data-toggle="modal" data-target="#exampleModalCenter_2">Сообщить о поступлении</button>
+                      <button class="btn btn-order" type="button">Купить</button>
                     </div>
                   </div>
                 </div>
@@ -548,8 +508,48 @@
                 <div class="modal-main-content-pic"><img src="../static/images/content/gross-modal.png" alt="pic"></div>
               </div>
             </div>
-            <div class="modal-footer">
+            <div class="modal-footer flex-wrap">
               <button class="btn recently-watched-btn" type="submit">Купить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModalCenter_2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle_2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle_2">Сообщить о поступлении товара</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fal fa-times"></i></span></button>
+            </div>
+            <div class="modal-body pb-0">
+              <div class="modal-main-content">
+                <form class="modal-main-content-form">
+                  <div class="modal-form-item">
+                    <p><span class="necessarily">*</span>Ваш e-mail</p>
+                    <div class="input-wrapp">
+                      <input type="text">
+                    </div>
+                  </div>
+                  <div class="modal-form-item">
+                    <p>Актуальность</p>
+                    <div class="select-wrapp">
+                      <select>
+                        <option>360 дней</option>
+                        <option>180 дней</option>
+                        <option>90 дней</option>
+                      </select>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer flex-wrap">
+              <div class="button-wrap">
+                <button class="btn modal-btn" type="submit">Уведомить меня</button>
+              </div>
+              <div class="necessarily-box">
+                <p><span class="necessarily">*</span>— Обязательно к заполнению</p>
+              </div>
             </div>
           </div>
         </div>

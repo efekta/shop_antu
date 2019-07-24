@@ -108,10 +108,9 @@ main.main.page-item-card.col-lg-9.col-md-12
 								p Aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
 								p Ged ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt dlearo explicabo. consequuntur magni dolores eos.
 
-		.col-lg-5.inner-card-popular
-			.row
+		.col-lg-5.inner-card-popular.out_of_stock
+			.row.flex-nowrap
 				.col-lg-6
-					.card-popular_discount Выгода 200 &#8381;
 					.card-popular
 						.myform-box.order-page-form
 							div.order-input-box.order-input-box_result
@@ -127,78 +126,11 @@ main.main.page-item-card.col-lg-9.col-md-12
 					.card-popular-like
 						span
 						button.btn.btn-card-like(type="submit") Добавить в избранное
-				.col-lg-6.old-price
-					.card-old-price
-						span 850 &#8381;
-					.card-order
-						span 490 &#8381;
+				.col-lg-6.of_stock
+						span Нет в наличии
+						button.btn.btn-stock(type="button", data-toggle="modal", data-target="#exampleModalCenter_2") Сообщить о поступлении
 						button.btn.btn-order(type="button") Купить
-			.row
-				.col-lg-12
-					.pickup-address
-						p Самовывоз в
-							span 6 магазинах
-						h3 Санкт-Петербург
-						ul
-							li
-								a(href="") ТЦ "Нарва" Ленинский пр-т.
-								span 4 шт.
-							li
-								a(href="") ТЦ "Миллер" Комендантский пр-т.
-								span 20 шт.
-							li
-								a(href="") ТРК "Балканский" Купчино
-								span 300 шт.
-							li
-								a(href="") ТЦ "Заневский каскад" Ладожская
-								span 8 шт.
-						h3 Москва
-						ul
-							li
-								a(href="") БЦ "Нижегородский" 
-								span 0 шт.
-							li
-								a(href="") ТРК "Принц Плаза"
-								span 30 шт.
-						h3 Доставка курьером
-						div.pickup-address__data
-							span 18.08.2018 г.
-							span 300 р.
-						h3 Доставка по России
-						ul
-							li
-								a(href="") Почта Росии
-								span от 200 р
-							li
-								a(href="") СДЭК
-								span от 400 р
-						div.pickup-address__pay
-							h3 Оплата
-							ul
-								li
-									a(href="")
-										span Наличные
-										i.far.fa-money-bill
-								li
-									a(href="")
-										span Безналичная оплата	
-										i.far.fa-credit-card
-								li
-									a(href="") 
-										span Электронные деньги
-										i.far.fa-money-bill
-								li
-									a(href="")
-										span Оплата с мобильного
-										i.fas.fa-mobile-alt
-								li
-									a(href="")
-										span Терминалы оплаты
-										i.far.fa-mobile-android-alt
-								li
-									a(href="")
-										span Бонусная программа Антураж
-										i.fas.fa-gift
+
 	.row
 		.col-md-12
 			.item-card-carousel-wrapp
@@ -319,10 +251,3 @@ main.main.page-item-card.col-lg-9.col-md-12
 							button(type="submit").btn.recently-watched-btn Купить
 						.recently-watched-have
 							span В наличии
-
-
-
-
-
-
-

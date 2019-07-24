@@ -2,6 +2,7 @@
 <p><a href="https://efekta.github.io/shop_antu/build/index.html">Главная</a></p>
 <p><a href="https://efekta.github.io/shop_antu/build/faq.html">Faq</a></p>
 <p><a href="https://efekta.github.io/shop_antu/build/card.html">Карточка товара</a></p>
+<p><a href="https://efekta.github.io/shop_antu/build/inner-card.html">Нет в наличии</a></p>
 <p><a href="https://efekta.github.io/shop_antu/build/actions.html">Акции</a></p>
 <p><a href="https://efekta.github.io/shop_antu/build/blog.html">Блог</a></p>
 <p><a href="https://efekta.github.io/shop_antu/build/delivery.html">Доставка</a></p>

@@ -96,7 +96,57 @@
 	width: 50%;
 	text-align: center;
 }
+.modal-title {
+	font-size: 18px;
+	font-weight: 400;
+	color: #212121;	
+}
 
+.modal-btn {
+  border-radius: 8px;
+  background-color: rgb(236, 36, 56);
+  width: 135px;
+  height: 30px;
+  color: $white;
+}
+
+.necessarily {
+	color: $red;
+}
+.modal-body .input-wrapp input {
+  border-width: 1.28px;
+  border-color: rgb(228, 228, 228);
+  border-style: solid;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  min-width: 357.44px;
+  padding: 2px 10px;
+  min-height: 19px;
+}
+.modal-body .select-wrapp select {
+  border-width: 1.28px;
+  border-color: rgb(228, 228, 228);
+  border-style: solid;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  width: 132.44px;
+  padding: 2px 10px;
+
+}
+.modal-body .jq-selectbox__select::before {
+	display: none;
+}
+
+.modal-form-item {
+	margin-bottom: 15px;
+}
+.button-wrap {
+	margin-bottom: 25px;
+}
+.button-wrap, .necessarily-box {
+	display: block;
+	width: 100%;
+}
 @media (max-width: 768px) {
 	.modal-main-content {
 		flex-wrap: wrap;

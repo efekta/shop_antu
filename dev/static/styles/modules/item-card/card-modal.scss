@@ -96,6 +96,9 @@
 	width: 50%;
 	text-align: center;
 }
+.modal-main-content-form.w100 {
+	width: 100%;
+}
 .modal-title {
 	font-size: 18px;
 	font-weight: 400;
@@ -136,7 +139,9 @@
 .modal-body .jq-selectbox__select::before {
 	display: none;
 }
-
+.modal-body .jq-selectbox__select {
+	line-height: 19px;
+}
 .modal-form-item {
 	margin-bottom: 15px;
 }

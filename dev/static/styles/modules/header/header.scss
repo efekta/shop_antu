@@ -81,10 +81,12 @@
 	}
 	span {
 		padding-left: 7px;
-		color: $red;
 	}
 	a {
 		display: block;
+	}
+	.card-box-desc {
+		color: $red;
 	}
 }
 
@@ -259,7 +261,7 @@ ul.nav-list {
     // top: 70px;
     // left: 0;
     // right: 0;
-    background: $white;
+    background: #fbfbfb;
     // position: fixed;
     // top: 205px;
     // left: 0;

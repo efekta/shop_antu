@@ -61,7 +61,10 @@
 		}
 	}
 }
-
+.main-page-faq .faq__accordion-box a.color-red {
+	color: $red;
+	border-bottom: 1px solid $red;
+}
 @media (max-width: 992px) {
 .accordion-box-fancy {
 	.accordion-box-fancy__item  {

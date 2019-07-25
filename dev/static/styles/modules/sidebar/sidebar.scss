@@ -2,7 +2,7 @@
 	width: 100%;
 	// padding: 15px;
 	.tabs {
-		margin-bottom: 10px;
+		// margin-bottom: 10px;
 	}
 	.tab {
 		position: relative;
@@ -75,7 +75,7 @@
 	right: 0;
 	transform: translateY(-50%);
 	font-size: 24px;
-	color: $base-color-font;
+	color: #c9c9c9;
 }
 
 
@@ -94,10 +94,9 @@
   	width: 310px;
   	min-height: 300px;
   	padding: 30px 0;
-  	overflow-y: scroll;
     position: absolute;
     top: 0;
-    right: -300px;
+    right: -310px;
     background: #fff;
     box-shadow: 3px 0px 4px 0px rgba(28, 28, 28, 0.21);
     border-radius: 6px;
@@ -109,23 +108,7 @@
 	visibility: visible;
 }
 
-.hover-sub-menu::-webkit-scrollbar-track
-{
-	border-radius: 12px;
-	background-color: transparent;
-}
 
-.hover-sub-menu::-webkit-scrollbar
-{
-	width: 8px;
-	background-color: transparent;
-}
-
-.hover-sub-menu::-webkit-scrollbar-thumb
-{
-	border-radius: 12px;
-	background-color: $light-red;
-}
 
 .menu-list__item_color-red:hover > a {
 	color: $red;
@@ -336,7 +319,26 @@
 	.side-news {
 		display: none;
 	}
+	.hover-sub-menu {
+  		overflow-y: scroll;
+  	}
+	.hover-sub-menu::-webkit-scrollbar-track
+	{
+		border-radius: 12px;
+		background-color: transparent;
+	}
 
+	.hover-sub-menu::-webkit-scrollbar
+	{
+		width: 8px;
+		background-color: transparent;
+	}
+
+	.hover-sub-menu::-webkit-scrollbar-thumb
+	{
+		border-radius: 12px;
+		background-color: $light-red;
+	}
 }
 
 

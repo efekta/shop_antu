@@ -1,6 +1,11 @@
 .recently-watched-list__item {
 	margin-bottom: 20px;
 	text-align: center;
+	padding-top: 15px;
+
+}
+.text-bold {
+	font-weight: 600;
 }
 button.btn.recently-watched-btn {
 	display: block;
@@ -17,6 +22,7 @@ button.btn.recently-watched-btn {
 .recently-watched__sum {
 	color: $red;
 	font-size: 14px;
+	font-weight: 600;
 }
 .recently-watched-content {
 	margin-bottom: 30px;
@@ -52,7 +58,6 @@ button.btn.recently-watched-btn {
 }
 .recently-watched__order {
 	display: flex;
-	justify-content: space-between;
 	flex-wrap: nowrap;
 	input {
 		display: inline-block;

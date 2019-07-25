@@ -2,6 +2,7 @@
 	display: block;
 	text-align: center;
 	margin-bottom: 20px;
+	font-weight: 600;
 }
 .popular-product-list__link:hover {
 	color: inherit;
@@ -16,7 +17,7 @@
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 .popular-product-price span {
 	position: relative;
@@ -43,7 +44,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 35px;
+	margin: 30px 35px 15px 35px;
 	&:before {
 		content: "";
 		position: absolute;
@@ -52,18 +53,27 @@
 		background: url('../images/icons/spritesheet.png');
 	    background-repeat: no-repeat;
 	    display: block;
-	    width: 42px;
-	    height: 42px;
+	    width: 45px;
+	    height: 45px;
 	    background-position: -7px -101px;
 	    transform: translateY(-50%);
 	}
 	p {
-		width: 65%;
+		// width: 65%;
 		font-size: 18px;
 		margin-bottom: 0;
+		padding-left: 115px;	
+	}
+	span {
+		color: $red;
+		border-bottom: 1px solid $red;
 	}
 }
-
+.box.recently-watched {
+	.box__title-wrapp {
+		padding-bottom: 30px;
+	}
+}
 
 @media (max-width: 992px) { 
 

@@ -1,17 +1,19 @@
 .actions {
 	color: #212121;
 	h1 {
-		font-weight: 500;
+		font-weight: 600;
 	}
 	p {
-		font-size: 14px;
+		font-size: 12px;
 		margin-bottom: 30px;
+		line-height: 20px;
 	}
 	.acticle-content-wrapp {
 		h2 {
 			color: $red;
 			text-transform: uppercase;
 			font-size: 14px;
+			font-weight: 600;
 			margin-bottom: 15px;
 		}
 		.acticle-content {
@@ -19,6 +21,7 @@
 		}
 		h3 {
 			font-size: 12px;
+			font-weight: 600;
 			text-transform: uppercase;
 			color: $red;
 			margin-bottom: 20px;
@@ -28,9 +31,10 @@
 			margin-bottom: 15px;
 		}
 		span {
-			font-weight: 500;
+			font-weight: 600;
 			color: #171717;
 			margin-bottom: 10px;
+			display: block;
 		}
 	}
 	.actions-mb {
@@ -43,26 +47,52 @@
 	.actions-items .recently-watched__order span:after {
 	    content: "";
 	    position: absolute;
-	    top: 7px;
+	    top: 4px;
 	    right: 0;
-	    background: url('../images/icons/spritesheet.png');
+	    // background: url('../images/icons/spritesheet.png');
+	    background: url('../images/icons/action-like.png');
 	    background-repeat: no-repeat;
 	    display: block;
-	    width: 11px;
-	    height: 11px;
-	    background-position: -98px -44px;
+	    width: 15px;
+	    height: 15px;
+	    // background-position: -98px -44px;
 	}
 
 	button.btn-like:hover {
 		background: transparent;
 	}
 	.card-carousel__desc p {
-		font-size: 12px;
+		font-size: 11px;
+		line-height: 12px;
 		margin-bottom: 5px;
 	}
 
 }
-
+.Actions {
+	.recently-watched__order input {
+		border-width: 1.638px;
+		border-color: rgb(228, 228, 228);
+		border-style: solid;
+		border-radius: 10px;
+		background-color: rgb(255, 255, 255);
+		width: 45.724px;
+		height: 17.724px;
+		text-align: center;
+	}
+	button.btn.recently-watched-btn {
+		border-radius: 10px;
+		background-color: rgb(236, 36, 56);
+		width: 63px;
+		height: 21px;
+		line-height: 19px;
+		padding-top: 0;
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+	.recently-watched-have {
+		font-size: 10px;
+	}
+}
 // .item-card-carousel__item .item-card-carousel__hit {
 //     left: 15px;
 // }

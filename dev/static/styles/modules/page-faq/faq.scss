@@ -1,4 +1,7 @@
 .main-page-faq {
+	font-family: 'Lato Regular';
+	// line-height: 10.25px;
+	color: #212121;
 	.page-faq {
 		margin-bottom: 45px;
 	}
@@ -8,8 +11,9 @@
 	}
 	.faq__accordion-box a {
 		display: inline-block;
-		border-bottom: 1px solid $base-color-font;
+		border-bottom: 1px solid #212121;
 		margin-bottom: 10px;
+		color: #212121;
 		&:hover {
 			color: $light-red;
 			border-bottom: 1px solid $light-red;

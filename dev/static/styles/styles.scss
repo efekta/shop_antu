@@ -149,22 +149,29 @@ input {
 }
 .title {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 30px;
+  color: #212121;
+  font-family: 'Century Gothic';
+  line-height: 30px;
 }
 .sub-title {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
+  font-family: 'Century Gothic';
+  line-height: 27px;
 }
 .subtitle {
   color: $red;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
+  font-family: 'Century Gothic';
 }
 .title_inner {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 18px;
   margin-bottom: 30px;
+  font-family: 'Century Gothic';
 }
 .btn.focus, .btn:focus {
   box-shadow: none;

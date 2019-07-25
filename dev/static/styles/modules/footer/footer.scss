@@ -13,7 +13,7 @@ footer {
 	width: 50%;
 }
 .footer-list {
-	padding-top: 30px;
+	padding-top: 22px;
 }
 .footer-list__link span {
 	display: block;
@@ -25,11 +25,12 @@ footer {
 	font-weight: 600;
 }
 .footer-list__item {
-	margin: 0 0 15px 0;
+	margin: 0 0 6px 0;
 }
 
 .footer__item_text-right {
 	text-align: right;
+
 }
 
 
@@ -39,6 +40,8 @@ footer {
 	display: flex;
 	justify-content: center;
 	text-align: center;
+	padding-top: 35px;
+	margin-bottom: 20px;
 	.footer-list__item {
 		margin-left: 7px;
 	}
@@ -46,8 +49,16 @@ footer {
 .footer-logo {
 	padding: 0 30px;
 	text-align: center;
+	text-transform: uppercase;
 	img {
 		padding-bottom: 10px;
+	}
+	p {
+		font-size: 8px;
+		margin-bottom: 0;
+	}
+	span {
+		font-size: 8px;
 	}
 }
 @media (max-width: 992px) { 

@@ -27,6 +27,9 @@
 	color: $red;
 	font-size: 14px;
 	font-weight: 600;
+	span {
+		font-weight: 400;
+	}
 }
 .contacts__day {
 	text-align: center;
@@ -257,45 +260,12 @@ ul.nav-list {
 }
 .page-nav-mob {
     width: 100%;
-    // position: absolute;
-    // top: 70px;
-    // left: 0;
-    // right: 0;
     background: #fbfbfb;
-    // position: fixed;
-    // top: 205px;
-    // left: 0;
-    // right: 0;
     transition: all .3s ease;
-    // display: none;
-    // z-index: 3;
 }
-// .page-nav {
-//     height: 475px;
-//     overflow-y: scroll;
-//     padding: 45px 15px;
-// }
-
-// .bottom-header_fixed .nav {
-// 	text-align: center;
-// }
-// .card-box_fixed {
-// 	position: fixed;
-// 	top: 15px;
-// 	right: 2%;
-// 	z-index: 4;
-// 	margin-bottom: 0;
-// 	text-align: left;
-// 	span.card-box-desc {
-// 		display: none;
-// 	}
-// }
-// .logo-link_fixed {
-// 	position: fixed;
-// 	top: 15px;
-// 	left: 2%;
-// 	z-index: 4;
-// }
+.user-enter {
+	color: $red;
+}
 
 
 

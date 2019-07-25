@@ -1,5 +1,6 @@
 .subscription {
 	margin-bottom: 30px;
+	font-family: 'Proxima Nova Regular';
 }
 .subscription-content {
 	position: relative;
@@ -18,11 +19,15 @@
 }
 .subscription-content__title {
 	font-size: 19px;
+	font-family: 'Proxima Nova Bold';
+	color: #3b3b3b;
 }
 .subscription-content__desc {
 	width: 70%;
 	margin: 0 auto;
 	font-size: 12px;
+	font-family: 'Proxima Nova Regular';
+	color: #3b3b3b;
 }
 
 .subscription-circle {
@@ -32,7 +37,7 @@
   border-radius: 50%;
   background-color: rgb(236, 36, 56);
   opacity: 0.99;
-  box-shadow: -1.545px 4.755px 0px 0px rgba(28, 28, 28, 0.1);
+  box-shadow: -0.545px 2.755px 0px -1px rgba(28, 28, 28, 0.1);
   position: absolute;
   top: 0;
   right: 0;
@@ -73,8 +78,10 @@
 	padding: 5px 10px 5px 25px;
 	background-color: transparent;
 	border: none;
+	width: 100%;
+	color: #4d4d4d;
 }
-
+.subscription-input-wrapp input::placeholder {color: #4d4d4d; font-weight: 400; font-family: 'Proxima Nova Regular';}
 
 
 
@@ -110,7 +117,7 @@ button.btn.btn-subscription {
 	font-weight: 500;
 	transition: all .3s;
 	p {
-		margin-bottom: 5px;
+		margin-bottom: 3px;
 		span {
 			border-bottom: 1px solid #3b3b3b;
 		}

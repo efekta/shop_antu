@@ -9,9 +9,9 @@
 }
 button.btn.recently-watched-btn {
 	display: block;
-	min-width: 71px;
-	padding: 3px 10px;
-	border-radius: 6px;
+	// min-width: 71px;
+	// padding: 3px 10px;
+	// border-radius: 6px;
 	background: $red;
 	color: $white;
 	&:hover {
@@ -34,12 +34,13 @@ button.btn.recently-watched-btn {
 	text-align: left;
 	span {
 		position: relative;
-		width: 100%;
+		// width: 100%;
 		display: inline-block;
 		padding-left: 10px;
 		color: $green;
+		font-size: 10px;
 		// text-decoration: underline;
-		// border-bottom: 1px solid $green;
+		border-bottom: 1px solid $green;
 		&:before {
 			content: "";
 			position: absolute;
@@ -59,22 +60,34 @@ button.btn.recently-watched-btn {
 .recently-watched__order {
 	display: flex;
 	flex-wrap: nowrap;
-	input {
+	.recently-watched__order-wrapp input {
 		display: inline-block;
-		padding: 3px;
+		padding: 0 3px;
 		border-width: 1px;
 		border-color: rgb(228, 228, 228);
 		border-style: solid;
 		border-radius: 6px;
 		background-color: rgb(255, 255, 255);
 		width: 41px;
-		min-height: 26px;
+		height: 22px;
+		text-align: center;
 	}
+
 	span {
 		display: inline-block;
 		margin: 0 5px;
 	}
 }
+button.btn.recently-watched-btn {
+  border-radius: 6px;
+  background-color: rgb(236, 36, 56);
+
+  width: 71px;
+  height: 24px;
+
+}
+
+
 .box__title-wrapp {
 	// margin-bottom: 30px;
 }
@@ -129,7 +142,11 @@ button.btn.recently-watched-btn {
 	display: block;
 }
 
-
+.index-page {
+	button.btn.recently-watched-btn {
+		margin-bottom: 0;
+	}
+}
 @media (max-width: 992px) {
 	.recently-watched-have {
 		text-align: center;

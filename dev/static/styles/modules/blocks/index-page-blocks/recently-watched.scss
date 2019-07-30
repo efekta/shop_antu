@@ -59,6 +59,7 @@ button.btn.recently-watched-btn {
 }
 .recently-watched__order {
 	display: flex;
+	// justify-content: center;
 	flex-wrap: nowrap;
 	.recently-watched__order-wrapp input {
 		display: inline-block;
@@ -146,6 +147,17 @@ button.btn.recently-watched-btn {
 	button.btn.recently-watched-btn {
 		margin-bottom: 0;
 	}
+}
+.recently-watched__order, .recently-watched-have {
+	margin-left: 40px;
+
+	text-align: left;
+}
+.recently-watched__order-wrapp {
+	margin-right: 20px;
+}
+button.btn.recently-watched-btn {
+	margin-bottom: 0;
 }
 @media (max-width: 992px) {
 	.recently-watched-have {

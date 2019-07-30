@@ -1,5 +1,17 @@
 .page-item-card {
-
+	.title_inner {
+		margin-bottom: 60px;
+	}
+	.item-card-content {
+		margin-bottom: 15px;
+		p {
+			margin-bottom: 5px;
+		}
+	}
+	.item-card-stars {
+		margin-top: 25px;
+	}
+	color: #212121;
 	.slider-for {
 		margin-bottom: 50px;
 	}
@@ -96,7 +108,7 @@
 	}
 	
 	.card-list-wrapp {
-		padding-top: 30px;
+		// padding-top: 30px;
 	}
 	.card-list-wrapp ul {
 		display: flex;
@@ -249,15 +261,18 @@
 
 	//item-card-carousel
 	.item-card-carousel-wrapp {
-		// border-width: 2px;
-		// border-color: $red;
-		// border-style: solid;
-		// border-radius: 6px;
-		// padding: 15px 30px;
+		border-width: 2px;
+		border-color: $red;
+		border-style: solid;
+		border-radius: 6px;
+		padding: 15px 30px;
 	}
 	h3 {
 		font-size: 14px;
 		margin-bottom: 15px;
+		text-align: center;
+		font-weight: 600;
+		color: #212121;
 	}
 	.item-card-carousel__item {
 		position: relative;
@@ -367,11 +382,11 @@
 
 .item-card-carousel {
 	position: relative;
-	border-width: 2px;
-	border-color: $red;
-	border-style: solid;
-	border-radius: 6px;
-	padding: 15px 30px;
+	// border-width: 2px;
+	// border-color: $red;
+	// border-style: solid;
+	// border-radius: 6px;
+	// padding: 15px 30px;
 	.slider-svg-ico {
 		position: absolute;
 		top: 50%;
@@ -534,7 +549,43 @@
 		}
 	}
 }
-
+.pickup-address {
+	color: #212121;
+	h3 {
+		font-size: 12px;
+		color: #212121;
+		text-align: left;
+	}
+}
+.page-item-card {
+	ul {
+		li {
+			span {
+				font-weight: 600;
+			}
+		}
+	}
+}
+.inner-card-content {
+	p {
+		color: #8d8d8d;
+		margin-bottom: 5px;
+	}
+}
+.item-card-carousel-wrapp {
+	color: #3b3b3b;
+}
+.card-list-wrapp {
+	a {
+		padding: 0;
+		margin: 5px;
+	}
+}
+.pickup-address {
+	ul {
+		margin-bottom: 20px;
+	}
+}
 @media (max-width: 992px) {
 	.item-card-slider {
 		margin-bottom: 20px;

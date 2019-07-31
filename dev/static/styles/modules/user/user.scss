@@ -1,6 +1,8 @@
 button.btn.btn-user-tab {
   display: inline-block;
-  padding: 10px 15px;
+  width: 109px;
+  height: 34px;
+  // padding: 10px 15px;
   border: 1px solid $red;
   color: $red;
   border-radius: 6px;
@@ -10,6 +12,8 @@ button.btn.btn-user-tab {
     background: $red;
   }
 }
+
+
 button.btn.btn-user-tab.tab-active {
   color: $white;
   background: $red;
@@ -92,12 +96,19 @@ button.btn.btn-editing {
 .table-status-order {
   border-radius: 6px;
   background-color: $red;
-  min-width: 85px;
+  // min-width: 85px;
   color: $white;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
-  padding: 3px 10px;
+  // padding: 3px 10px;
+  width: 85px;
+  height: 23px;
+  line-height: 23px;
+}
+
+.user .tab-items form .user-input.user-textarea {
+  margin-bottom: 0;
 }
 .table-status-order_green {
   background-color: #34d55e;

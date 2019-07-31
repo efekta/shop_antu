@@ -8,8 +8,10 @@
   border-radius: 8px;
   background-color: rgb(255, 255, 255);
   width: 347.44px;
-  padding: 6px 10px;
+  height: 25.44px;
+  padding: 0 10px;
 }
+
 .registration-form__btn-wrapp {
   display: inline-block;
   vertical-align: middle;
@@ -18,13 +20,32 @@
 .registration-form__link-wrapp {
   display: inline-block;
   vertical-align: middle;
+ 
   p {
     margin-bottom: 0;
+  }
+  a {
+    margin: 0 3px;
+     text-decoration: underline;
   }
 }
 .place_recipient-check-wrapp_mb {
   margin-bottom: 30px;
 }
+button.btn.btn-registration {
+  display: inline-block;
+  vertical-align: middle;
+  color: #ffffff;
+  padding: 0 10px;
+  border-radius: 13px;
+  background-color: rgb(236, 36, 56);
+  width: 165px;
+  height: 30px;
+  &:hover {
+    background: $light-red;
+  }
+}
+
 
 @media (max-width: 576px) {
   .registration-form__btn-wrapp {

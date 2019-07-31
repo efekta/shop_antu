@@ -142,14 +142,16 @@ button.btn.recently-watched-btn {
 	height: auto;
 	display: block;
 }
-
+.recently-watched-have span:hover {
+	border-bottom: none;
+}
 .index-page {
 	button.btn.recently-watched-btn {
 		margin-bottom: 0;
 	}
 }
 .recently-watched__order, .recently-watched-have {
-	margin-left: 40px;
+	margin-left: 28px;
 
 	text-align: left;
 }
@@ -170,3 +172,4 @@ button.btn.recently-watched-btn {
 		margin-bottom: 20px;
 	}
 }
+

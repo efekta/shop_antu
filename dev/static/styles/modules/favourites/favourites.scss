@@ -13,6 +13,12 @@
 			color: $red;
 		}
 	}
+	.recently-watched__order-wrapp {
+		margin-right: 0;
+	}
+	.recently-watched__order, .recently-watched-have {
+		margin-left: 25px;
+	}
 }
 .favourites__sort {
 	display: flex;

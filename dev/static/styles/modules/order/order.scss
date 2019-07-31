@@ -1,3 +1,11 @@
+.Order-page {
+	.recently-watched__order-wrapp {
+		margin-right: 0;
+	}
+	.place_order-form-item {
+		margin-bottom: 5px;
+	}
+}
 .order {
 	color: #3b3b3b;
 }
@@ -74,8 +82,9 @@
 	background-color: rgb(255, 255, 255);
 	width: 535.44px;
 	height: 39.44px;
-
 }
+
+
 .coupon-code {
 	background: transparent;
 	border: none;
@@ -98,6 +107,10 @@
 		color: $white;
 	}
 }
+input.coupon-code::-webkit-input-placeholder { color: #3b3b3b; font-size: 12px; }
+input.coupon-code:-ms-input-placeholder { color: #3b3b3b; font-size: 12px; }
+input.coupon-code::-ms-input-placeholder { color: #3b3b3b; font-size: 12px; }
+input.coupon-code::placeholder { color: #3b3b3b; font-size: 12px; } 
 
 .total-desc {
 	font-size: 14px;
@@ -124,15 +137,18 @@
 	margin-bottom: 30px;
 	p {
 		font-size: 12px;
-		color: #3b3b3b;
-		font-weight: 500;
+		color: #212121;
 
 	}
 }
 
-// .place_order {
-// 	padding-top: 70px;
-// }
+.place_order {
+	// padding-top: 70px;
+	color: #272727;
+	.title {
+		font-weight: 400;
+	}
+}
 .place_order-form-item {
 
 	input[type="radio"] {
@@ -186,9 +202,12 @@
 		border-radius: 8px;
 		background-color: rgb(255, 255, 255);
 		width: 347.44px;
-		padding: 6px 10px;
+		height: 25.44px;
+		padding: 0 10px;
 	}
 }
+
+
 .place_order-form-item_wrapp {
 	padding-top: 30px;
 }
@@ -204,6 +223,8 @@
 		p {
 			margin-bottom: 0;
 			padding-left: 45px;
+			color: #272727;
+			line-height: 17px;
 		}
 		.sprite-order {
 			position: absolute;
@@ -289,7 +310,7 @@
 .color-red {
 	color: $light-red;
 }
-.place-order-title {
+.place_order-form-item__inner .place_order-form-item__inner_wrapp_p p.place-order-title {
 	font-size: 12px;
 	font-weight: 600;
 	color: #212121;
@@ -454,12 +475,16 @@ button.btn.btn-recipient {
 	border-radius: 9px;
 	background-color: rgb(236, 36, 56);
 	color: $white;
-	padding: 6px 10px;
-	min-width: 151px;
+	padding: 0 10px;
+	height: 31px;
+	width: 151px;
+	line-height: 28.04px;
 	&:hover {
 		background: $light-red;
 	}
 }
+
+
 .feedback {
 	position: relative;
 	display: flex;
@@ -472,7 +497,7 @@ button.btn.btn-recipient {
 .feedback:before {
 	content: "";
 	position: absolute;
-	width: 9px;
+	width: 7px;
 	height: 125px;
 	background-color: $red;
 	top: 0;
@@ -483,10 +508,13 @@ button.btn.btn-recipient {
 
 
 .feedback {
+	color: #212121;
 	a {
 		font-size: 18px;
 		padding-bottom: 5px;
 		border-bottom: 1px solid #212121;
+		font-weight: 600;
+		color: #212121;
 		&:hover {
 			border-bottom: 1px solid $light-red;
 		}

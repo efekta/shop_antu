@@ -422,13 +422,21 @@ input.coupon-code::placeholder { color: #3b3b3b; font-size: 12px; }
 	}
 	.place_recipient_textarea-wrapp {
 		textarea {
-			width: 100%;
+
 			padding: 20px;
-			min-height: 68px;
+
 			margin-bottom: 20px;
+
+			border-style: solid;
+			border-width: 1px;
+			border-color: rgb(228, 228, 228);
+			background-color: rgb(251, 251, 251);
+			width: 828px;
+  			min-height: 69px;
 		}
 	}
 }
+
 .place_recipient-check-wrapp input[type="checkbox"] {
     margin-right: 10px;
     cursor: pointer;
@@ -521,6 +529,14 @@ button.btn.btn-recipient {
 	}
 	p {
 		margin-bottom: 0;
+	}
+}
+@media (max-width: 992px) {
+	.place_recipient_textarea-wrapp {
+		textarea {
+			width: 100%;
+
+		}
 	}
 }
 @media (max-width: 576px) {

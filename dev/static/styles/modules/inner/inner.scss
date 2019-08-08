@@ -1,4 +1,7 @@
 .Inner-page {
+	.page-item-card {
+		flex-wrap: nowrap;
+	}
 	.tab_content {
 		display: none;
 	}
@@ -61,7 +64,8 @@
 }
 .form-inner-wrapp {
 	background: #fbfbfb;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
+	padding: 20px;
 }
 .page-item_inner {
 	margin-bottom: 40px;
@@ -70,32 +74,74 @@
 	display: block;
 	margin-bottom: 20px;
 }
+
+
 .form-inner__checkbox-icon {
 	input[type="checkbox"] {
-	    width: 25px;
-	    height: 25px;
+	    // width: 25px;
+	    // height: 25px;
 	    vertical-align: middle;
-	    font-size: 20px;
-	    line-height: 25px;
-	    margin-right: 10px;
+	    // font-size: 20px;
+	    // line-height: 25px;
+	    margin-right: 5px;
 	    cursor: pointer;
 	    display: none;
+	    // background: $white;
+
+	}
+	input[type="checkbox"] + label {
+		position: relative;
+		padding-left: 20px;
 	}
 	input[type="checkbox"] + label::before {
+		// position: absolute;
+		// top: 0;
+		// left: 0;
+	    width: 19px;
+	    height: 20px;
+	    content: '';
+	    display: inline-block;
+	    vertical-align: middle;
+	    margin-right: 5px;
+	    font-size: 12px;
+	    border-radius: 50%;
+	}
+	input[type="checkbox"] + label::after {
 	    width: 12px;
 	    height: 12px;
 	    content: '';
 	    display: inline-block;
 	    vertical-align: middle;
-	    margin-right: 10px;
+	    margin-right: 30px;
 	    font-size: 12px;
 	    border-radius: 50%;
+	    background: #fff;
 	}
 	input[type="checkbox"]:checked + label::before {
 		font-size: 16px;
 		width: 16px;
 		height: 16px;
 	}
+}
+.form-inner__checkbox-icon input[type="checkbox"] + label::after {
+	width: 14px;
+	height: 15px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-width: 1px;
+	border-color: rgb(251, 251, 251);
+	border-style: solid;
+	border-radius: 3px;
+	background-color: rgb(255, 255, 255);
+}
+.form-inner__checkbox-icon input[type="checkbox"]:checked + label::after {
+	content: '\2713';
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    font-size: 15px;
+    color: #f3f3f3;
+    text-align: center;
+    line-height: 15px;
 }
 
 
@@ -284,5 +330,9 @@ button.btn.btn-inner_red {
 		    text-align: center;
 		}
 	}
-	
+	.Inner-page {
+		.page-item-card {
+			flex-wrap: wrap;
+		}
+	}
 }

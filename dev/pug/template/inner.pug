@@ -24,6 +24,22 @@ html(lang="ru-RU")
 				.container
 					.content-wrapper.row
 						include ../modules/sidebar/sidebar
+						.col-lg-9
+							.inner-wrapp
+								nav(aria-label="breadcrumb")
+									ol.breadcrumb
+										li.breadcrumb-item
+											a(href="") Все для ногтей, волос и тела
+										li.breadcrumb-item
+											a(href="") Гель-лаки
+										li.breadcrumb-item.active(aria-current="page") Цветные гель-лаки «UNO»
+
+								.favourites__sort-list
+											span Вид:
+											a(href="").favourites__icon.favourites__view_4
+												i.fas.fa-th
+											a(href="").favourites__icon.favourites__view_1
+												i.fas.fa-align-justify
 						include ../pages/inner/inner
 
 			include ../modules/footer/footer

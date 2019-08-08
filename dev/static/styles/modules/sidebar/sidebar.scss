@@ -1,5 +1,6 @@
 .sidebar {
 	width: 100%;
+
 	// padding: 15px;
 	.tabs {
 		// margin-bottom: 10px;
@@ -279,6 +280,8 @@
 #nav-icon.header-burger-menu.menu-gamburger.menu-gamburger-sidebar.open span:nth-child(1) {
 	// left: 60px;
 }
+
+
 @media screen and (max-width: 1024px) and (min-width: 320px) { 
 	.hover-sub-menu {
 		position: static;
@@ -341,7 +344,30 @@
 	}
 }
 
-
+.sidebar-catalog {
+	#nav-icon span {
+	    display: block;
+	    position: absolute;
+	    height: 3px;
+	    // width: 100%;
+	    width: 16px;
+	    // background: $red;
+	    background: $white;
+	    transform: rotate(0deg);
+	    transition: .25s ease-in-out;
+	    color: $red;
+	}
+	#nav-icon.open span:nth-child(1) {
+	    transform: rotate(45deg);
+	    top: 17px;
+	    left: 0;
+	}
+	#nav-icon.open span:nth-child(3) {
+	    transform: rotate(-45deg);
+	    top: 28px;
+	    left: 0;
+	}
+}
 
 @media (max-width: 578px) {
 	.sidebar {

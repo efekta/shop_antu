@@ -93,6 +93,18 @@
 		font-size: 10px;
 	}
 }
+
+
+.actions>p {
+
+	font-size: 14px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid rgb(249, 249, 249);
+}
+.acticle-content-wrapp {
+	padding: 30px 0;
+	border-bottom: 1px solid rgb(249, 249, 249);
+}
 // .item-card-carousel__item .item-card-carousel__hit {
 //     left: 15px;
 // }
@@ -101,5 +113,8 @@
 		.acticle-content-wrapp {
 			text-align: center;
 		}
+	}
+	.actions>p {
+		width: 100%;
 	}
 }

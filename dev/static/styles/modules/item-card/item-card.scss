@@ -283,7 +283,7 @@
 			background-color: $red;
 			position: absolute;
 			top: 0;
-			left: 15px;
+			left: 0;
 			width: 35px;
 			height: 35px;
 			display: flex;
@@ -587,12 +587,25 @@
 		margin-bottom: 20px;
 	}
 }
+.page-item-card .item-card-carousel__item {
+	border-width: 4.915px;
+	border-color: rgb(251, 251, 251);
+	border-style: solid;
+	border-radius: 7px;
+	background-color: rgb(255, 255, 255);
+	margin: 0 15px 0 0;
+	// padding: 0;
+	padding-bottom: 15px;
+}
 @media (max-width: 992px) {
 	.item-card-slider {
 		margin-bottom: 20px;
 	}
 	.card-popular-like {
 		margin-bottom: 20px;
+	}
+	.page-item-card .item-card-carousel__item {
+		margin: 15px;
 	}
 }
 

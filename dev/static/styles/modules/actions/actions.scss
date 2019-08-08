@@ -108,6 +108,14 @@
 // .item-card-carousel__item .item-card-carousel__hit {
 //     left: 15px;
 // }
+.Actions {
+	.recently-watched__order {
+		padding: 0;
+	}
+	.recently-watched-have {
+		padding: 0;
+	}
+}
 @media (max-width: 992px) {
 	.actions {
 		.acticle-content-wrapp {

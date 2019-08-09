@@ -19,6 +19,9 @@
 	.recently-watched__order, .recently-watched-have {
 		margin-left: 25px;
 	}
+	.actions-items.page-item-card > .row {
+		flex-wrap: nowrap;
+	}
 }
 .favourites__sort {
 	display: flex;
@@ -80,4 +83,23 @@ button.btn.btn-like  {
 	display: inline-block;
 	color: $red;
 	background: transparent;
+}
+.favourites {
+	.recently-watched__order {
+		padding: 0;
+	}
+	.recently-watched-have {
+		padding: 0;
+	}
+}
+.favourites .recently-watched__order, .favourites .recently-watched-have {
+	margin-left: 0;
+}
+
+@media (max-width: 992px) { 
+	.favourites {
+		.actions-items.page-item-card > .row {
+			flex-wrap: wrap;
+		}
+	}
 }

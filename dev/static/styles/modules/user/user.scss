@@ -13,6 +13,10 @@ button.btn.btn-user-tab {
   }
 }
 
+.User-page .table__item {
+  // padding-bottom: 15px;
+  border-bottom: 1px solid rgb(249, 249, 249);
+}
 
 button.btn.btn-user-tab.tab-active {
   color: $white;

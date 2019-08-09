@@ -1,7 +1,15 @@
+.recently-watched-list {
+	flex-wrap: nowrap;
+}
 .recently-watched-list__item {
 	margin-bottom: 20px;
 	text-align: center;
 	padding-top: 15px;
+	padding-bottom: 15px;
+	border-width: 3px;
+    border-color: #fbfbfb;
+    border-style: solid;
+    margin-right: 15px;
 
 }
 .text-bold {
@@ -173,6 +181,9 @@ button.btn.recently-watched-btn {
 	}
 	.page-item-card .item-card-carousel__item {
 		margin-bottom: 20px;
+	}
+	.recently-watched-list {
+		flex-wrap: wrap;
 	}
 }
 

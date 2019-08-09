@@ -1,7 +1,19 @@
+.popular-product-list {
+	flex-wrap: nowrap;
+}
+.popular-product-list__item {
+	border-width: 3px;
+    border-color: #fbfbfb;
+    border-style: solid;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    min-height: 240px;
+}
 .popular-product-list__link {
 	display: block;
 	text-align: center;
-	margin-bottom: 20px;
+	// margin-bottom: 20px;
 	font-weight: 600;
 }
 .popular-product-list__link:hover {
@@ -37,6 +49,11 @@
 }
 .popular-product-price {
 	color: $red;
+	padding: 7px 0;
+	background: #fbfbfb;
+	position: absolute;
+	left: 0;
+	right: 0;
 }
 
 .programm-lid {
@@ -44,7 +61,9 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 30px 35px 15px 35px;
+	margin-top: 30px;
+	padding: 15px 35px 15px 35px;
+	background: #fbfbfb;
 	&:before {
 		content: "";
 		position: absolute;
@@ -76,7 +95,20 @@
 }
 
 @media (max-width: 992px) { 
-
+	.popular-product-list {
+		flex-wrap: wrap;
+	}
+	.popular-product-list__item {
+		margin: 0;
+		margin-bottom: 15px;
+	}
+	.programm-lid {
+		padding: 0;
+		margin-bottom: 20px;
+	}
+	.programm-lid p {
+		padding-left: 75px;
+	}
 }
 
 

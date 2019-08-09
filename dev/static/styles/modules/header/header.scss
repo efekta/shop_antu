@@ -47,6 +47,7 @@
 		height: 25px;
 		border: 1px solid rgb(194, 194, 194);
 		border-radius: 6px;
+		padding: 0 10px;
 	}
 }
 
@@ -72,6 +73,7 @@
 	position: relative;
 	margin-bottom: 15px;
 	padding-left: 28px;
+	text-align: left;
 	&:before {
 		content: "";
 		position: absolute;
@@ -104,6 +106,7 @@
 .favorites {
 	position: relative;
 	padding-left: 20px;
+	margin-left: 20px;
 	&:before {
 		content: "";
 		position: absolute;
@@ -131,7 +134,7 @@
 		// justify-content: space-around;
 		&__link {
 			display: block;
-			padding: 15px;
+			padding: 7px 15px;
 			text-transform: uppercase;
 			&:hover {
 				color: $light-red;

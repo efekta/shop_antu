@@ -205,7 +205,14 @@ input:-ms-input-placeholder { color: #959494; font-size: 12px; }
 input::-ms-input-placeholder { color: #959494; font-size: 12px; }
 input::placeholder { color: #959494; font-size: 12px; } 
 
-
+.index-page {
+  .subtitle {
+    color: $red;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Century Gothic';
+  }
+}
 @media screen and (max-width: 1024px) and (min-width: 320px) {
   #scroller {
       position: fixed;

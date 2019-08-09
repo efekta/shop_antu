@@ -111,6 +111,8 @@
 		$(".user-tabs .tab").removeClass("tab-active ").eq($(this).index()).addClass("tab-active");
 		$(".tab-items").hide().eq($(this).index()).fadeIn()
 	}).eq(0).addClass("tab-active ");
+
+
 	/*====================================
 	Main Components Menu Sidebar Acordion
 	======================================*/

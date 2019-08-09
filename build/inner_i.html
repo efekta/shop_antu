@@ -2,7 +2,7 @@
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
-    <title>Inner</title>
+    <title>Inner-i</title>
     <meta http-equiv="X-UA-Compatible" content="IE = edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&amp;display=swap" rel="stylesheet"><!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
   </head>
-  <body class="Inner-page">
+  <body class="Inner-page-i">
     <div class="wrapper">
       <header class="header">
         <div class="top-header">
@@ -197,10 +197,25 @@
               </div>
             </div>
             <main class="main col-lg-12 col-md-12">
-              <div class="form-inner-wrapp">
-                <form>
-                  <div class="row">
-                    <div class="col-lg-2 col-md-4 col-12">
+              <div class="row">
+                <div class="col-md-3 menu-left">
+                  <ul>
+                    <li class="item-title">Гель-лаки</li>
+                    <li><a href="">Базы, топы, праймеры <span>(24)</span></a></li>
+                    <li><a href="">Цветные гель-лаки "UNO"  <span>(247)</span></a></li>
+                    <li><a href="">Термо гель-лаки "UNO" <span>(32)</span></a></li>
+                    <li><a href="">Гель-лаки UNO "Кошачий глаз" <span>(53)</span></a></li>
+                    <li><a href="">Цветные гель-лаки "Uno Lux" <span>(105)</span></a></li>
+                    <li><a href="">Цветные гель-лаки "Perfect Match"  <span>(24)</span></a></li>
+                    <li><a href="">Термо гель-лаки "LeChat" <span>(8)</span></a></li>
+                    <li><a href="">Стойкий лак с эффектом геля "Nina Ultra Pro" <span>(63)</span></a></li>
+                    <li><a href="">Биогели "Nobility" <span>(7)</span></a></li>
+                    <li><a href="">Материалы для гель-лака <span>(24)</span></a></li>
+                  </ul>
+                </div>
+                <div class="col-md-9">
+                  <div class="form-inner-wrapp">
+                    <form>
                       <div class="form-inner__item"><span class="form-inner-title">Основные цвета</span>
                         <div class="form-inner__checkbox form-inner__checkbox-icon">
                           <input type="checkbox" id="white">
@@ -252,11 +267,9 @@
                         </div>
                         <div class="form-inner__checkbox form-inner__checkbox-icon">
                           <input type="checkbox" id="pink">
-                          <label for="pink">Розовые						</label>
+                          <label for="pink">Розовые</label>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-12">
                       <div class="form-inner__item form-inner__item_checkbox-no"><span class="form-inner-title">Эффект</span>
                         <div class="form-inner__checkbox form-inner__checkbox-icon">
                           <input type="checkbox" id="i1">
@@ -295,8 +308,6 @@
                           <label for="i5">Без эффекта</label>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-12">
                       <div class="form-inner__item form-inner__item_checkbox-no"><span class="form-inner-title">Коллекция</span>
                         <div class="form-inner__checkbox form-inner__checkbox-icon">
                           <input type="checkbox" id="i6">
@@ -335,8 +346,6 @@
                           <label for="i14">Цветные</label>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-12">
                       <div class="form-inner__item"><span class="form-inner-title">Оттенки</span>
                         <div class="form-inner__checkbox form-inner__checkbox-icon">
                           <input type="checkbox" id="pearl">
@@ -371,8 +380,6 @@
                           <label for="cuprum">Медные</label>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-12">
                       <div class="form-inner__item"><span class="form-inner-title">Тон</span>
                         <div class="form-inner__checkbox form-inner__checkbox-icon">
                           <input type="checkbox" id="light">
@@ -387,28 +394,15 @@
                           <label for="dark">Темный</label>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-12">
-                      <div class="rang">
-                        <div class="range__item"> 
-                          <label>от</label>
-                          <input type="text" id="amount">
+                      <div class="row">
+                        <div class="col-md-12 df-end">
+                          <button class="btn btn-inner" type="reset">Сбросить</button>
+                          <button class="btn btn-inner btn-inner_red" type="submit">Показать</button>
                         </div>
-                        <div class="range__item">
-                          <label>до</label>
-                          <input type="text" id="amount-max"><span>&#8381;</span>
-                        </div>
-                        <div id="slider-range"></div>
                       </div>
-                    </div>
+                    </form>
                   </div>
-                  <div class="row">
-                    <div class="col-md-12 df-end">
-                      <button class="btn btn-inner" type="reset">Сбросить</button>
-                      <button class="btn btn-inner btn-inner_red" type="submit">Показать</button>
-                    </div>
-                  </div>
-                </form>
+                </div>
               </div>
               <div class="row page-item-card">
                 <div class="col-md-3 item-card-carousel__item">
@@ -430,7 +424,7 @@
                     <button class="btn recently-watched-btn" type="submit">Купить</button>
                     <button class="btn btn-like" type="submit"><span></span></button>
                   </div>
-                  <div class="recently-watched-have"><span>В наличии</span></div>
+                  <div class="recently-watched-have"><span>В наличии					</span></div>
                 </div>
                 <div class="col-md-3 item-card-carousel__item">
                   <div class="item-card-carousel__hit"><span>Хит!</span></div>

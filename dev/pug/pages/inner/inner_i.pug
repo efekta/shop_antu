@@ -1,8 +1,31 @@
 main.main.col-lg-12.col-md-12
-	.form-inner-wrapp
-		form
-			.row
-				.col-lg-2.col-md-4.col-12
+	.row
+		.col-md-3.menu-left
+			ul
+				li.item-title Гель-лаки
+				li
+					a(href="") Базы, топы, праймеры <span>(24)</span>
+				li
+					a(href="") Цветные гель-лаки "UNO"  <span>(247)</span>
+				li
+					a(href="") Термо гель-лаки "UNO" <span>(32)</span>
+				li
+					a(href="") Гель-лаки UNO "Кошачий глаз" <span>(53)</span>
+				li
+					a(href="") Цветные гель-лаки "Uno Lux" <span>(105)</span>
+				li
+					a(href="") Цветные гель-лаки "Perfect Match"  <span>(24)</span>
+				li
+					a(href="") Термо гель-лаки "LeChat" <span>(8)</span>
+				li
+					a(href="") Стойкий лак с эффектом геля "Nina Ultra Pro" <span>(63)</span>
+				li
+					a(href="") Биогели "Nobility" <span>(7)</span>
+				li
+					a(href="") Материалы для гель-лака <span>(24)</span>
+		.col-md-9
+			.form-inner-wrapp
+				form
 					.form-inner__item
 						span.form-inner-title Основные цвета
 						.form-inner__checkbox.form-inner__checkbox-icon
@@ -43,9 +66,8 @@ main.main.col-lg-12.col-md-12
 							label(for="purple") Фиолетовые
 						.form-inner__checkbox.form-inner__checkbox-icon
 							input(type="checkbox")#pink
-							label(for="pink") Розовые						
+							label(for="pink") Розовые
 
-				.col-lg-2.col-md-4.col-12
 					.form-inner__item.form-inner__item_checkbox-no
 						span.form-inner-title Эффект
 						.form-inner__checkbox.form-inner__checkbox-icon
@@ -76,7 +98,6 @@ main.main.col-lg-12.col-md-12
 							input(type="checkbox")#i5
 							label(for="i5") Без эффекта
 
-				.col-lg-2.col-md-4.col-12
 					.form-inner__item.form-inner__item_checkbox-no
 						span.form-inner-title Коллекция
 						.form-inner__checkbox.form-inner__checkbox-icon
@@ -107,7 +128,6 @@ main.main.col-lg-12.col-md-12
 							input(type="checkbox")#i14
 							label(for="i14") Цветные
 
-				.col-lg-2.col-md-4.col-12
 					.form-inner__item
 						span.form-inner-title Оттенки
 						.form-inner__checkbox.form-inner__checkbox-icon
@@ -135,7 +155,6 @@ main.main.col-lg-12.col-md-12
 							input(type="checkbox")#cuprum
 							label(for="cuprum") Медные
 
-				.col-lg-2.col-md-4.col-12
 					.form-inner__item
 						span.form-inner-title Тон
 						.form-inner__checkbox.form-inner__checkbox-icon
@@ -147,23 +166,10 @@ main.main.col-lg-12.col-md-12
 						.form-inner__checkbox.form-inner__checkbox-icon
 							input(type="checkbox")#dark
 							label(for="dark") Темный
-
-				.col-lg-2.col-md-4.col-12
-					.rang
-						.range__item 
-							label от
-							input(type="text")#amount
-						.range__item
-							label до
-							input(type="text")#amount-max
-							span &#8381;
-						#slider-range
-
-			.row
-				.col-md-12.df-end
-					button(type='reset').btn.btn-inner Сбросить
-					button(type='submit').btn.btn-inner.btn-inner_red Показать
-
+					.row
+						.col-md-12.df-end
+							button(type='reset').btn.btn-inner Сбросить
+							button(type='submit').btn.btn-inner.btn-inner_red Показать
 	.row.page-item-card
 		.col-md-3.item-card-carousel__item
 			.item-card-carousel__hit
@@ -189,7 +195,7 @@ main.main.col-lg-12.col-md-12
 				button(type="submit").btn.btn-like
 					span
 			.recently-watched-have
-				span В наличии
+				span В наличии					
 		.col-md-3.item-card-carousel__item
 			.item-card-carousel__hit
 				span Хит!
@@ -265,9 +271,6 @@ main.main.col-lg-12.col-md-12
 					span
 			.recently-watched-have
 				span В наличии
-	
-
-
 	nav(aria-label="Page navigation example")
 		ul.pagination
 			li.page-item.disabled

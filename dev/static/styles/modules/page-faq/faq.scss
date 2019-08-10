@@ -2,9 +2,7 @@
 	font-family: 'Lato Regular';
 	// line-height: 10.25px;
 	color: #212121;
-	.page-faq {
-		margin-bottom: 45px;
-	}
+
 
 	.sub-title {
 		margin-bottom: 20px;
@@ -65,6 +63,14 @@
 	color: $red;
 	border-bottom: 1px solid $red;
 }
+.main-page-faq .page-faq {
+	padding-bottom: 15px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid rgb(249, 249, 249);
+}
+
+
+
 @media (max-width: 992px) {
 .accordion-box-fancy {
 	.accordion-box-fancy__item  {

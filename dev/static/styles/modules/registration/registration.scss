@@ -15,7 +15,7 @@
 .registration-form__btn-wrapp {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 20px;
+  margin-right: 5px;
 }
 .registration-form__link-wrapp {
   display: inline-block;
@@ -45,7 +45,12 @@ button.btn.btn-registration {
     background: $light-red;
   }
 }
-
+.registration-form__item.place_recipient-check-wrapp.place_recipient-check-wrapp_mb a {
+  border-bottom: 1px solid #272727;
+  &:hover {
+    border-bottom: 1px solid $red;
+  }
+}
 
 @media (max-width: 576px) {
   .registration-form__btn-wrapp {

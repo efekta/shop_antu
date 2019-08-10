@@ -5,7 +5,7 @@ main.main.order.col-lg-9.col-md-12
 			.row.align-items-center.order-item
 				.col-md-2.col-12
 					img(src="static/images/content/card.png", alt="pic")
-				.col-md-5.col-md-5.col-12
+				.col-md-4.col-12
 					a.order__link(href="#") UNO, Гель–краска №005 Red — «Красная»
 				.col-md-2.col-3
 					.myform-box.order-page-form
@@ -23,8 +23,8 @@ main.main.order.col-lg-9.col-md-12
 				.col-md-1.col-3
 					a(href="")
 						img(src="static/images/icons/action-like.png", alt="pic")
-				.col-md-1.col-3
-					span 360 &#8381;
+				.col-md-2.col-3
+					span.value-price 360 &#8381;
 				.col-md-1.col-3
 					a.order_clear__link(href="")
 						i.fal.fa-times
@@ -32,7 +32,7 @@ main.main.order.col-lg-9.col-md-12
 			.row.align-items-center.order-item
 				.col-md-2.col-12
 					img(src="static/images/content/card.png", alt="pic")
-				.col-md-5.col-12
+				.col-md-4.col-12
 					a.order__link(href="#") UNO, Гель–краска №005 Red — «Красная»
 				.col-md-2.col-3
 					.myform-box.order-page-form
@@ -50,8 +50,8 @@ main.main.order.col-lg-9.col-md-12
 				.col-md-1.col-3
 					a(href="")
 						img(src="static/images/icons/action-like.png", alt="pic")
-				.col-md-1.col-3
-					span 360 &#8381;
+				.col-md-2.col-3
+					span.value-price 360 &#8381;
 				.col-md-1.col-3
 					a.order_clear__link(href="")
 						i.fal.fa-times
@@ -59,7 +59,7 @@ main.main.order.col-lg-9.col-md-12
 			.row.align-items-center.order-item
 				.col-md-2.col-12
 					img(src="static/images/content/card.png", alt="pic")
-				.col-md-5.col-12
+				.col-md-4.col-12
 					a.order__link(href="#") UNO, Гель–краска №005 Red — «Красная»
 				.col-md-2.col-3
 					.myform-box.order-page-form
@@ -77,8 +77,8 @@ main.main.order.col-lg-9.col-md-12
 				.col-md-1.col-3
 					a(href="")
 						img(src="static/images/icons/action-like.png", alt="pic")
-				.col-md-1.col-3
-					span 360 &#8381;
+				.col-md-2.col-3
+					span.value-price 360 &#8381;
 				.col-md-1.col-3
 					a.order_clear__link(href="")
 						i.fal.fa-times
@@ -320,7 +320,7 @@ main.main.order.col-lg-9.col-md-12
 			.place_order-form
 				.place_order-form-item.place_order-form-item__inner
 					.place_order-form-input-wrapp__inner
-						input#user_registr(type="radio", name="user_registr", checked)
+						input#user_registr(type="checkbox", name="user_registr", checked)
 						label(for="user_registr") 
 					.place_order-form-item__inner_wrapp_p
 						i.sprite-order.sprite-order-i-1
@@ -328,14 +328,14 @@ main.main.order.col-lg-9.col-md-12
 
 				.place_order-form-item.place_order-form-item__inner
 					.place_order-form-input-wrapp__inner
-						input#user_registr_mail(type="radio", name="user_registr")
+						input#user_registr_mail(type="checkbox", name="user_registr")
 						label(for="user_registr_mail")
 					.place_order-form-item__inner_wrapp_p
 						i.sprite-order.sprite-order-i-2-png
 						p Подписка на email рассылку. Всегда свежие интересные статьи из мира Nail.
 		.place_order
 			h2.title Доставка
-			.place_order-form
+			.place_order-form.polosa
 				.place_order-form-item.place_order-form-item__inner
 					.place_order-form-input-wrapp__inner
 						input#user_dost(type="radio", name="user_dost", checked)
@@ -353,7 +353,7 @@ main.main.order.col-lg-9.col-md-12
 				p Самовывоз в г. Санкт-Петербурге осуществляется <a class="place_order-form__link" href="">бесплатно</a> в розничных магазинах компании Антураж. В случае наличия товара на складе магазина, самовывоз может быть осуществлен в тот-же день. 
 				p В ином случае, формирование заказа для самовывоза займет от 1 до 2 дней. 
 				p Срок хранения заказа на пункте самовывоза до 3-х дней.
-			.place_order-form
+			.place_order-form.polosa
 				.place_order-form-item.place_order-form-item__inner
 					.place_order-form-input-wrapp__inner
 						input#user_sam(type="radio", name="user_dost")
@@ -374,7 +374,7 @@ main.main.order.col-lg-9.col-md-12
 					p При заказе на сумму от 5000 руб. – <span class="color-red">бесплатно.</span>
 					p Стоимость доставки в удаленные районы города составляет <span class="color-red">– 350 рублей,</span> в независимости от суммы заказа.
 					p Удаленными районами считаются: <span class="color-red">Сестрорецк, Кронштадт, Ломоносов, Петродворец, Красное село, Пушкин, Павловск, Колпино, Всеволожск, Сертолово</span>
-			.place_order-form
+			.place_order-form.polosa
 				.place_order-form-item.place_order-form-item__inner.mob_flex_wrap
 					.place_order-form-input-wrapp__inner
 						input#user_sdk(type="radio", name="user_dost")
@@ -392,7 +392,7 @@ main.main.order.col-lg-9.col-md-12
 				p Стоимость и сроки доставки зависят от региона и способа доставки! При оформлении заказа, наш менеджер свяжется с Вами, для уточнения способа, стоимости и срока доставки. 
 				p Если Вы хотите узнать стоимость доставки до Вашего населенного пункта, перед оформлением заказа, позвоните <span class="color-red">8 800 700-73-80 (звонок по России бесплатный).</span>
 
-			.place_order-form
+			.place_order-form.polosa
 				.place_order-form-item.place_order-form-item__inner
 					.place_order-form-input-wrapp__inner
 						input#user_post(type="radio", name="user_dost")
@@ -404,7 +404,7 @@ main.main.order.col-lg-9.col-md-12
 				p Если Вы хотите узнать точную стоимость доставки до Вашего населенного пункта перед оформлением заказа, позвоните <a href="tel:+78007007380">8 800 700-73-80.</a>
 
 		.place_order
-			h2.title Доставка
+			h2.title Оплата
 			.place_order-form
 				.place_order-form-item.place_order-form-item__inner
 					.place_order-form-input-wrapp__inner
